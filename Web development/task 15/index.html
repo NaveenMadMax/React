@@ -1,46 +1,78 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Task 15</title>
-        <style>
-            .header
-            {
-                background-color: gray;
-            }
-            .grey
-            {
-                text-align: center;
-                padding-top: 10px;
-            }
-            .container
-            {
-                display: grid;
-                grid-template-columns: 2fr 2fr 1fr;
-                grid-row: 3fr 3fr 3fr;
-                height: 100px;
-            }
-            .cayn
-            {
-                background-color: cyan;
-            }
-            .yellow
-            {
-                background-color: yellow;
-            }
-
-        </style>
-    </head>
-    <body>
-        <div class="header">
-            <div class="grey">
-                Header
-            </div>
-        </div>
-        <div class="container">
-            <div class="cayn"></div>
-            <div class="yellow"></div>
-            <div class="skyblue"></div>
-            <div class="blue"></div>
-        </div>
-    </body>
+  <head>
+    <title>Task 15</title>
+    <style>
+      table {
+        width: 1300px;
+        border-collapse: collapse;
+        margin-left: 80px;
+      }
+      .row1 {
+        height: 90px;
+      }
+      .row2 {
+        height: 200px;
+      }
+      .row3 {
+        height: 150px;
+      }
+      .header {
+        text-align: center;
+        background-color: gray;
+      }
+      .blue {
+        background-color: cyan;
+      }
+      .green {
+        background-color: greenyellow;
+      }
+      .yellow {
+        background-color: yellow;
+      }
+      .skyblue {
+        background-color: skyblue;
+      }
+      .violet {
+        background-color: violet;
+      }
+      .darkyellow {
+        background-color: rgb(186, 186, 4);
+      }
+      .darkblue {
+        background-color: blue;
+      }
+      .red {
+        background-color: red;
+      }
+      .footergrey {
+        background-color: gray;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr class="row1">
+        <td colspan="4" class="header">Header</td>
+      </tr>
+      <tr class="row2">
+        <td colspan="2" class="blue"></td>
+        <td colspan="2" class="green"></td>
+      </tr>
+      <tr class="row3">
+        <td class="yellow"></td>
+        <td class="skyblue"></td>
+        <td class="violet"></td>
+        <td class="darkyellow"></td>
+      </tr>
+      <tr class="row2">
+        <td colspan="2" class="darkblue"></td>
+        <td colspan="2" class="red"></td>
+      </tr>
+      <tr class="row1">
+        <td colspan="4" class="footergrey">Footer</td>
+      </tr>
+    </table>
+  </body>
 </html>
