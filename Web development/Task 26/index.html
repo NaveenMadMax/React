@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task 26</title>
+    <style>
+      .row1 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100px;
+      }
+      .row2 {
+        display: flex;
+        height: 300px;
+      }
+      .row3{
+        display: flex;
+        height: 200px;
+      }
+      .column{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 500px;    
+    }
+      .box1 {
+        background-color: blue;
+      }
+      .box2 {
+        background-color: yellow;
+      }
+      .innerbox {
+        width: 80px;
+        height: 50px;
+      }
+      .lightpink {
+        background-color: lightpink;
+        margin-left: -100px;
+      }
+      .yellow {
+        background-color: yellow;
+        margin-left: 600px;
+      }
+      .yellow2 {
+        background-color: yellow;
+      }
+      .brown {
+        background-color: brown;
+      }
+      .green {
+        background-color: green;
+      }
+      .orange{
+        background-color: orange;
+      }
+      .lightgreen{
+        background-color: lightgreen;
+      }
+      .blue{
+        background-color: blue;
+      }
+      .pink{
+        background-color: lightpink;
+      }
+      .black{
+        background-color: black;
+        margin-top: -100px;
+      }
+      .darkblue{
+        background-color: darkblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="row1 box1">
+        <div class="innerbox lightpink"></div>
+        <div class="innerbox yellow"></div>
+        <div class="innerbox brown"></div>
+        <div class="innerbox green"></div>
+      </div>
+      <div class="row2 box2"></div>
+      <div class="row3">
+        <div class="column orange">
+            <div class="innerbox pink"></div>
+            <div class="innerbox yellow2"></div>
+            <div class="innerbox green"></div>
+        </div>
+        <div class="column lightgreen">
+            <div class="innerbox blue"></div>
+            <div class="innerbox green"></div>
+        </div>
+        <div class="column green">
+            <div class="innerbox black"></div>
+        </div>
+        <div class="column darkblue"></div>
+      </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
