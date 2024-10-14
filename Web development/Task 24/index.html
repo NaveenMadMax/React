@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task 24</title>
+    <style>
+      container {
+        display: flex;
+        width: 800px;
+        height: 800px;
+      }
+      .row1 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100px;
+        width: 700px;
+        margin-left: -8px;
+      }
+      .row2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 400px;
+        width: 700px;
+        margin-left: -8px;
+      }
+      .row3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        height: 150px;
+        width: 700px;
+        margin-left: -8px;
+      }
+      .innerbox1 {
+        width: 100px;
+        height: 50px;
+        margin-left: 10px;
+      }
+      .box1 {
+        background-color: blue;
+      }
+      .red {
+        background-color: red;
+      }
+
+      .box2 {
+        background-color: yellow;
+      }
+      .purple {
+        background-color: blueviolet;
+        margin-top: 10px;
+      }
+      .yellow {
+        background-color: gold;
+      }
+      .pink {
+        background-color: hotpink;
+        margin-bottom: 10px;
+      }
+      .box3 {
+        background-color: cyan;
+      }
+
+      .hotpink {
+        background-color: hotpink;
+        margin-right: 150px;
+      }
+      .green {
+        background-color: green;
+        margin-right: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row1 box1">
+        <div class="innerbox1 red"></div>
+      </div>
+      <div class="row2 box2">
+        <div class="innerbox1 purple"></div>
+        <div class="innerbox1 yellow"></div>
+        <div class="innerbox1 pink"></div>
+      </div>
+      <div class="row3 box3">
+        <div class="innerbox1 hotpink"></div>
+        <div class="innerbox1 green"></div>
+      </div>
+    </div>
+  </body>
+</html>
