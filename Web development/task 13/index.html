@@ -1,90 +1,99 @@
 <!DOCTYPE html>
 <head>
-    <title>task 13</title>
+    <title>Task 13</title>
     <style>
-        .grey
-        {
+        table {
+            width: 700px;
+            border-collapse: collapse;
+        }
+        td {
+            border: 0;
+            padding: 0;
+        }
+        .grey {
             background-color: grey;
             width: 700px;
             height: 90px;
-        }
-        .Gray{
             text-align: center;
-            padding-top: 28px;
         }
-        .menupanel{
+        .Gray {
+            text-align: center;
+        }
+        .menupanel {
             background-color: aqua;
-            top: -10px;
             width: 200px;
             height: 450px;
-        }
-        .cayn{
             text-align: center;
+            vertical-align: top;
+        }
+        .cayn {
             padding-top: 200px;
         }
-        .section{
+        .section {
             background-color: blue;
-            margin-left: 200px;
-            margin-top: -450px;
             width: 500px;
             height: 250px;
-        }
-        .blue{
             text-align: center;
+        }
+        .blue {
             padding: 110px;
         }
-        .article{
+        .article {
             background-color: red;
-            margin-left: 200px;
             width: 250px;
             height: 200px;
-        }
-        .red{
             text-align: center;
+        }
+        .red {
             padding: 90px;
         }
-        .nav{
+        .nav {
             background-color: orange;
-            margin-left: 450px;
-            margin-top: -200px;
             width: 250px;
             height: 200px;
-        }
-        .orange{
             text-align: center;
+        }
+        .orange {
             padding: 90px;
         }
-        .footer{
+        .footer {
             background-color: gray;
             width: 700px;
             height: 90px;
-        }
-        .footergrey{
             text-align: center;
+        }
+        .footergrey {
             padding-top: 35px;
         }
-
-
     </style>
 </head>
 <body>
-    <div class="grey">
-        <div class="Gray">Gray</div>
-    </div>
-        <div class="menupanel">
-            <div class="cayn">MenuPanel</div>
-        </div>
-    <div class="section">
-        <div class="blue">Blue</div>
-    </div>
-        <div class="article">
-            <div class="red">Red</div>
-        </div>
-    <div class="nav">
-        <div class="orange">Orange</div>
-    </div>
-    <div class="footer">
-        <div class="footergrey">Footer</div>
-    </div>
+    <table>
+        <tr class="grey">
+            <td colspan="3" class="Gray">Gray</td>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="menupanel">
+                <div class="cayn">MenuPanel</div>
+            </td>
+            <td colspan="2" class="section">
+                <div class="blue">Blue</div>
+            </td>
+        </tr>
+        <tr>
+            <td class="article">
+                <div class="red">Red</div>
+            </td>
+            <td class="nav">
+                <div class="orange">Orange</div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" class="footer">
+                <div class="footergrey">Footer</div>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
