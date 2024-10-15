@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task 32</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+      }
+      .container {
+        height: 500px;
+        width: 1300px;
+        margin-left: 220px;
+        margin-top: 250px;
+        margin-bottom: 50px;
+      }
+      .header {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        background-color: rgb(46, 45, 45);
+        color: blanchedalmond;
+        height: 180px;
+        font-size: 50px;
+      }
+      .navigationbar {
+        display: flex;
+        justify-content: space-around;
+        background-color: black;
+        padding: 10px;
+      }
+      .nav {
+        border: 1px solid black;
+        background-color: white;
+        width: 225px;
+        height: 17px;
+        text-align: center;
+        padding: 10px;
+      }
+      .artical {
+        display: flex;
+        height: 200px;
+      }
+      .column1 {
+        display: flex;
+        flex-direction: column;
+        width: 800px;
+        background-color: lightgrey;
+        padding: 5px;
+      }
+      .column2 {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        padding: 10px;
+      }
+      .footer {
+        display: flex;
+        background-color: lightgray;
+        padding-top: 10px;
+        height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Site Wide Header</div>
+      <div class="navigationbar">
+        <div class="nav">Home</div>
+        <div class="nav">About</div>
+        <div class="nav">Blog</div>
+        <div class="nav">Careers</div>
+        <div class="nav">About Us</div>
+      </div>
+      <div class="artical">
+        <div class="column1">
+          <p style="font-size: 20px">
+            <strong>This is the header of the artical</strong>
+          </p>
+          <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex sunt
+            autem quam pariatur repudiandae at vel illum similique consequatur,
+            magnam quo, dolores quisquam fugiat itaque tempora laboriosam
+            veritatis unde. Perspiciatis vero labore modi aperiam eveniet
+            ducimus quasi praesentium nisi harum.
+          </div>
+        </div>
+        <div class="column2">
+          <p style="font-size: 20px"><strong>Aside Heading</strong></p>
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+            impedit.
+          </div>
+        </div>
+      </div>
+      <div style="background-color: black; height: 10px"></div>
+      <div class="footer">
+        <div style="padding-left: 10px; padding-top: 15px">
+          <strong>copyRight © 2017</strong>
+          <strong style="color: blue; text-decoration: underline">
+            My Site</strong
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
