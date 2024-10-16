@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task 32</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: white;
+      }
+      .container1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 633px;
+        width: 1030px;
+        background-color: lightgray;
+        margin-left: 506px;
+        margin-top: 75px;
+      }
+      .container2 {
+        height: 500px;
+        width: 1000px;
+      }
+      .header {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        background-color: rgb(46, 45, 45);
+        color: white;
+        height: 100px;
+        font-size: 23px;
+      }
+      .navigationbar {
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(46, 45, 45);
+        padding: 10px;
+      }
+      .nav {
+        border: 1px solid black;
+        background-color: white;
+        width: 225px;
+        height: 17px;
+        text-align: center;
+        padding: 10px;
+        font-weight: bold;
+      }
+      .artical {
+        display: flex;
+        height: 448px;
+        background-color: white;
+      }
+      .column {
+        display: flex;
+        flex-direction: column;
+        width: 190px;
+        background-color: rgb(240, 240, 240);
+      }
+      .column div {
+        display: flex;
+        border-bottom-style: solid;
+        border-color: lightgray;
+        justify-content: center;
+        padding: 10px;
+        text-decoration: underline;
+      }
+      .column1 {
+        display: flex;
+        flex-direction: column;
+        width: 800px;
+        background-color: lightgrey;
+        padding: 5px;
+      }
+      .column2 {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        padding: 10px;
+      }
+      .footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: rgb(46, 45, 45);
+        height: 25px;
+        font-size: 17px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container1">
+      <div class="container2">
+        <div class="header"><h2>Site wide Header</h2></div>
+
+        <div class="artical">
+          <div class="column">
+            <div>Home</div>
+            <div>About</div>
+            <div>Blog</div>
+            <div>Careers</div>
+            <div>About us</div>
+          </div>
+          <div class="column1">
+            <p style="font-size: 20px">
+              <strong>This is the header of the artical</strong>
+            </p>
+            <div>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex sunt
+              autem quam pariatur repudiandae at vel illum similique
+              consequatur, magnam quo, dolores quisquam fugiat itaque tempora
+              laboriosam veritatis unde. Perspiciatis vero labore modi aperiam
+              eveniet ducimus quasi praesentium nisi harum.
+            </div>
+          </div>
+          <div class="column2">
+            <p style="font-size: 20px"><strong>Aside Heading</strong></p>
+            <div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+              impedit.
+            </div>
+          </div>
+        </div>
+        <div class="navigationbar">
+          <div class="nav">Home</div>
+          <div class="nav">About</div>
+          <div class="nav">Blog</div>
+          <div class="nav">Careers</div>
+          <div class="nav">About Us</div>
+        </div>
+        <div class="footer">
+          <div>
+            <strong style="color: white">Copyright © 2017</strong>
+            <strong style="color: grey; text-decoration: underline">
+              My Site</strong
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
