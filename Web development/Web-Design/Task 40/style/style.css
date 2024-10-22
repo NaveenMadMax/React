@@ -284,7 +284,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
-  height: 1010.92px;
+  height: 1110.92px;
   padding: 64px 0px;
 }
 .Project > h1 {
@@ -299,6 +299,54 @@
   color: #777777;
   text-align: center;
   margin-bottom: 40.8px;
+}
+.projectnav{
+  display: flex;
+  flex-wrap: wrap;
+  height: 44.78px;
+  width: 1140px;
+  padding: 4.8px;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 32px;
+}
+.projectnav>h2{
+  display: flex;
+  height: 35.19px;
+  width: 60.3px;
+  justify-content: center;
+  align-items: center;
+  font-family: Popins;
+  font-size: 12.8px;
+  color: #8490ff;
+  cursor: pointer;
+}
+.projectnav>button{
+  font-family: Popins;
+  font-size: 12.8px;
+  text-align: start;
+  padding: 6.4px 0px;
+  border: none;
+  cursor: pointer;
+  height: 35.19px;
+  width: 77.84px;
+  color: #04091e;
+  background-color: transparent;
+  position: relative;
+}
+.projectnav>button::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 2.5px;
+  background:black;
+  transition: 0.4s ease all;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.projectnav>button:hover::after{
+  width: 25px;
 }
 .Project-container {
   display: flex;
