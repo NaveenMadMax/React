@@ -1,200 +1,25 @@
-.header {
-  display: flex;
-  flex-wrap: wrap;
-  height: 50px;
-  justify-content: space-evenly;
-  align-content: center;
-  margin-top: 10px;
-  position: relative;
-}
-.heading {
-  display: flex;
-  flex-wrap: wrap;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: large;
-  margin-top: 12px;
-}
-.heading > i {
-  display: none;
-}
-.section {
-  display: flex;
-  flex-wrap: wrap;
-  height: 352px;
-  width: 100%;
-  background-image: url(/Assets/japan-background-digital-art.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  justify-content: center;
-}
-.container {
-  display: flex;
-  flex-direction: column;
-  width: 510px;
-  height: 338px;
-}
-.content {
-  display: flex;
-  font-weight: bold;
-  height: 90px;
-  margin-top: 40px;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.content2 {
-  display: flex;
-  flex-direction: row;
-  background-color: blue;
-  color: white;
-}
-.button {
-  display: flex;
-  margin-top: 76px;
-  height: 50px;
-}
-.button-style {
-  background-color: aqua;
-  border: none;
-  text-align: center;
-  color: white;
-  border-radius: 30px;
-  width: 130px;
-  height: 50px;
-  cursor: pointer;
-}
-.container-form {
-  display: flex;
-  width: 400px;
-  height: 467px;
-  background-color: lightgray;
-  padding: 20px;
-}
-.container-form1 {
-  display: flex;
-  flex-direction: column;
-  width: 225px;
-  height: 250px;
-  background-color: white;
-  padding: 10px;
-  margin-top: 36px;
-  margin-left: 165px;
-}
-.container-form2 {
-  display: flex;
-  flex-direction: column;
-  width: 225px;
-  height: 250px;
-  background-color: gold;
-}
-
-.container-form3 {
-  display: flex;
-  width: 100px;
-  height: 100px;
-}
-.form-header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  height: 80px;
-  font-weight: bold;
-  font-size: 20px;
-  color: white;
-}
-.input {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  height: 310px;
-}
-.input-style {
-  display: flex;
-  flex-wrap: wrap;
-  height: 20px;
-  width: 188px;
-}
-.form-button {
-  position: absolute;
-  margin-top: 242px;
-  margin-left: 65px;
-  height: 30px;
-  width: 100px;
-  background-color: gray;
-  color: white;
-  border: none;
-  font-size: 18px;
-  text-align: center;
-  padding-top: 10px;
-}
-.content-block {
-  height: 100px;
-  width: 519px;
-  padding-top: 65px;
-}
-.content-block > h2 {
-  font-size: 22px;
-  font-weight: bold;
-  text-align: start;
-  margin-bottom: 10px;
-}
-.content-block > p {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.content-block-image {
-  width: 150px;
-  height: 150px;
-  padding-top: 56px;
-  position: relative;
-  left: 60px;
-}
-.content-block-container {
-  display: flex;
-  height: 207px;
-  justify-content: center;
-  margin-bottom: 30px;
-  gap: 120px;
-}
-
-.grid_section {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: auto;
-  height: auto;
-  gap: 30px;
-}
-.grid-container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 795px;
-  gap: 51px;
-}
-.grid-container > img {
-  height: 100px;
-  width: 160px;
-}
-.tour-content {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 35px;
-  text-align: center;
-}
 /* -------------------------------------------------Mobile Screen 375px--------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------------------------- */
 @media only screen and (max-width: 375px) {
   .header {
     margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px;
+    justify-content: space-evenly;
+    align-content: center;
+    position: relative;
   }
   .header > div {
     display: none;
+  }
+  .heading {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    margin-top: 12px;
   }
   .heading > i {
     display: flex;
@@ -205,38 +30,135 @@
     flex-direction: column;
     width: 100%;
     height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(/Assets/japan-background-digital-art.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    justify-content: center;
   }
   .container {
     width: fit-content;
     height: auto;
     flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
   }
   .content {
+    display: flex;
+    font-weight: bold;
+    height: 90px;
+    margin-top: 40px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
     justify-content: center;
     text-align: center;
   }
   .content2 {
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
+    color: white;
   }
   .button {
+    display: flex;
+    height: 50px;
     justify-content: center;
     margin-top: 20;
   }
+  .button-style {
+    background-color: aqua;
+    border: none;
+    text-align: center;
+    color: white;
+    border-radius: 30px;
+    width: 130px;
+    height: 50px;
+    cursor: pointer;
+  }
   .container-form {
     align-items: center;
+    display: flex;
+    width: 400px;
+    height: 467px;
+    background-color: lightgray;
+    padding: 20px;
   }
   .container-form1 {
+    display: flex;
+    flex-direction: column;
+    width: 225px;
+    height: 250px;
+    background-color: white;
+    padding: 10px;
+    margin-top: 36px;
     justify-content: start;
     margin-left: 36px;
     margin-right: 0;
   }
+  .container-form2 {
+    display: flex;
+    flex-direction: column;
+    width: 225px;
+    height: 250px;
+    background-color: gold;
+  }
+  .container-form3 {
+    display: flex;
+    width: 100px;
+    height: 100px;
+  }
+  .form-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 80px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+  }
+  .input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 310px;
+  }
+  .input-style {
+    display: flex;
+    flex-wrap: wrap;
+    height: 20px;
+    width: 188px;
+  }
+  .form-button {
+    position: absolute;
+    margin-top: 242px;
+    margin-left: 65px;
+    height: 30px;
+    width: 100px;
+    background-color: gray;
+    color: white;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
+  }
   .content-block {
+    height: 100px;
+    padding-top: 65px;
     width: 100%;
   }
   .content-block > h2 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: start;
+    margin-bottom: 10px;
     padding: 10px;
   }
   .content-block > p {
+    font-size: 16px;
+    line-height: 1.5;
     text-align: justify;
     padding: 10px;
   }
@@ -246,14 +168,32 @@
     left: 0;
     padding-top: 15px;
     margin-top: 65px;
+    padding-top: 15px;
+    position: relative;
   }
   .content-block-container {
     width: 100%;
     height: auto;
     flex-direction: column;
     line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 120px;
+  }
+  .grid_section {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    gap: 30px;
   }
   .grid-container {
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
     height: 100%;
@@ -264,15 +204,36 @@
     width: 100%;
     height: 80%;
   }
+  .tour-content {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 35px;
+    text-align: center;
+  }
 }
 /* -------------------------------------------------Mobile Screen 374 to 424px--------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------------------------ */
 @media only screen and (min-width: 375px) and (max-width: 424px) {
   .header {
     margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px;
+    justify-content: space-evenly;
+    align-content: center;
+    position: relative;
   }
   .header > div {
     display: none;
+  }
+  .heading {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    margin-top: 12px;
   }
   .heading > i {
     display: flex;
@@ -283,38 +244,134 @@
     flex-direction: column;
     width: 100%;
     height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(/Assets/japan-background-digital-art.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    justify-content: center;
   }
   .container {
     width: fit-content;
     height: auto;
     flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
   }
   .content {
+    display: flex;
+    font-weight: bold;
+    height: 90px;
+    margin-top: 40px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
     justify-content: center;
     text-align: center;
   }
   .content2 {
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
+    color: white;
   }
   .button {
+    display: flex;
+    height: 50px;
     justify-content: center;
     margin-top: 20;
   }
+  .button-style {
+    background-color: aqua;
+    border: none;
+    text-align: center;
+    color: white;
+    border-radius: 30px;
+    width: 130px;
+    height: 50px;
+    cursor: pointer;
+  }
   .container-form {
     align-items: center;
+    display: flex;
+    width: 400px;
+    height: 467px;
+    background-color: lightgray;
+    padding: 20px;
   }
   .container-form1 {
+    display: flex;
+    flex-direction: column;
+    width: 225px;
+    height: 250px;
+    background-color: white;
+    padding: 10px;
+    margin-top: 36px;
     justify-content: start;
     margin-left: 65px;
     margin-right: 0;
   }
+  .container-form2 {
+    display: flex;
+    flex-direction: column;
+    width: 225px;
+    height: 250px;
+    background-color: gold;
+  }
+  .container-form3 {
+    display: flex;
+    width: 100px;
+    height: 100px;
+  }
+  .form-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 80px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+  }
+  .input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 310px;
+  }
+  .input-style {
+    display: flex;
+    flex-wrap: wrap;
+    height: 20px;
+    width: 188px;
+  }
+  .form-button {
+    position: absolute;
+    margin-top: 242px;
+    margin-left: 65px;
+    height: 30px;
+    width: 100px;
+    background-color: gray;
+    color: white;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
+  }
   .content-block {
+    height: 100px;
+    padding-top: 65px;
     width: 100%;
   }
   .content-block > h2 {
-    padding: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: start;
+    margin-bottom: 10px;
   }
   .content-block > p {
+    font-size: 16px;
+    line-height: 1.5;
     text-align: justify;
     padding: 10px;
   }
@@ -324,14 +381,31 @@
     left: 0;
     padding-top: 15px;
     margin-top: 30px;
+    position: relative;
   }
   .content-block-container {
     width: 100%;
     height: auto;
     flex-direction: column;
     line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 120px;
+  }
+  .grid_section {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    gap: 30px;
   }
   .grid-container {
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
     height: 100%;
@@ -342,15 +416,36 @@
     width: 100%;
     height: 80%;
   }
+  .tour-content {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 35px;
+    text-align: center;
+  }
 }
 /* -------------------------------------------------Mobile Screen 424px to 767px --------------------------------------------- */
 /* -------------------------------------------------------------------------------------------------------------------------- */
 @media only screen and (min-width: 424px) and (max-width: 767px) {
   .header {
     margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px;
+    justify-content: space-evenly;
+    align-content: center;
+    position: relative;
   }
   .header > div {
     display: none;
+  }
+  .heading {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    margin-top: 12px;
   }
   .heading > i {
     display: flex;
@@ -361,40 +456,137 @@
     flex-direction: column;
     width: 100%;
     height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(/Assets/japan-background-digital-art.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    justify-content: center;
   }
   .container {
     width: fit-content;
     height: auto;
     flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
   }
   .content {
     justify-content: center;
     text-align: center;
+    display: flex;
+    font-weight: bold;
+    height: 90px;
+    margin-top: 40px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
   }
   .content2 {
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
+    color: white;
   }
   .button {
     justify-content: center;
     margin-top: 20;
+    display: flex;
+    height: 50px;
+  }
+  .button-style {
+    background-color: aqua;
+    border: none;
+    text-align: center;
+    color: white;
+    border-radius: 30px;
+    width: 130px;
+    height: 50px;
+    cursor: pointer;
   }
   .container-form {
     align-items: center;
+    display: flex;
+    width: 400px;
+    height: 467px;
+    background-color: lightgray;
+    padding: 20px;
   }
   .container-form1 {
+    display: flex;
+    flex-direction: column;
+    width: 225px;
+    height: 250px;
+    background-color: white;
+    padding: 10px;
+    margin-top: 36px;
     justify-content: start;
     margin-left: 95px;
     margin-right: 0;
   }
+  .container-form2 {
+    display: flex;
+    flex-direction: column;
+    width: 225px;
+    height: 250px;
+    background-color: gold;
+  }
+  .container-form3 {
+    display: flex;
+    width: 100px;
+    height: 100px;
+  }
+  .form-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 80px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+  }
+  .input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 310px;
+  }
+  .input-style {
+    display: flex;
+    flex-wrap: wrap;
+    height: 20px;
+    width: 188px;
+  }
+  .form-button {
+    position: absolute;
+    margin-top: 242px;
+    margin-left: 65px;
+    height: 30px;
+    width: 100px;
+    background-color: gray;
+    color: white;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
+  }
   .content-block {
     width: 100%;
+    height: 100px;
+    padding-top: 65px;
   }
   .content-block > h2 {
     padding: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: start;
+    margin-bottom: 10px;
   }
   .content-block > p {
     text-align: justify;
     padding: 10px;
+    font-size: 16px;
+    line-height: 1.5;
   }
   .content-block-image {
     width: 100%;
@@ -402,12 +594,27 @@
     left: 0;
     padding-top: 15px;
     margin-top: 0px;
+    position: relative;
   }
   .content-block-container {
     width: 100%;
     height: auto;
     flex-direction: column;
     line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 120px;
+  }
+  .grid_section {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    gap: 30px;
   }
   .grid-container {
     flex-direction: column;
@@ -415,43 +622,161 @@
     height: 100%;
     align-items: center;
     gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
   }
   .grid-container > img {
     width: 100%;
     height: 80%;
   }
+  .tour-content {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 35px;
+    text-align: center;
+  }
 }
 /* -------------------------------------------------Tablet Screen 767px to 1023px  --------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------------------------- */
 @media only screen and (min-width: 767px) and (max-width: 1023px) {
+  .header {
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px;
+    justify-content: space-evenly;
+    align-content: center;
+    position: relative;
+  }
+  .heading {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    margin-top: 12px;
+  }
+  .heading > i {
+    display: none;
+  }
   .section {
     flex-direction: column;
     width: 100%;
     height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(/Assets/japan-background-digital-art.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    justify-content: center;
   }
   .container {
     width: fit-content;
     height: auto;
     flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
   }
   .content {
     justify-content: center;
     text-align: center;
+    display: flex;
+    font-weight: bold;
+    height: 90px;
+    margin-top: 40px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
   }
   .content2 {
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
+    color: white;
   }
   .button {
     justify-content: center;
     margin-top: 20;
+    display: flex;
+    height: 50px;
+  }
+  .button-style {
+    background-color: aqua;
+    border: none;
+    text-align: center;
+    color: white;
+    border-radius: 30px;
+    width: 130px;
+    height: 50px;
+    cursor: pointer;
   }
   .container-form {
     align-items: center;
+    display: flex;
+    width: 400px;
+    height: 467px;
+    background-color: lightgray;
+    padding: 20px;
   }
   .container-form1 {
     justify-content: start;
     margin-left: 265px;
     margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    width: 225px;
+    height: 250px;
+    background-color: white;
+    padding: 10px;
+    margin-top: 36px;
+  }
+  .container-form2 {
+    display: flex;
+    flex-direction: column;
+    width: 225px;
+    height: 250px;
+    background-color: gold;
+  }
+  .container-form3 {
+    display: flex;
+    width: 100px;
+    height: 100px;
+  }
+  .form-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 80px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+  }
+  .input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 310px;
+  }
+  .input-style {
+    display: flex;
+    flex-wrap: wrap;
+    height: 20px;
+    width: 188px;
+  }
+  .form-button {
+    position: absolute;
+    margin-top: 242px;
+    margin-left: 65px;
+    height: 30px;
+    width: 100px;
+    background-color: gray;
+    color: white;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
   }
   .content-block {
     display: flex;
@@ -462,10 +787,15 @@
   .content-block > h2 {
     padding: 10px;
     margin-bottom: 0px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: start;
   }
   .content-block > p {
     text-align: justify;
     padding: 10px;
+    font-size: 16px;
+    line-height: 1.5;
   }
   .content-block-image {
     width: 100%;
@@ -480,15 +810,423 @@
     flex-direction: column;
     line-height: 1.5;
     gap: 30px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .grid_section {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    gap: 30px;
   }
   .grid-container {
     width: 100%;
     height: 100%;
     justify-content: center;
     gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
   }
   .grid-container > img {
     width: 335px;
     height: 370px;
   }
+  .tour-content {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 35px;
+    text-align: center;
+  }
 }
+/* -------------------------------------------------laptop Screen 1023px to 1439px --------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+@media only screen and (min-width: 1023px) and (max-width: 1439px) {
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px;
+    justify-content: space-evenly;
+    align-content: center;
+    margin-top: 10px;
+    position: relative;
+  }
+  .heading {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    margin-top: 12px;
+  }
+  .heading > i {
+    display: none;
+  }
+  .section {
+    display: flex;
+    flex-wrap: wrap;
+    height: 352px;
+    width: 100%;
+    background-image: url(/Assets/japan-background-digital-art.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    justify-content: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 510px;
+    height: 338px;
+  }
+  .content {
+    display: flex;
+    font-weight: bold;
+    height: 90px;
+    margin-top: 40px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .content2 {
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
+    color: white;
+  }
+  .button {
+    display: flex;
+    margin-top: 76px;
+    height: 50px;
+  }
+  .button-style {
+    background-color: aqua;
+    border: none;
+    text-align: center;
+    color: white;
+    border-radius: 30px;
+    width: 130px;
+    height: 50px;
+    cursor: pointer;
+  }
+  .container-form {
+    display: flex;
+    width: 400px;
+    height: 467px;
+    background-color: lightgray;
+    padding: 20px;
+  }
+  .container-form1 {
+    display: flex;
+    flex-direction: column;
+    width: 225px;
+    height: 250px;
+    background-color: white;
+    padding: 10px;
+    margin-top: 36px;
+    margin-left: 165px;
+  }
+  .container-form2 {
+    display: flex;
+    flex-direction: column;
+    width: 225px;
+    height: 250px;
+    background-color: gold;
+  }
+
+  .container-form3 {
+    display: flex;
+    width: 100px;
+    height: 100px;
+  }
+  .form-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 80px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+  }
+  .input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 310px;
+  }
+  .input-style {
+    display: flex;
+    flex-wrap: wrap;
+    height: 20px;
+    width: 188px;
+  }
+  .form-button {
+    position: absolute;
+    margin-top: 242px;
+    margin-left: 65px;
+    height: 30px;
+    width: 100px;
+    background-color: gray;
+    color: white;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .content-block {
+    height: 100px;
+    width: 519px;
+    padding-top: 65px;
+  }
+  .content-block > h2 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: start;
+    margin-bottom: 10px;
+  }
+  .content-block > p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .content-block-image {
+    width: 150px;
+    height: 150px;
+    padding-top: 56px;
+    position: relative;
+    left: 60px;
+  }
+  .content-block-container {
+    display: flex;
+    height: 207px;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 120px;
+  }
+
+  .grid_section {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    gap: 30px;
+  }
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 795px;
+    gap: 51px;
+  }
+  .grid-container > img {
+    height: 100px;
+    width: 160px;
+  }
+  .tour-content {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+}
+/* -------------------------------------------------desktop 1439px to 2560px --------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+@media only screen and (min-width: 1439px) and (max-width: 2560px) {
+    .header {
+      display: flex;
+      flex-wrap: wrap;
+      height: 50px;
+      justify-content: space-evenly;
+      align-content: center;
+      margin-top: 10px;
+      position: relative;
+    }
+    .heading {
+      display: flex;
+      flex-wrap: wrap;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: large;
+      margin-top: 12px;
+    }
+    .heading > i {
+      display: none;
+    }
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      height: 352px;
+      width: 100%;
+      background-image: url(/Assets/japan-background-digital-art.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      justify-content: center;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 510px;
+      height: 338px;
+    }
+    .content {
+      display: flex;
+      font-weight: bold;
+      height: 90px;
+      margin-top: 40px;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  
+    .content2 {
+      display: flex;
+      flex-direction: row;
+      background-color: blue;
+      color: white;
+    }
+    .button {
+      display: flex;
+      margin-top: 76px;
+      height: 50px;
+    }
+    .button-style {
+      background-color: aqua;
+      border: none;
+      text-align: center;
+      color: white;
+      border-radius: 30px;
+      width: 130px;
+      height: 50px;
+      cursor: pointer;
+    }
+    .container-form {
+      display: flex;
+      width: 400px;
+      height: 467px;
+      background-color: lightgray;
+      padding: 20px;
+    }
+    .container-form1 {
+      display: flex;
+      flex-direction: column;
+      width: 225px;
+      height: 250px;
+      background-color: white;
+      padding: 10px;
+      margin-top: 36px;
+      margin-left: 165px;
+    }
+    .container-form2 {
+      display: flex;
+      flex-direction: column;
+      width: 225px;
+      height: 250px;
+      background-color: gold;
+    }
+  
+    .container-form3 {
+      display: flex;
+      width: 100px;
+      height: 100px;
+    }
+    .form-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      height: 80px;
+      font-weight: bold;
+      font-size: 20px;
+      color: white;
+    }
+    .input {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      height: 310px;
+    }
+    .input-style {
+      display: flex;
+      flex-wrap: wrap;
+      height: 20px;
+      width: 188px;
+    }
+    .form-button {
+      position: absolute;
+      margin-top: 242px;
+      margin-left: 65px;
+      height: 30px;
+      width: 100px;
+      background-color: gray;
+      color: white;
+      border: none;
+      font-size: 18px;
+      text-align: center;
+      padding-top: 10px;
+    }
+    .content-block {
+      height: 100px;
+      width: 519px;
+      padding-top: 65px;
+    }
+    .content-block > h2 {
+      font-size: 22px;
+      font-weight: bold;
+      text-align: start;
+      margin-bottom: 10px;
+    }
+    .content-block > p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  
+    .content-block-image {
+      width: 150px;
+      height: 150px;
+      padding-top: 56px;
+      position: relative;
+      left: 60px;
+    }
+    .content-block-container {
+      display: flex;
+      height: 207px;
+      justify-content: center;
+      margin-bottom: 30px;
+      gap: 120px;
+    }
+  
+    .grid_section {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: auto;
+      height: auto;
+      gap: 30px;
+    }
+    .grid-container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 795px;
+      gap: 51px;
+    }
+    .grid-container > img {
+      height: 100px;
+      width: 160px;
+    }
+    .tour-content {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 35px;
+      text-align: center;
+    }
+  }
