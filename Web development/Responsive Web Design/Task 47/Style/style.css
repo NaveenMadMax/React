@@ -1,0 +1,8338 @@
+@font-face {
+  font-family: lexend;
+  src: url(/Assets/Fonts/Lexend/static/Lexend-Light.ttf);
+}
+@font-face {
+  font-family: lexendbold;
+  src: url(/Assets/Fonts/Lexend/static/Lexend-Bold.ttf);
+}
+
+/* ----------------------------------------------------------Mobile view 374px--------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 374px) {
+  .header {
+    display: flex;
+    height: 848px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url(/Assets/Images/background5.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .header > nav {
+    position: fixed;
+  }
+  .nav {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    position: fixed;
+    width: -webkit-fill-available;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: transparent;
+    z-index: 10;
+    gap: 127px;
+  }
+  .nav > i {
+    color: white;
+    font-size: 30px;
+  }
+  .nav-brand {
+    display: flex;
+    font-family: lexendbold;
+    color: #263d5a;
+    font-size: 28.8px;
+    cursor: pointer;
+  }
+  .nav-brand:hover {
+    color: black;
+    transition: 0.2s ease;
+  }
+  .nav-items {
+    display: none;
+  }
+  .message {
+    display: none;
+  }
+  .photographer-container {
+    display: flex;
+    flex-direction: column;
+    height: 300.64px;
+    width: 242px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 32px 16px;
+    border-radius: 48px;
+    position: relative;
+    top: 150px;
+    z-index: 2;
+    backdrop-filter: blur(3px);
+    align-items: center;
+  }
+  .photographer-container > h1 {
+    font-family: "lexendbold";
+    color: #263d5a;
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+  .photographer-container > p {
+    font-family: lexend;
+    color: #263d5a;
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .photographer-container > button {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #a148ff, #ff6f45 100%);
+    border: none;
+    transition: all 0.4s ease;
+    border-radius: 50px;
+    width: 170.47px;
+    height: 54.41px;
+    font-family: lexend;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    top: 35px;
+  }
+  .photographer-container > button:hover {
+    transform: translateY(-5px);
+  }
+  .photographer-container2 {
+    display: flex;
+    flex-direction: column;
+    height: 171px;
+    width: 296px;
+    background-image: url(/Assets/Images/girlwithcamera.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+    position: relative;
+    top: 32px;
+    z-index: 1;
+  }
+  .our-service {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: url(/Assets/Images/background3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1132.25px;
+    background-position: 50% 50%;
+    align-content: center;
+    padding: 128px 0px;
+    gap: 70px;
+  }
+  .our-service > h1 {
+    text-align: center;
+    font-family: lexendbold;
+    font-size: 26.68px;
+    color: #263d5a;
+  }
+  .servicecontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 1035.34px;
+    width: 296px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(3px);
+    border-radius: 30px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  }
+  .servicecontainer-content1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 310px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .servicecontainer-content1 > button {
+    background-color: rgba(255, 255, 255, 0.67);
+    height: 114px;
+    width: 112px;
+    text-align: center;
+    font-size: 64px;
+    border-radius: 109px;
+    border: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    color: #a148ff;
+  }
+  .servicecontainer-content1 > h1 {
+    font-family: "lexendbold";
+    font-weight: bold;
+    font-size: 17.68px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 20px;
+  }
+  .servicecontainer-content1 > p {
+    font-family: Lexend;
+    display: flex;
+    font-size: 16px;
+    width: 245px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 10px;
+  }
+  .servicecontainer-content2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 310px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .servicecontainer-content2 > button {
+    background-color: rgba(255, 255, 255, 0.67);
+    height: 114px;
+    width: 112px;
+    text-align: center;
+    font-size: 64px;
+    border-radius: 109px;
+    border: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    color: #a148ff;
+  }
+  .servicecontainer-content2 > h1 {
+    font-family: "lexendbold";
+    font-weight: bold;
+    font-size: 17.68px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 20px;
+  }
+  .servicecontainer-content2 > p {
+    font-family: Lexend;
+    display: flex;
+    font-size: 16px;
+    width: 245px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 10px;
+  }
+  .servicecontainer-content3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 310px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .servicecontainer-content3 > button {
+    background-color: rgba(255, 255, 255, 0.67);
+    height: 114px;
+    width: 112px;
+    text-align: center;
+    font-size: 64px;
+    border-radius: 109px;
+    border: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    color: #a148ff;
+  }
+  .servicecontainer-content3 > h1 {
+    font-family: "lexendbold";
+    font-weight: bold;
+    font-size: 17.68px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 20px;
+  }
+  .servicecontainer-content3 > p {
+    font-family: Lexend;
+    display: flex;
+    font-size: 16px;
+    width: 245px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 10px;
+  }
+  .aboutus {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 983px;
+    background-image: url(/Assets/Images/background8.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    gap: 45px;
+  }
+  .aboutus > img {
+    display: flex;
+    height: 368.83px;
+    width: 296px;
+    border-radius: 30px;
+  }
+  .aboutus-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 255px;
+    height: 390.61;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0.6) 100%
+    );
+    backdrop-filter: blur(3.5px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 32px 16px;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, 0.329);
+  }
+  .aboutus-card > h1 {
+    font-family: Lexendbold;
+    color: #263d5a;
+    font-size: 35.04px;
+  }
+  .aboutus-card > h2 {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .aboutus-card > p {
+    display: flex;
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    left: 50px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .pricingcontainer1 {
+    height: 1500px;
+    background-image: url(/Assets/Images/background4.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .pricingcontainer2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: center;
+    height: 1275.19px;
+    background-color: rgba(255, 255, 255, 0.245);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 112px 0px;
+    align-items: center;
+  }
+  .pricingcontainer2 > p {
+    font-family: Lexend;
+    font-size: 20.8px;
+    color: #263d5a;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  .pricingcontainer2 > h1 {
+    font-family: Lexendbold;
+    font-size: 28.8px;
+    color: #263d5a;
+    margin-bottom: 60px;
+  }
+  .pricingcard {
+    display: flex;
+    flex-wrap: wrap;
+    height: 345px;
+    width: 280px;
+    gap: 40px;
+  }
+  .card1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 281px;
+    width: 270px;
+    background-color: rgba(255, 255, 255, 0.603);
+    backdrop-filter: blur(3.5px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 32px 16px;
+    align-items: center;
+  }
+  .card1 > h1 {
+    font-family: Lexendbold;
+    font-size: 35px;
+    color: #263d5a;
+    text-align: start;
+  }
+  .card1 > h2 {
+    font-family: Lexendbold;
+    font-size: 20px;
+    color: #263d5a;
+    text-align: start;
+    margin-top: 40px;
+  }
+  .card1 > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 30px;
+  }
+  .card1 > button {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #a148ff, #ff6f45 100%);
+    border: none;
+    transition: all 0.4s ease;
+    border-radius: 35px;
+    width: 150px;
+    height: 55px;
+    font-family: lexend;
+    color: white;
+    cursor: pointer;
+    margin-top: 25px;
+    font-weight: bold;
+  }
+  .card1 > button:hover {
+    transform: translateY(-6px);
+  }
+  .our-works {
+    display: flex;
+    flex-direction: column;
+    background-image: url(/Assets/Images/background5.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1610px;
+    align-items: center;
+  }
+  .our-works > p {
+    font-family: Lexend;
+    font-size: 20.8px;
+    color: #263d5a;
+    position: relative;
+    top: 83px;
+    font-weight: bold;
+  }
+  .our-works > h1 {
+    font-family: Lexendbold;
+    font-size: 20.48px;
+    width: 230px;
+    text-align: center;
+    color: black;
+    position: relative;
+    top: 100px;
+  }
+  .imagecard {
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    width: 304.8px;
+    justify-content: flex-start;
+    gap: 40px;
+    position: relative;
+    top: 130px;
+  }
+  .imagecard1 {
+    width: 410px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .imagecard1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Assets/Images/tv.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.4s ease;
+    z-index: 1;
+  }
+  .imagecard1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.4s ease;
+    z-index: 2;
+    transform: scale(1.2);
+  }
+  .imagecard1 > h1 {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    color: white;
+    font-family: Lexendbold;
+    font-size: 17.68px;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard1 > p {
+    position: absolute;
+    bottom: 20px;
+    left: 47px;
+    color: white;
+    font-family: Lexend;
+    font-size: 16px;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard1:hover {
+    cursor: pointer;
+  }
+  .imagecard2 {
+    width: 410px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .imagecard2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Assets/Images/Girl.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.4s ease;
+    z-index: 1;
+  }
+  .imagecard2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.4s ease;
+    z-index: 2;
+  }
+  .imagecard2:hover::before {
+    transform: scale(1.2);
+  }
+  .imagecard2 > h1 {
+    position: absolute;
+    bottom: 50px;
+    left: 73px;
+    color: white;
+    font-family: Lexendbold;
+    font-size: 20.8px;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard2 > p {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    color: white;
+    font-family: Lexend;
+    font-size: 16px;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard2:hover {
+    cursor: pointer;
+  }
+  .imagecard3 {
+    width: 410px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .imagecard3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Assets/Images/light.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.4s ease;
+    z-index: 1;
+  }
+  .imagecard3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.4s ease;
+    z-index: 2;
+  }
+  .imagecard3:hover::before {
+    transform: scale(1.2);
+  }
+  .imagecard3 > h1 {
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+    color: white;
+    font-family: Lexendbold;
+    font-size: 20.8px;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard3 > p {
+    position: absolute;
+    bottom: 20px;
+    left: 55px;
+    color: white;
+    font-family: Lexend;
+    font-size: 16px;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard3:hover {
+    cursor: pointer;
+  }
+  .progress {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 755px;
+    background-image: url(/Assets/Images/background1.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    position: relative;
+  }
+  .progress-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(3.5px);
+    width: 255px;
+    height: 538.38px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 48px 16px;
+  }
+  .progress-container > h1 {
+    font-family: Lexend;
+    color: #263d5a;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+  }
+  .progress-container > h2 {
+    font-family: Lexendbold;
+    color: #263d5a;
+    font-size: 26.08px;
+    text-align: center;
+    line-height: 1.1;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+  }
+  .progress-container > p {
+    font-family: Lexend;
+    color: #263d5a;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 16px;
+    padding-bottom: 24px;
+  }
+  .progress1 {
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+  }
+  .progress1-heading {
+    display: flex;
+    justify-content: space-between;
+  }
+  .progress1-heading > h1 {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #232323;
+    margin-bottom: 16px;
+  }
+  .progress1-heading > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #232323;
+    margin-bottom: 16px;
+  }
+  .progressbar-container {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;
+    height: 8px;
+    position: relative;
+    z-index: 1;
+  }
+  .progressbar {
+    background-color: #a148ff;
+    width: 92%;
+    border-radius: 15px;
+  }
+  .progress2 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    height: 40px;
+  }
+  .progressbar2-container {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;
+    height: 8px;
+  }
+  .progressbar2 {
+    background-color: #a148ff;
+    width: 71%;
+    border-radius: 15px;
+  }
+  .progressbar3-container {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;
+    height: 8px;
+  }
+  .progressbar3 {
+    background-color: #a148ff;
+    width: 53%;
+    border-radius: 15px;
+  }
+  .faq {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 755px;
+    background-image: url(/Assets/Images/background5.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .faq-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    width: 275px;
+    height: 507px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 28px 12px;
+  }
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+  }
+  .faq-image {
+    display: flex;
+    height: 181px;
+    width: 564px;
+    background-image: url(/Assets/Images/Beach.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    margin-top: 45px;
+  }
+  .faq-list > h1 {
+    font-family: Lexendbold;
+    font-size: 26.08px;
+    color: #263d5a;
+    text-align: center;
+    line-height: 1.1;
+  }
+  .faq-list > h2 {
+    font-family: Lexendbold;
+    font-size: 26.08px;
+    color: #263d5a;
+    text-align: center;
+    line-height: 1.1;
+    margin-bottom: 4px;
+    padding-bottom: 16px;
+  }
+  .list {
+    display: flex;
+    height: 68.19px;
+    cursor: pointer;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: #ffff0026;
+  }
+  .list > h1 {
+    font-family: Lexend;
+    font-size: 18.68px;
+    color: #263d5a;
+    padding: 24px 16px 13px 0px;
+  }
+  .list > p {
+    font-family: Lexend;
+    font-size: 27.8px;
+    color: #6d6d6d;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .client {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-image: url(/Assets/Images/background2.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 1528.16px;
+  }
+  .client-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 96px 0px;
+    height: 1343px;
+  }
+  .client-container > h1 {
+    font-family: Lexend;
+    font-size: 20.8px;
+    color: white;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  .client-container > h2 {
+    font-family: Lexendbold;
+    font-size: 28.8px;
+    color: white;
+    margin-bottom: 8px;
+    font-weight: bold;
+    padding-bottom: 24px;
+  }
+  .client-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 318px;
+    gap: 40px;
+    margin-top: 33px;
+  }
+  .clientcard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 259px;
+    height: 100.84px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    backdrop-filter: blur(3.5px);
+    padding: 32px 16px;
+  }
+  .clientcard > img {
+    height: 98.56px;
+  }
+  .sayhello {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-image: url(/Assets/Images/background7.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 405px;
+  }
+  .sayhello-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 213.7px;
+    width: 260px;
+    padding: 30px 16px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(3.5px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    text-align: center;
+    align-items: center;
+  }
+  .sayhello-card > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    margin-bottom: 16px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .sayhello-card > h1 {
+    font-family: Lexendbold;
+    font-size: 35.04px;
+    color: #263d5a;
+    margin-bottom: 32px;
+    line-height: 1.1;
+  }
+  .sayhello-card > h2 {
+    font-family: Lexend;
+    font-size: 20.8px;
+    color: #263d5a;
+    margin-bottom: 32px;
+    line-height: 1.1;
+    text-align: center;
+    cursor: pointer;
+  }
+  .sayhello-card > h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: black;
+    transition: 0.2s ease;
+  }
+  .sayhello-card > h2:hover:after {
+    width: 100%;
+  }
+  .map {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 482px;
+    background-image: url(/Assets/Images/background3.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    padding: 112px 0px;
+  }
+  .map-container {
+    height: 480px;
+    border-radius: 30px;
+    opacity: 0.8;
+  }
+  .map-container > iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+  }
+  .article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 934.47px;
+    background-image: url(/Assets/Images/background5.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    gap: 30px;
+  }
+  .article-card1 {
+    background-image: url(/Assets/Images/girlwithcoffee.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 404px;
+    width: 290px;
+    border-radius: 30px;
+  }
+  .article-card2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 32px 15px;
+    width: 270px;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    backdrop-filter: blur(3.5px);
+  }
+  .article-card2 > h1 {
+    font-family: Lexendbold;
+    font-size: 20.48px;
+    color: #263d5a;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .article-card2 > p {
+    font-family: Lexen;
+    font-size: 16px;
+    color: #263d5a;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: center;
+  }
+  .inputbackground {
+    height: 973px;
+    background-image: url(/Assets/Images/background1.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .overlay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 971px;
+    background-color: rgb(255, 255, 255, 0.6);
+  }
+  .inputcard {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 690px;
+    width: 280px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(3.5px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 32px 0px;
+  }
+  .inputcard > h1 {
+    font-family: Lexend;
+    font-size: 28.8px;
+    color: #263d5a;
+    text-align: center;
+    margin-bottom: 48px;
+    font-weight: bold;
+  }
+  .inputcard-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 144px;
+    gap: 20px;
+    width: 278px;
+  }
+  .input-field {
+    height: 48;
+    width: 476.41;
+    padding: 9.6px 19.2px;
+    border: 1px solid transparent;
+    outline: none;
+    font-family: Lexend;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  }
+  .input-field:hover {
+    border: none;
+  }
+  .input-field:focus {
+    border-color: #a148ff;
+  }
+  .textarea {
+    height: 250px;
+    width: 972.41px;
+    padding: 9.6px 19.2px;
+    border: 1px solid transparent;
+    outline: none;
+    font-family: Lexend;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  }
+  .textarea:hover {
+    border: none;
+  }
+  .textarea:focus {
+    border-color: #a148ff;
+  }
+  .inputcard-container > button {
+    height: 56px;
+    width: 972px;
+    background: linear-gradient(90deg, #a148ff, #ff6f45);
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    font-family: Lexend;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  .inputcard-container > button:hover {
+    transform: translateY(-4px);
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: center;
+    height: 608.69px;
+    background-color: #131729;
+    padding: 96px 0 80px;
+    gap: 20px;
+  }
+  .footer-aboutus {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 289px;
+  }
+  .footer-aboutus > h1 {
+    font-family: Lexendbold;
+    font-size: 20.8px;
+    color: white;
+    margin-bottom: 8px;
+  }
+  .footer-aboutus > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: white;
+    line-height: 1.5;
+  }
+  .company {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .company > h1 {
+    font-family: Lexendbold;
+    font-size: 20.8px;
+    color: white;
+    margin-bottom: 8px;
+  }
+  .company > h2 {
+    font-family: Lexend;
+    font-size: 16px;
+    color: white;
+    line-height: 1.5;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+  }
+  .company > h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.2s ease;
+  }
+  .company > h2:hover:after {
+    width: 45%;
+  }
+}
+/* ----------------------------------------------------------Mobile 374px view 424px--------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+@media only screen and (min-width: 374px) and (max-width: 424px) {
+  .header {
+    display: flex;
+    height: 848px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url(/Assets/Images/background5.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .header > nav {
+    position: fixed;
+  }
+  .nav {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    position: fixed;
+    width: -webkit-fill-available;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: transparent;
+    z-index: 10;
+    gap: 180px;
+  }
+  .nav > i {
+    color: white;
+    font-size: 30px;
+  }
+  .nav-brand {
+    display: flex;
+    font-family: lexendbold;
+    color: #263d5a;
+    font-size: 28.8px;
+    cursor: pointer;
+  }
+  .nav-brand:hover {
+    color: black;
+    transition: 0.2s ease;
+  }
+  .nav-items {
+    display: none;
+  }
+  .message {
+    display: none;
+  }
+  .photographer-container {
+    display: flex;
+    flex-direction: column;
+    height: 300.64px;
+    width: 306px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 32px 16px;
+    border-radius: 48px;
+    position: relative;
+    top: 150px;
+    z-index: 2;
+    backdrop-filter: blur(3px);
+    align-items: center;
+  }
+  .photographer-container > h1 {
+    font-family: "lexendbold";
+    color: #263d5a;
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+  .photographer-container > p {
+    font-family: lexend;
+    color: #263d5a;
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 35px;
+  }
+  .photographer-container > button {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #a148ff, #ff6f45 100%);
+    border: none;
+    transition: all 0.4s ease;
+    border-radius: 50px;
+    width: 170.47px;
+    height: 54.41px;
+    font-family: lexend;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    top: 35px;
+  }
+  .photographer-container > button:hover {
+    transform: translateY(-5px);
+  }
+  .photographer-container2 {
+    display: flex;
+    flex-direction: column;
+    height: 203px;
+    width: 351px;
+    background-image: url(/Assets/Images/girlwithcamera.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+    position: relative;
+    top: 32px;
+    z-index: 1;
+  }
+  .our-service {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: url(/Assets/Images/background3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1140.25px;
+    background-position: 50% 50%;
+    align-content: center;
+    padding: 128px 0px;
+    gap: 70px;
+  }
+  .our-service > h1 {
+    text-align: center;
+    font-family: lexendbold;
+    font-size: 28.37px;
+    color: #263d5a;
+  }
+  .servicecontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 1035.34px;
+    width: 350px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(3px);
+    border-radius: 30px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  }
+  .servicecontainer-content1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 350px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .servicecontainer-content1 > button {
+    background-color: rgba(255, 255, 255, 0.67);
+    height: 114px;
+    width: 112px;
+    text-align: center;
+    font-size: 64px;
+    border-radius: 109px;
+    border: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    color: #a148ff;
+  }
+  .servicecontainer-content1 > h1 {
+    font-family: "lexendbold";
+    font-weight: bold;
+    font-size: 17.68px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 20px;
+  }
+  .servicecontainer-content1 > p {
+    font-family: Lexend;
+    display: flex;
+    font-size: 16px;
+    width: 286px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 10px;
+  }
+  .servicecontainer-content2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 350px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .servicecontainer-content2 > button {
+    background-color: rgba(255, 255, 255, 0.67);
+    height: 114px;
+    width: 112px;
+    text-align: center;
+    font-size: 64px;
+    border-radius: 109px;
+    border: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    color: #a148ff;
+  }
+  .servicecontainer-content2 > h1 {
+    font-family: "lexendbold";
+    font-weight: bold;
+    font-size: 17.68px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 20px;
+  }
+  .servicecontainer-content2 > p {
+    font-family: Lexend;
+    display: flex;
+    font-size: 16px;
+    width: 286px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 10px;
+  }
+  .servicecontainer-content3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 350px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .servicecontainer-content3 > button {
+    background-color: rgba(255, 255, 255, 0.67);
+    height: 114px;
+    width: 112px;
+    text-align: center;
+    font-size: 64px;
+    border-radius: 109px;
+    border: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    color: #a148ff;
+  }
+  .servicecontainer-content3 > h1 {
+    font-family: "lexendbold";
+    font-weight: bold;
+    font-size: 17.68px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 20px;
+  }
+  .servicecontainer-content3 > p {
+    font-family: Lexend;
+    display: flex;
+    font-size: 16px;
+    width: 286px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 10px;
+  }
+  .aboutus {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 983px;
+    background-image: url(/Assets/Images/background8.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    gap: 45px;
+  }
+  .aboutus > img {
+    display: flex;
+    height: 351;
+    width: 355px;
+    border-radius: 30px;
+  }
+  .aboutus-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 310px;
+    height: 390.61;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0.6) 100%
+    );
+    backdrop-filter: blur(3.5px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 32px 16px;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, 0.329);
+  }
+  .aboutus-card > h1 {
+    font-family: Lexendbold;
+    color: #263d5a;
+    font-size: 35.04px;
+  }
+  .aboutus-card > h2 {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .aboutus-card > p {
+    display: flex;
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    left: 50px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .pricingcontainer1 {
+    height: 1500px;
+    background-image: url(/Assets/Images/background4.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .pricingcontainer2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: center;
+    height: 1275.19px;
+    background-color: rgba(255, 255, 255, 0.245);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 112px 0px;
+    align-items: center;
+  }
+  .pricingcontainer2 > p {
+    font-family: Lexend;
+    font-size: 20.8px;
+    color: #263d5a;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  .pricingcontainer2 > h1 {
+    font-family: Lexendbold;
+    font-size: 21.5px;
+    color: #263d5a;
+    margin-bottom: 60px;
+  }
+  .pricingcard {
+    display: flex;
+    flex-wrap: wrap;
+    height: 326.23px;
+    width: 350px;
+    gap: 40px;
+  }
+  .card1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 278.23px;
+    width: 320px;
+    background-color: rgba(255, 255, 255, 0.603);
+    backdrop-filter: blur(3.5px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 32px 16px;
+    align-items: center;
+  }
+  .card1 > h1 {
+    font-family: Lexendbold;
+    font-size: 35px;
+    color: #263d5a;
+    text-align: start;
+  }
+  .card1 > h2 {
+    font-family: Lexendbold;
+    font-size: 20px;
+    color: #263d5a;
+    text-align: start;
+    margin-top: 40px;
+  }
+  .card1 > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 30px;
+  }
+  .card1 > button {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #a148ff, #ff6f45 100%);
+    border: none;
+    transition: all 0.4s ease;
+    border-radius: 35px;
+    width: 150px;
+    height: 55px;
+    font-family: lexend;
+    color: white;
+    cursor: pointer;
+    margin-top: 25px;
+    font-weight: bold;
+  }
+  .card1 > button:hover {
+    transform: translateY(-6px);
+  }
+  .our-works {
+    display: flex;
+    flex-direction: column;
+    background-image: url(/Assets/Images/background5.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1610px;
+    align-items: center;
+  }
+  .our-works > p {
+    font-family: Lexend;
+    font-size: 20.8px;
+    color: #263d5a;
+    position: relative;
+    top: 83px;
+    font-weight: bold;
+  }
+  .our-works > h1 {
+    font-family: Lexendbold;
+    font-size: 21.5px;
+    text-align: center;
+    color: black;
+    position: relative;
+    top: 100px;
+  }
+  .imagecard {
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    width: 350.8px;
+    justify-content: flex-start;
+    gap: 40px;
+    position: relative;
+    top: 130px;
+  }
+  .imagecard1 {
+    width: 410px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .imagecard1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Assets/Images/tv.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.4s ease;
+    z-index: 1;
+  }
+  .imagecard1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.4s ease;
+    z-index: 2;
+    transform: scale(1.2);
+  }
+  .imagecard1 > h1 {
+    position: absolute;
+    bottom: 65px;
+    left: 75px;
+    color: white;
+    font-family: Lexendbold;
+    font-size: 18.06px;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard1 > p {
+    position: absolute;
+    bottom: 30px;
+    left: 70px;
+    color: white;
+    font-family: Lexend;
+    font-size: 16px;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard1:hover {
+    cursor: pointer;
+  }
+  .imagecard2 {
+    width: 410px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .imagecard2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Assets/Images/Girl.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.4s ease;
+    z-index: 1;
+  }
+  .imagecard2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.4s ease;
+    z-index: 2;
+  }
+  .imagecard2:hover::before {
+    transform: scale(1.2);
+  }
+  .imagecard2 > h1 {
+    position: absolute;
+    bottom: 65px;
+    left: 95px;
+    color: white;
+    font-family: Lexendbold;
+    font-size: 20.8px;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard2 > p {
+    position: absolute;
+    bottom: 30px;
+    left: 70px;
+    color: white;
+    font-family: Lexend;
+    font-size: 16px;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard2:hover {
+    cursor: pointer;
+  }
+  .imagecard3 {
+    width: 410px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .imagecard3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Assets/Images/light.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.4s ease;
+    z-index: 1;
+  }
+  .imagecard3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.4s ease;
+    z-index: 2;
+  }
+  .imagecard3:hover::before {
+    transform: scale(1.2);
+  }
+  .imagecard3 > h1 {
+    position: absolute;
+    bottom: 65px;
+    left: 115px;
+    color: white;
+    font-family: Lexendbold;
+    font-size: 20.8px;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard3 > p {
+    position: absolute;
+    bottom: 30px;
+    left: 75px;
+    color: white;
+    font-family: Lexend;
+    font-size: 16px;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard3:hover {
+    cursor: pointer;
+  }
+  .progress {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 800px;
+    background-image: url(/Assets/Images/background1.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    position: relative;
+  }
+  .progress-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(3.5px);
+    width: 305px;
+    height: 538.38px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 48px 16px;
+  }
+  .progress-container > h1 {
+    font-family: Lexend;
+    color: #263d5a;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+  }
+  .progress-container > h2 {
+    font-family: Lexendbold;
+    color: #263d5a;
+    font-size: 26.08px;
+    text-align: center;
+    line-height: 1.1;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+  }
+  .progress-container > p {
+    font-family: Lexend;
+    color: #263d5a;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 16px;
+    padding-bottom: 24px;
+  }
+  .progress1 {
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+  }
+  .progress1-heading {
+    display: flex;
+    justify-content: space-between;
+  }
+  .progress1-heading > h1 {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #232323;
+    margin-bottom: 16px;
+  }
+  .progress1-heading > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #232323;
+    margin-bottom: 16px;
+  }
+  .progressbar-container {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;
+    height: 8px;
+    position: relative;
+    z-index: 1;
+  }
+  .progressbar {
+    background-color: #a148ff;
+    width: 92%;
+    border-radius: 15px;
+  }
+  .progress2 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    height: 40px;
+  }
+  .progressbar2-container {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;
+    height: 8px;
+  }
+  .progressbar2 {
+    background-color: #a148ff;
+    width: 71%;
+    border-radius: 15px;
+  }
+  .progressbar3-container {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;
+    height: 8px;
+  }
+  .progressbar3 {
+    background-color: #a148ff;
+    width: 53%;
+    border-radius: 15px;
+  }
+  .faq {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 755px;
+    background-image: url(/Assets/Images/background5.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .faq-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    width: 320px;
+    height: 545px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 28px 12px;
+  }
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+  }
+  .faq-image {
+    display: flex;
+    height: 218px;
+    width: 327px;
+    background-image: url(/Assets/Images/Beach.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    margin-top: 45px;
+  }
+  .faq-list > h1 {
+    font-family: Lexendbold;
+    font-size: 26.08px;
+    color: #263d5a;
+    text-align: center;
+    line-height: 1.1;
+  }
+  .faq-list > h2 {
+    font-family: Lexendbold;
+    font-size: 26.08px;
+    color: #263d5a;
+    text-align: center;
+    line-height: 1.1;
+    margin-bottom: 4px;
+    padding-bottom: 16px;
+  }
+  .list {
+    display: flex;
+    height: 68.19px;
+    width: 320px;
+    cursor: pointer;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: #ffff0026;
+    justify-content: space-between;
+  }
+  .list > h1 {
+    font-family: Lexend;
+    font-size: 18.68px;
+    color: #263d5a;
+    padding: 24px 16px 13px 0px;
+  }
+  .list > p {
+    font-family: Lexend;
+    font-size: 27.8px;
+    color: #6d6d6d;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .client {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-image: url(/Assets/Images/background2.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 1397.16px;
+  }
+  .client-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 96px 0px;
+    height: 1204px;
+    width: 355px;
+  }
+  .client-container > h1 {
+    font-family: Lexend;
+    font-size: 18.063px;
+    color: white;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  .client-container > h2 {
+    font-family: Lexendbold;
+    font-size: 21.5px;
+    color: white;
+    margin-bottom: 8px;
+    font-weight: bold;
+    padding-bottom: 24px;
+    display: flex;
+    width: 280px;
+  }
+  .client-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 355px;
+    gap: 40px;
+    margin-top: 33px;
+  }
+  .clientcard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 326px;
+    height: 80.84px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    backdrop-filter: blur(3.5px);
+    padding: 32px 16px;
+  }
+  .clientcard > img {
+    height: 98.56px;
+  }
+  .sayhello {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-image: url(/Assets/Images/background7.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 411px;
+  }
+  .sayhello-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 188.7px;
+    width: 325px;
+    padding: 30px 16px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(3.5px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    text-align: center;
+    align-items: center;
+  }
+  .sayhello-card > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    margin-bottom: 16px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .sayhello-card > h1 {
+    font-family: Lexendbold;
+    font-size: 35.04px;
+    color: #263d5a;
+    margin-bottom: 32px;
+    line-height: 1.1;
+  }
+  .sayhello-card > h2 {
+    font-family: Lexend;
+    font-size: 20.8px;
+    color: #263d5a;
+    margin-bottom: 32px;
+    line-height: 1.1;
+    text-align: center;
+    cursor: pointer;
+  }
+  .sayhello-card > h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: black;
+    transition: 0.2s ease;
+  }
+  .sayhello-card > h2:hover:after {
+    width: 100%;
+  }
+  .map {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 482px;
+    background-image: url(/Assets/Images/background3.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    padding: 112px 0px;
+  }
+  .map-container {
+    height: 480px;
+    border-radius: 30px;
+    opacity: 0.8;
+    width: 357px;
+  }
+  .map-container > iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+  }
+  .article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 934.47px;
+    background-image: url(/Assets/Images/background5.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    gap: 30px;
+  }
+  .article-card1 {
+    background-image: url(/Assets/Images/girlwithcoffee.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 479.11px;
+    width: 351px;
+    border-radius: 30px;
+  }
+  .article-card2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 32px 15px;
+    width: 313px;
+    height: 212.95px;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    backdrop-filter: blur(3.5px);
+  }
+  .article-card2 > h1 {
+    font-family: Lexendbold;
+    font-size: 20.48px;
+    color: #263d5a;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .article-card2 > p {
+    font-family: Lexen;
+    font-size: 16px;
+    color: #263d5a;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: center;
+  }
+  .inputbackground {
+    height: 973px;
+    background-image: url(/Assets/Images/background1.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .overlay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 971px;
+    background-color: rgb(255, 255, 255, 0.6);
+  }
+  .inputcard {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 690px;
+    width: 351px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(3.5px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 32px 0px;
+  }
+  .inputcard > h1 {
+    font-family: Lexend;
+    font-size: 28.8px;
+    color: #263d5a;
+    text-align: center;
+    margin-bottom: 48px;
+    font-weight: bold;
+  }
+  .inputcard-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 144px;
+    gap: 20px;
+    width: 350px;
+  }
+  .input-field {
+    height: 48;
+    width: 348.41px;
+    padding: 9.6px 19.2px;
+    border: 1px solid transparent;
+    outline: none;
+    font-family: Lexend;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  }
+  .input-field:hover {
+    border: none;
+  }
+  .input-field:focus {
+    border-color: #a148ff;
+  }
+  .textarea {
+    height: 250px;
+    width: 972.41px;
+    padding: 9.6px 19.2px;
+    border: 1px solid transparent;
+    outline: none;
+    font-family: Lexend;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  }
+  .textarea:hover {
+    border: none;
+  }
+  .textarea:focus {
+    border-color: #a148ff;
+  }
+  .inputcard-container > button {
+    height: 56px;
+    width: 972px;
+    background: linear-gradient(90deg, #a148ff, #ff6f45);
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    font-family: Lexend;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  .inputcard-container > button:hover {
+    transform: translateY(-4px);
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: center;
+    height: 608.69px;
+    background-color: #131729;
+    padding: 96px 0 80px;
+    gap: 20px;
+  }
+  .footer-aboutus {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 340px;
+  }
+  .footer-aboutus > h1 {
+    font-family: Lexendbold;
+    font-size: 20.8px;
+    color: white;
+    margin-bottom: 8px;
+  }
+  .footer-aboutus > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: white;
+    line-height: 1.5;
+  }
+  .company {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .company > h1 {
+    font-family: Lexendbold;
+    font-size: 20.8px;
+    color: white;
+    margin-bottom: 8px;
+  }
+  .company > h2 {
+    font-family: Lexend;
+    font-size: 16px;
+    color: white;
+    line-height: 1.5;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+  }
+  .company > h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.2s ease;
+  }
+  .company > h2:hover:after {
+    width: 45%;
+  }
+}
+
+/* ----------------------------------------------------------Mobile 424px view 767px--------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+@media only screen and (min-width: 424px) and (max-width: 767px) {
+  .header {
+    display: flex;
+    height: 900px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url(/Assets/Images/background5.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .header > nav {
+    position: fixed;
+  }
+  .nav {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    position: fixed;
+    width: -webkit-fill-available;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: transparent;
+    z-index: 10;
+    gap: 240px;
+  }
+  .nav > i {
+    color: white;
+    font-size: 30px;
+  }
+  .nav-brand {
+    display: flex;
+    font-family: lexendbold;
+    color: #263d5a;
+    font-size: 28.8px;
+    cursor: pointer;
+  }
+  .nav-brand:hover {
+    color: black;
+    transition: 0.2s ease;
+  }
+  .nav-items {
+    display: none;
+  }
+  .message {
+    display: none;
+  }
+  .photographer-container {
+    display: flex;
+    flex-direction: column;
+    height: 300.64px;
+    width: 350px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 32px 16px;
+    border-radius: 48px;
+    position: relative;
+    top: 150px;
+    z-index: 2;
+    backdrop-filter: blur(3px);
+    align-items: center;
+  }
+  .photographer-container > h1 {
+    font-family: "lexendbold";
+    color: #263d5a;
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+  .photographer-container > p {
+    font-family: lexend;
+    color: #263d5a;
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 35px;
+  }
+  .photographer-container > button {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #a148ff, #ff6f45 100%);
+    border: none;
+    transition: all 0.4s ease;
+    border-radius: 50px;
+    width: 170.47px;
+    height: 54.41px;
+    font-family: lexend;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    top: 35px;
+  }
+  .photographer-container > button:hover {
+    transform: translateY(-5px);
+  }
+  .photographer-container2 {
+    display: flex;
+    flex-direction: column;
+    height: 232.45px;
+    width: 390px;
+    background-image: url(/Assets/Images/girlwithcamera.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+    position: relative;
+    top: 32px;
+    z-index: 1;
+  }
+  .our-service {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: url(/Assets/Images/background3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1050.25px;
+    background-position: 50% 50%;
+    align-content: center;
+    padding: 128px 0px;
+    gap: 70px;
+  }
+  .our-service > h1 {
+    text-align: center;
+    font-family: lexendbold;
+    font-size: 28.37px;
+    color: #263d5a;
+  }
+  .servicecontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 950.34px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(3px);
+    border-radius: 30px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  }
+  .servicecontainer-content1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 401px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .servicecontainer-content1 > button {
+    background-color: rgba(255, 255, 255, 0.67);
+    height: 114px;
+    width: 112px;
+    text-align: center;
+    font-size: 64px;
+    border-radius: 109px;
+    border: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    color: #a148ff;
+  }
+  .servicecontainer-content1 > h1 {
+    font-family: "lexendbold";
+    font-weight: bold;
+    font-size: 17.68px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 20px;
+  }
+  .servicecontainer-content1 > p {
+    font-family: Lexend;
+    display: flex;
+    font-size: 16px;
+    width: 345px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 10px;
+  }
+  .servicecontainer-content2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 400px;
+    height: 270px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .servicecontainer-content2 > button {
+    background-color: rgba(255, 255, 255, 0.67);
+    height: 114px;
+    width: 112px;
+    text-align: center;
+    font-size: 64px;
+    border-radius: 109px;
+    border: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    color: #a148ff;
+  }
+  .servicecontainer-content2 > h1 {
+    font-family: "lexendbold";
+    font-weight: bold;
+    font-size: 17.68px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 20px;
+  }
+  .servicecontainer-content2 > p {
+    font-family: Lexend;
+    display: flex;
+    font-size: 16px;
+    width: 305px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 10px;
+  }
+  .servicecontainer-content3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 350px;
+    height: 243px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .servicecontainer-content3 > button {
+    background-color: rgba(255, 255, 255, 0.67);
+    height: 114px;
+    width: 112px;
+    text-align: center;
+    font-size: 64px;
+    border-radius: 109px;
+    border: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    color: #a148ff;
+  }
+  .servicecontainer-content3 > h1 {
+    font-family: "lexendbold";
+    font-weight: bold;
+    font-size: 17.68px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 20px;
+  }
+  .servicecontainer-content3 > p {
+    font-family: Lexend;
+    display: flex;
+    font-size: 16px;
+    width: 315px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 10px;
+  }
+  .aboutus {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 1081px;
+    background-image: url(/Assets/Images/background8.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    gap: 45px;
+  }
+  .aboutus > img {
+    display: flex;
+    height: 499px;
+    width: 400px;
+    border-radius: 30px;
+  }
+  .aboutus-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 360px;
+    height: 285.61px;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0.6) 100%
+    );
+    backdrop-filter: blur(3.5px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 32px 16px;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, 0.329);
+  }
+  .aboutus-card > h1 {
+    font-family: Lexendbold;
+    color: #263d5a;
+    font-size: 35.04px;
+  }
+  .aboutus-card > h2 {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .aboutus-card > p {
+    display: flex;
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    left: 50px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .pricingcontainer1 {
+    height: 1827px;
+    background-image: url(/Assets/Images/background4.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .pricingcontainer2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: center;
+    height: 1602.19px;
+    background-color: rgba(255, 255, 255, 0.245);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 112px 0px;
+    align-items: center;
+  }
+  .pricingcontainer2 > p {
+    font-family: Lexend;
+    font-size: 20.8px;
+    color: #263d5a;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  .pricingcontainer2 > h1 {
+    font-family: Lexendbold;
+    font-size: 21.5px;
+    color: #263d5a;
+    margin-bottom: 60px;
+  }
+  .pricingcard {
+    display: flex;
+    flex-wrap: wrap;
+    height: 365.23px;
+    width: 410px;
+    gap: 40px;
+  }
+  .card1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 331.56px;
+    width: 336px;
+    background-color: rgba(255, 255, 255, 0.603);
+    backdrop-filter: blur(3.5px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 64px 48px;
+  }
+  .card1 > h1 {
+    font-family: Lexendbold;
+    font-size: 70.4px;
+    color: #263d5a;
+    text-align: start;
+  }
+  .card1 > h2 {
+    font-family: Lexendbold;
+    font-size: 28.8px;
+    color: #263d5a;
+    text-align: start;
+    margin-top: 40px;
+  }
+  .card1 > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 30px;
+  }
+  .card1 > button {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #a148ff, #ff6f45 100%);
+    border: none;
+    transition: all 0.4s ease;
+    border-radius: 35px;
+    width: 150px;
+    height: 55px;
+    font-family: lexend;
+    color: white;
+    cursor: pointer;
+    margin-top: 25px;
+    font-weight: bold;
+  }
+  .card1 > button:hover {
+    transform: translateY(-6px);
+  }
+  .our-works {
+    display: flex;
+    flex-direction: column;
+    background-image: url(/Assets/Images/background5.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1610px;
+    align-items: center;
+  }
+  .our-works > p {
+    font-family: Lexend;
+    font-size: 20.8px;
+    color: #263d5a;
+    position: relative;
+    top: 83px;
+    font-weight: bold;
+  }
+  .our-works > h1 {
+    font-family: Lexendbold;
+    font-size: 21.5px;
+    text-align: center;
+    color: black;
+    position: relative;
+    top: 100px;
+  }
+  .imagecard {
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    width: 400.8px;
+    justify-content: flex-start;
+    gap: 40px;
+    position: relative;
+    top: 130px;
+  }
+  .imagecard1 {
+    width: 410px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .imagecard1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Assets/Images/tv.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.4s ease;
+    z-index: 1;
+  }
+  .imagecard1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.4s ease;
+    z-index: 2;
+    transform: scale(1.2);
+  }
+  .imagecard1 > h1 {
+    position: absolute;
+    bottom: 65px;
+    left: 100px;
+    color: white;
+    font-family: Lexendbold;
+    font-size: 18.06px;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard1 > p {
+    position: absolute;
+    bottom: 30px;
+    left: 96px;
+    color: white;
+    font-family: Lexend;
+    font-size: 16px;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard1:hover {
+    cursor: pointer;
+  }
+  .imagecard2 {
+    width: 410px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .imagecard2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Assets/Images/Girl.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.4s ease;
+    z-index: 1;
+  }
+  .imagecard2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.4s ease;
+    z-index: 2;
+  }
+  .imagecard2:hover::before {
+    transform: scale(1.2);
+  }
+  .imagecard2 > h1 {
+    position: absolute;
+    bottom: 65px;
+    left: 120px;
+    color: white;
+    font-family: Lexendbold;
+    font-size: 20.8px;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard2 > p {
+    position: absolute;
+    bottom: 30px;
+    left: 92px;
+    color: white;
+    font-family: Lexend;
+    font-size: 16px;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard2:hover {
+    cursor: pointer;
+  }
+  .imagecard3 {
+    width: 410px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .imagecard3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Assets/Images/light.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.4s ease;
+    z-index: 1;
+  }
+  .imagecard3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.4s ease;
+    z-index: 2;
+  }
+  .imagecard3:hover::before {
+    transform: scale(1.2);
+  }
+  .imagecard3 > h1 {
+    position: absolute;
+    bottom: 65px;
+    left: 150px;
+    color: white;
+    font-family: Lexendbold;
+    font-size: 20.8px;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard3 > p {
+    position: absolute;
+    bottom: 30px;
+    left: 105px;
+    color: white;
+    font-family: Lexend;
+    font-size: 16px;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard3:hover {
+    cursor: pointer;
+  }
+  .progress {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 800px;
+    background-image: url(/Assets/Images/background1.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    position: relative;
+  }
+  .progress-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(3.5px);
+    width: 368px;
+    height: 462.38px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 48px 16px;
+  }
+  .progress-container > h1 {
+    font-family: Lexend;
+    color: #263d5a;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+  }
+  .progress-container > h2 {
+    font-family: Lexendbold;
+    color: #263d5a;
+    font-size: 26.08px;
+    text-align: center;
+    line-height: 1.1;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+  }
+  .progress-container > p {
+    font-family: Lexend;
+    color: #263d5a;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 16px;
+    padding-bottom: 24px;
+  }
+  .progress1 {
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+  }
+  .progress1-heading {
+    display: flex;
+    justify-content: space-between;
+  }
+  .progress1-heading > h1 {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #232323;
+    margin-bottom: 16px;
+  }
+  .progress1-heading > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #232323;
+    margin-bottom: 16px;
+  }
+  .progressbar-container {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;
+    height: 8px;
+    position: relative;
+    z-index: 1;
+  }
+  .progressbar {
+    background-color: #a148ff;
+    width: 92%;
+    border-radius: 15px;
+  }
+  .progress2 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    height: 40px;
+  }
+  .progressbar2-container {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;
+    height: 8px;
+  }
+  .progressbar2 {
+    background-color: #a148ff;
+    width: 71%;
+    border-radius: 15px;
+  }
+  .progressbar3-container {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;
+    height: 8px;
+  }
+  .progressbar3 {
+    background-color: #a148ff;
+    width: 53%;
+    border-radius: 15px;
+  }
+  .faq {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 755px;
+    background-image: url(/Assets/Images/background5.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .faq-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    width: 370px;
+    height: 585px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 28px 12px;
+  }
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+  }
+  .faq-image {
+    display: flex;
+    height: 251.33px;
+    width: 377px;
+    background-image: url(/Assets/Images/Beach.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    margin-top: 45px;
+  }
+  .faq-list > h1 {
+    font-family: Lexendbold;
+    font-size: 26.08px;
+    color: #263d5a;
+    text-align: center;
+    line-height: 1.1;
+  }
+  .faq-list > h2 {
+    font-family: Lexendbold;
+    font-size: 26.08px;
+    color: #263d5a;
+    text-align: center;
+    line-height: 1.1;
+    margin-bottom: 4px;
+    padding-bottom: 16px;
+  }
+  .list {
+    display: flex;
+    height: 68.19px;
+    width: 370px;
+    cursor: pointer;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: #ffff0026;
+    justify-content: space-between;
+  }
+  .list > h1 {
+    font-family: Lexend;
+    font-size: 18.68px;
+    color: #263d5a;
+    padding: 24px 16px 13px 0px;
+  }
+  .list > p {
+    font-family: Lexend;
+    font-size: 27.8px;
+    color: #6d6d6d;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .client {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-image: url(/Assets/Images/background2.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 1397.16px;
+  }
+  .client-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 96px 0px;
+    height: 1204px;
+    width: 355px;
+  }
+  .client-container > h1 {
+    font-family: Lexend;
+    font-size: 18.063px;
+    color: white;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  .client-container > h2 {
+    font-family: Lexendbold;
+    font-size: 21.5px;
+    color: white;
+    margin-bottom: 8px;
+    font-weight: bold;
+    padding-bottom: 24px;
+    display: flex;
+    width: 280px;
+  }
+  .client-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 395px;
+    gap: 40px;
+    margin-top: 33px;
+  }
+  .clientcard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 362px;
+    height: 80.84px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    backdrop-filter: blur(3.5px);
+    padding: 32px 16px;
+  }
+  .clientcard > img {
+    height: 98.56px;
+  }
+  .sayhello {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-image: url(/Assets/Images/background7.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 411px;
+  }
+  .sayhello-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 188.7px;
+    width: 365px;
+    padding: 30px 16px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(3.5px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    text-align: center;
+    align-items: center;
+  }
+  .sayhello-card > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    margin-bottom: 16px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .sayhello-card > h1 {
+    font-family: Lexendbold;
+    font-size: 35.04px;
+    color: #263d5a;
+    margin-bottom: 32px;
+    line-height: 1.1;
+  }
+  .sayhello-card > h2 {
+    font-family: Lexend;
+    font-size: 20.8px;
+    color: #263d5a;
+    margin-bottom: 32px;
+    line-height: 1.1;
+    text-align: center;
+    cursor: pointer;
+  }
+  .sayhello-card > h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: black;
+    transition: 0.2s ease;
+  }
+  .sayhello-card > h2:hover:after {
+    width: 100%;
+  }
+  .map {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 482px;
+    background-image: url(/Assets/Images/background3.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    padding: 112px 0px;
+  }
+  .map-container {
+    height: 480px;
+    border-radius: 30px;
+    opacity: 0.8;
+    width: 405px;
+  }
+  .map-container > iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+  }
+  .article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 934.47px;
+    background-image: url(/Assets/Images/background5.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    gap: 30px;
+  }
+  .article-card1 {
+    background-image: url(/Assets/Images/girlwithcoffee.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 479.11px;
+    width: 401px;
+    border-radius: 30px;
+  }
+  .article-card2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 32px 15px;
+    width: 364px;
+    height: 212.95px;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    backdrop-filter: blur(3.5px);
+  }
+  .article-card2 > h1 {
+    font-family: Lexendbold;
+    font-size: 21.48px;
+    color: #263d5a;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .article-card2 > p {
+    font-family: Lexen;
+    font-size: 18px;
+    color: #263d5a;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: center;
+  }
+  .inputbackground {
+    height: 973px;
+    background-image: url(/Assets/Images/background1.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .overlay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 971px;
+    background-color: rgb(255, 255, 255, 0.6);
+  }
+  .inputcard {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 690px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(3.5px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 32px 0px;
+  }
+  .inputcard > h1 {
+    font-family: Lexend;
+    font-size: 28.8px;
+    color: #263d5a;
+    text-align: center;
+    margin-bottom: 48px;
+    font-weight: bold;
+  }
+  .inputcard-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 144px;
+    gap: 20px;
+    width: 400px;
+  }
+  .input-field {
+    height: 48;
+    width: -webkit-fill-available;
+    padding: 9.6px 19.2px;
+    border: 1px solid transparent;
+    outline: none;
+    font-family: Lexend;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  }
+  .input-field:hover {
+    border: none;
+  }
+  .input-field:focus {
+    border-color: #a148ff;
+  }
+  .textarea {
+    height: 250px;
+    width: 972.41px;
+    padding: 9.6px 19.2px;
+    border: 1px solid transparent;
+    outline: none;
+    font-family: Lexend;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  }
+  .textarea:hover {
+    border: none;
+  }
+  .textarea:focus {
+    border-color: #a148ff;
+  }
+  .inputcard-container > button {
+    height: 56px;
+    width: 972px;
+    background: linear-gradient(90deg, #a148ff, #ff6f45);
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    font-family: Lexend;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  .inputcard-container > button:hover {
+    transform: translateY(-4px);
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: center;
+    height: 608.69px;
+    background-color: #131729;
+    padding: 96px 0 80px;
+    gap: 20px;
+  }
+  .footer-aboutus {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 340px;
+  }
+  .footer-aboutus > h1 {
+    font-family: Lexendbold;
+    font-size: 20.8px;
+    color: white;
+    margin-bottom: 8px;
+  }
+  .footer-aboutus > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: white;
+    line-height: 1.5;
+  }
+  .company {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .company > h1 {
+    font-family: Lexendbold;
+    font-size: 20.8px;
+    color: white;
+    margin-bottom: 8px;
+  }
+  .company > h2 {
+    font-family: Lexend;
+    font-size: 16px;
+    color: white;
+    line-height: 1.5;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+  }
+  .company > h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.2s ease;
+  }
+  .company > h2:hover:after {
+    width: 45%;
+  }
+}
+
+/* ----------------------------------------------------------laptop 767px view 1023px--------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+  .header {
+    display: flex;
+    height: 1215px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url(/Assets/Images/background5.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .header > nav {
+    position: fixed;
+  }
+  .nav {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    position: fixed;
+    width: -webkit-fill-available;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: transparent;
+    z-index: 10;
+    gap: 530px;
+  }
+  .nav > i {
+    color: white;
+    font-size: 30px;
+  }
+  .nav-brand {
+    display: flex;
+    font-family: lexendbold;
+    color: #263d5a;
+    font-size: 28.8px;
+    cursor: pointer;
+  }
+  .nav-brand:hover {
+    color: black;
+    transition: 0.2s ease;
+  }
+  .nav-items {
+    display: none;
+  }
+  .message {
+    display: none;
+  }
+  .photographer-container {
+    display: flex;
+    flex-direction: column;
+    height: 300.64px;
+    width: 655px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 96px 48px;
+    border-radius: 48px;
+    position: relative;
+    top: 150px;
+    z-index: 2;
+    backdrop-filter: blur(3px);
+  }
+  .photographer-container > h1 {
+    font-family: "lexendbold";
+    color: #263d5a;
+    font-size: 70.4px;
+    margin-bottom: 10px;
+  }
+  .photographer-container > p {
+    font-family: lexend;
+    display: flex;
+    width: 575px;
+    color: #263d5a;
+    font-size: 20.8px;
+    line-height: 1.5;
+    margin-top: 35px;
+  }
+  .photographer-container > button {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #a148ff, #ff6f45 100%);
+    border: none;
+    transition: all 0.4s ease;
+    border-radius: 50px;
+    width: 170.47px;
+    height: 54.41px;
+    font-family: lexend;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    top: 35px;
+  }
+  .photographer-container > button:hover {
+    transform: translateY(-5px);
+  }
+  .photographer-container2 {
+    display: flex;
+    flex-direction: column;
+    height: 403.45px;
+    width: 732px;
+    background-image: url(/Assets/Images/girlwithcamera.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+    position: relative;
+    top: 32px;
+    z-index: 1;
+  }
+  .our-service {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: url(/Assets/Images/background3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 860.25px;
+    background-position: 50% 50%;
+    align-content: center;
+    padding: 128px 0px;
+    gap: 70px;
+  }
+  .our-service > h1 {
+    text-align: center;
+    font-family: lexendbold;
+    font-size: 44.8px;
+    color: #263d5a;
+  }
+  .servicecontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 645.34px;
+    width: 611px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(3px);
+    border-radius: 30px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    padding: 50px;
+  }
+  .servicecontainer-content1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 305px;
+    height: 281px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .servicecontainer-content1 > button {
+    background-color: rgba(255, 255, 255, 0.67);
+    height: 114px;
+    width: 112px;
+    text-align: center;
+    font-size: 64px;
+    border-radius: 109px;
+    border: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    color: #a148ff;
+  }
+  .servicecontainer-content1 > h1 {
+    font-family: "lexendbold";
+    font-weight: bold;
+    font-size: 17.68px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 20px;
+  }
+  .servicecontainer-content1 > p {
+    font-family: Lexend;
+    display: flex;
+    font-size: 16px;
+    width: 285px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 10px;
+  }
+  .servicecontainer-content2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 305px;
+    height: 281px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .servicecontainer-content2 > button {
+    background-color: rgba(255, 255, 255, 0.67);
+    height: 114px;
+    width: 112px;
+    text-align: center;
+    font-size: 64px;
+    border-radius: 109px;
+    border: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    color: #a148ff;
+  }
+  .servicecontainer-content2 > h1 {
+    font-family: "lexendbold";
+    font-weight: bold;
+    font-size: 17.68px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 20px;
+  }
+  .servicecontainer-content2 > p {
+    font-family: Lexend;
+    display: flex;
+    font-size: 16px;
+    width: 285px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 10px;
+  }
+  .servicecontainer-content3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 305px;
+    height: 281px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .servicecontainer-content3 > button {
+    background-color: rgba(255, 255, 255, 0.67);
+    height: 114px;
+    width: 112px;
+    text-align: center;
+    font-size: 64px;
+    border-radius: 109px;
+    border: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    color: #a148ff;
+  }
+  .servicecontainer-content3 > h1 {
+    font-family: "lexendbold";
+    font-weight: bold;
+    font-size: 17.68px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 20px;
+  }
+  .servicecontainer-content3 > p {
+    font-family: Lexend;
+    display: flex;
+    font-size: 16px;
+    width: 285px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 10px;
+  }
+  .aboutus {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 1490px;
+    background-image: url(/Assets/Images/background8.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    gap: 45px;
+  }
+  .aboutus > img {
+    display: flex;
+    height: 867.27px;
+    width: 696px;
+    border-radius: 30px;
+  }
+  .aboutus-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 610px;
+    height: 265.47px;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0.6) 100%
+    );
+    backdrop-filter: blur(3.5px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 96px 48px;
+    border: 2px solid rgba(255, 255, 255, 0.329);
+  }
+  .aboutus-card > h1 {
+    font-family: Lexendbold;
+    color: #263d5a;
+    font-size: 35.04px;
+  }
+  .aboutus-card > h2 {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .aboutus-card > p {
+    display: flex;
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    left: 50px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .pricingcontainer1 {
+    height: 1320px;
+    background-image: url(/Assets/Images/background4.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .pricingcontainer2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: center;
+    height: 1096.19px;
+    background-color: rgba(255, 255, 255, 0.245);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 112px 0px;
+    align-items: center;
+  }
+  .pricingcontainer2 > p {
+    font-family: Lexend;
+    font-size: 20.8px;
+    color: #263d5a;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  .pricingcontainer2 > h1 {
+    font-family: Lexendbold;
+    font-size: 28.8px;
+    color: #263d5a;
+    margin-bottom: 60px;
+  }
+  .pricingcard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  .card1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 335px;
+    width: 230px;
+    background-color: rgba(255, 255, 255, 0.603);
+    backdrop-filter: blur(3.5px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 64px 48px;
+  }
+  .card1 > h1 {
+    font-family: Lexendbold;
+    font-size: 70.4px;
+    color: #263d5a;
+    text-align: start;
+  }
+  .card1 > h2 {
+    font-family: Lexendbold;
+    font-size: 28.8px;
+    color: #263d5a;
+    text-align: start;
+    margin-top: 40px;
+  }
+  .card1 > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    text-align: start;
+    line-height: 1.5;
+    margin-top: 30px;
+  }
+  .card1 > button {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #a148ff, #ff6f45 100%);
+    border: none;
+    transition: all 0.4s ease;
+    border-radius: 35px;
+    width: 150px;
+    height: 55px;
+    font-family: lexend;
+    color: white;
+    cursor: pointer;
+    margin-top: 25px;
+    font-weight: bold;
+  }
+  .card1 > button:hover {
+    transform: translateY(-6px);
+  }
+  .our-works {
+    display: flex;
+    flex-direction: column;
+    background-image: url(/Assets/Images/background5.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1160px;
+    padding: 0px 32px;
+  }
+  .our-works > p {
+    font-family: Lexend;
+    font-size: 20.8px;
+    color: #263d5a;
+    position: relative;
+    top: 83px;
+    font-weight: bold;
+  }
+  .our-works > h1 {
+    font-family: Lexendbold;
+    font-size: 28.8px;
+    text-align: start;
+    color: black;
+    position: relative;
+    top: 100px;
+    margin-bottom: 20px;
+  }
+  .imagecard {
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+    top: 130px;
+  }
+  .imagecard1 {
+    width: 320px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .imagecard1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Assets/Images/tv.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.4s ease;
+    z-index: 1;
+  }
+  .imagecard1:hover {
+    cursor: pointer;
+  }
+  .imagecard2 {
+    width: 320px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .imagecard2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Assets/Images/Girl.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.4s ease;
+    z-index: 1;
+  }
+  .imagecard2:hover {
+    cursor: pointer;
+  }
+  .imagecard3 {
+    width: 320px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .imagecard3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Assets/Images/light.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.4s ease;
+    z-index: 1;
+  }
+  .imagecard3:hover {
+    cursor: pointer;
+  }
+  .progress {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 710px;
+    background-image: url(/Assets/Images/background1.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    position: relative;
+  }
+  .progress-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(3.5px);
+    width: 615px;
+    height: 410.27px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 48px 32px;
+  }
+  .progress-container > h1 {
+    font-family: Lexend;
+    color: #263d5a;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: start;
+    font-weight: bold;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+  }
+  .progress-container > h2 {
+    font-family: Lexendbold;
+    color: #263d5a;
+    font-size: 44px;
+    text-align: start;
+    line-height: 1.1;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+  }
+  .progress-container > p {
+    font-family: Lexend;
+    color: #263d5a;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: start;
+    font-weight: bold;
+    margin-bottom: 16px;
+    padding-bottom: 24px;
+  }
+  .progress1 {
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+  }
+  .progress1-heading {
+    display: flex;
+    justify-content: space-between;
+  }
+  .progress1-heading > h1 {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #232323;
+    margin-bottom: 16px;
+  }
+  .progress1-heading > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #232323;
+    margin-bottom: 16px;
+  }
+  .progressbar-container {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;
+    height: 8px;
+    position: relative;
+    z-index: 1;
+  }
+  .progressbar {
+    background-color: #a148ff;
+    width: 92%;
+    border-radius: 15px;
+  }
+  .progress2 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    height: 40px;
+  }
+  .progressbar2-container {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;
+    height: 8px;
+  }
+  .progressbar2 {
+    background-color: #a148ff;
+    width: 71%;
+    border-radius: 15px;
+  }
+  .progressbar3-container {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;
+    height: 8px;
+  }
+  .progressbar3 {
+    background-color: #a148ff;
+    width: 53%;
+    border-radius: 15px;
+  }
+  .faq {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 1090px;
+    background-image: url(/Assets/Images/background5.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .faq-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+    width: 680px;
+    height: 805.5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 32px 26px;
+  }
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+  }
+  .faq-image {
+    display: flex;
+    height: 426.66px;
+    width: 675px;
+    background-image: url(/Assets/Images/Beach.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    margin-top: 45px;
+  }
+  .faq-list > h1 {
+    font-family: Lexendbold;
+    font-size: 44.8px;
+    color: #263d5a;
+    text-align: start;
+    line-height: 1.1;
+  }
+  .faq-list > h2 {
+    font-family: Lexendbold;
+    font-size: 44.8px;
+    color: #263d5a;
+    text-align: start;
+    line-height: 1.1;
+    margin-bottom: 4px;
+    padding-bottom: 16px;
+  }
+  .list {
+    display: flex;
+    height: 68.19px;
+    width: 680px;
+    cursor: pointer;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: #ffff0026;
+    justify-content: space-between;
+  }
+  .list > h1 {
+    font-family: Lexend;
+    font-size: 18.68px;
+    color: #263d5a;
+    padding: 24px 16px 13px 0px;
+  }
+  .list > p {
+    font-family: Lexend;
+    font-size: 27.8px;
+    color: #6d6d6d;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .client {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-image: url(/Assets/Images/background2.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .client-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 96px 0px;
+  }
+  .client-container > h1 {
+    font-family: Lexend;
+    font-size: 18.063px;
+    color: white;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  .client-container > h2 {
+    font-family: Lexendbold;
+    font-size: 28.8px;
+    color: white;
+    margin-bottom: 8px;
+    font-weight: bold;
+    padding-bottom: 24px;
+    display: flex;
+    width: 472px;
+  }
+  .client-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 765px;
+    gap: 40px;
+    margin-top: 33px;
+  }
+  .clientcard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 123px;
+    height: 114.84px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    backdrop-filter: blur(3.5px);
+    padding: 48px;
+  }
+  .clientcard > img {
+    height: 98.56px;
+  }
+  .sayhello {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-image: url(/Assets/Images/background7.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 411px;
+  }
+  .sayhello-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 205px;
+    width: 570px;
+    padding: 64px 48px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(3.5px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    text-align: center;
+    align-items: center;
+  }
+  .sayhello-card > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    margin-bottom: 16px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .sayhello-card > h1 {
+    font-family: Lexendbold;
+    font-size: 70.4px;
+    color: #263d5a;
+    margin-bottom: 32px;
+    line-height: 1.1;
+  }
+  .sayhello-card > h2 {
+    font-family: Lexend;
+    font-size: 20.8px;
+    color: #263d5a;
+    margin-bottom: 32px;
+    line-height: 1.1;
+    text-align: center;
+    cursor: pointer;
+  }
+  .sayhello-card > h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: black;
+    transition: 0.2s ease;
+  }
+  .sayhello-card > h2:hover:after {
+    width: 100%;
+  }
+  .map {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 482px;
+    background-image: url(/Assets/Images/background3.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    padding: 112px 0px;
+  }
+  .map-container {
+    height: 480px;
+    border-radius: 30px;
+    opacity: 0.8;
+    width: 730px;
+  }
+  .map-container > iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+  }
+  .article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 1653.47px;
+    background-image: url(/Assets/Images/background5.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    gap: 30px;
+  }
+  .article-card1 {
+    background-image: url(/Assets/Images/girlwithcoffee.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 950.03px;
+    width: 696px;
+    border-radius: 30px;
+  }
+  .article-card2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 64px 48px;
+    width: 612px;
+    height: 190.34px;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    backdrop-filter: blur(3.5px);
+  }
+  .article-card2 > h1 {
+    font-family: Lexendbold;
+    font-size: 28.8px;
+    color: #263d5a;
+    line-height: 1.5;
+    text-align: start;
+    margin-bottom: 32px;
+  }
+  .article-card2 > p {
+    font-family: Lexen;
+    font-size: 18px;
+    color: #263d5a;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: start;
+  }
+  .inputbackground {
+    height: 1020px;
+    background-image: url(/Assets/Images/background1.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .overlay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 1020px;
+    background-color: rgb(255, 255, 255, 0.6);
+  }
+  .inputcard {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 675.72px;
+    width: 621px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(3.5px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 112px 48px;
+  }
+  .inputcard > h1 {
+    font-family: Lexend;
+    font-size: 28.8px;
+    color: #263d5a;
+    text-align: center;
+    margin-bottom: 48px;
+    font-weight: bold;
+  }
+  .inputcard-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 144px;
+    gap: 20px;
+    width: 622px;
+  }
+  .input-field {
+    height: 48;
+    width: -webkit-fill-available;
+    padding: 9.6px 19.2px;
+    border: 1px solid transparent;
+    outline: none;
+    font-family: Lexend;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  }
+  .input-field:hover {
+    border: none;
+  }
+  .input-field:focus {
+    border-color: #a148ff;
+  }
+  .textarea {
+    height: 250px;
+    width: 972.41px;
+    padding: 9.6px 19.2px;
+    border: 1px solid transparent;
+    outline: none;
+    font-family: Lexend;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  }
+  .textarea:hover {
+    border: none;
+  }
+  .textarea:focus {
+    border-color: #a148ff;
+  }
+  .inputcard-container > button {
+    height: 56px;
+    width: 972px;
+    background: linear-gradient(90deg, #a148ff, #ff6f45);
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    font-family: Lexend;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  .inputcard-container > button:hover {
+    transform: translateY(-4px);
+  }
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 313.69px;
+    background-color: #131729;
+    gap: 38px;
+    padding: 96px 30px 80px;
+  }
+  .footer-aboutus {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 332px;
+    text-align: start;
+  }
+  .footer-aboutus > h1 {
+    font-family: Lexendbold;
+    font-size: 20.8px;
+    color: white;
+    margin-bottom: 8px;
+  }
+  .footer-aboutus > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: white;
+    line-height: 1.5;
+  }
+  .company {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 330px;
+    text-align: start;
+  }
+  .company > h1 {
+    font-family: Lexendbold;
+    font-size: 20.8px;
+    color: white;
+    margin-bottom: 8px;
+  }
+  .company > h2 {
+    font-family: Lexend;
+    font-size: 16px;
+    color: white;
+    line-height: 1.5;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+  }
+  .company > h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.2s ease;
+  }
+  .company > h2:hover:after {
+    width: 45%;
+  }
+}
+/* ----------------------------------------------------------laptop 1023px view 1439px-------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+@media only screen and (min-width: 1023px) and (max-width: 1439px) {
+  .header {
+    display: flex;
+    height: 805px;
+    width: auto;
+    flex-wrap: wrap;
+    background-image: url(/Assets/Images/background5.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .header > nav {
+    position: fixed;
+  }
+  .nav {
+    display: flex;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: transparent;
+    z-index: 10;
+  }
+  .nav > i {
+    display: none;
+  }
+  .nav-brand {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: lexendbold;
+    color: #263d5a;
+    font-size: 28.8px;
+    cursor: pointer;
+    align-content: center;
+  }
+  .nav-brand:hover {
+    color: black;
+    transition: 0.2s ease;
+  }
+  .nav-items {
+    display: flex;
+    font-family: lexendbold;
+    width: 658px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    height: 41px;
+  }
+  .nav-items > button {
+    background-color: transparent;
+    border: none;
+    color: #263d5a;
+    font-size: 20.8px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .nav-items > button:hover {
+    color: black;
+    transition: 0.2s ease;
+  }
+  .message {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #a148ff, #ff6f45 100%);
+    border: none;
+    transition: all 0.4s ease;
+    border-radius: 35px;
+    width: 150px;
+    font-family: lexend;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  .message:hover {
+    transform: translateY(-5px);
+  }
+  .photographer-container {
+    display: flex;
+    flex-direction: column;
+    height: 331.38px;
+    width: 481px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 96px 48px;
+    border-radius: 48px;
+    position: relative;
+    top: 150px;
+    left: 14px;
+    z-index: 2;
+    backdrop-filter: blur(3px);
+  }
+  .photographer-container > h1 {
+    font-family: "lexendbold";
+    color: #263d5a;
+    font-size: 70.4px;
+    margin-bottom: 10px;
+  }
+  .photographer-container > p {
+    font-family: lexend;
+    color: #263d5a;
+    font-size: 20.8px;
+    line-height: 1.5;
+    margin-top: 35px;
+  }
+  .photographer-container > button {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #a148ff, #ff6f45 100%);
+    border: none;
+    transition: all 0.4s ease;
+    border-radius: 50px;
+    width: 170.47px;
+    height: 54.41px;
+    font-family: lexend;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    top: 35px;
+  }
+  .photographer-container > button:hover {
+    transform: translateY(-5px);
+  }
+  .photographer-container2 {
+    display: flex;
+    flex-direction: column;
+    height: 329.45px;
+    width: 559px;
+    background-image: url(/Assets/Images/girlwithcamera.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+    position: absolute;
+    top: 252px;
+    right: 32px;
+    z-index: 1;
+  }
+  .our-service {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: url(/Assets/Images/background3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 535.25px;
+    background-position: 50% 50%;
+    align-content: center;
+    padding: 128px 0px;
+    gap: 70px;
+  }
+  .our-service > h1 {
+    text-align: center;
+    font-family: lexendbold;
+    font-size: 44.8px;
+    color: #263d5a;
+  }
+  .servicecontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 298.34px;
+    width: 893px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(3px);
+    border-radius: 30px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    gap: 85px;
+  }
+  .servicecontainer-content1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 234px;
+    height: 314px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .servicecontainer-content1 > button {
+    background-color: rgba(255, 255, 255, 0.67);
+    height: 114px;
+    width: 112px;
+    text-align: center;
+    font-size: 64px;
+    border-radius: 109px;
+    border: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    color: #a148ff;
+  }
+  .servicecontainer-content1 > h1 {
+    font-family: "lexendbold";
+    font-weight: bold;
+    font-size: 17.68px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 20px;
+  }
+  .servicecontainer-content1 > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 10px;
+  }
+  .servicecontainer-content2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 234px;
+    height: 314px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .servicecontainer-content2 > button {
+    background-color: rgba(255, 255, 255, 0.67);
+    height: 114px;
+    width: 112px;
+    text-align: center;
+    font-size: 64px;
+    border-radius: 109px;
+    border: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    color: #a148ff;
+  }
+  .servicecontainer-content2 > h1 {
+    font-family: "lexendbold";
+    font-weight: bold;
+    font-size: 17.68px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 20px;
+  }
+  .servicecontainer-content2 > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 10px;
+  }
+  .servicecontainer-content3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 234px;
+    height: 314px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .servicecontainer-content3 > button {
+    background-color: rgba(255, 255, 255, 0.67);
+    height: 114px;
+    width: 112px;
+    text-align: center;
+    font-size: 64px;
+    border-radius: 109px;
+    border: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    color: #a148ff;
+  }
+  .servicecontainer-content3 > h1 {
+    font-family: "lexendbold";
+    font-weight: bold;
+    font-size: 17.68px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 20px;
+  }
+  .servicecontainer-content3 > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 10px;
+  }
+  .aboutus {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 730px;
+    background-image: url(/Assets/Images/background8.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    gap: 30px;
+  }
+  .aboutus > img {
+    display: flex;
+    height: 458.55px;
+    width: 368px;
+    border-radius: 30px;
+  }
+  .aboutus-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 455px;
+    height: 269.44px;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0.6) 100%
+    );
+    backdrop-filter: blur(3.5px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 96px 48px;
+    border: 2px solid rgba(255, 255, 255, 0.329);
+  }
+  .aboutus-card > h1 {
+    font-family: Lexendbold;
+    display: flex;
+    width: 460px;
+    color: #263d5a;
+    font-size: 35.04px;
+  }
+  .aboutus-card > h2 {
+    display: flex;
+    width: 197px;
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    text-align: start;
+    line-height: 1.5;
+  }
+  .aboutus-card > p {
+    display: flex;
+    width: 193px;
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    line-height: 1.5;
+    text-align: start;
+    margin-left: 45px;
+  }
+  .pricingcontainer1 {
+    height: 864px;
+    background-image: url(/Assets/Images/background4.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .pricingcontainer2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: center;
+    height: 640.19px;
+    background-color: rgba(255, 255, 255, 0.245);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 112px 0px;
+    align-items: center;
+  }
+  .pricingcontainer2 > p {
+    font-family: Lexend;
+    font-size: 20.8px;
+    color: #263d5a;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  .pricingcontainer2 > h1 {
+    font-family: Lexendbold;
+    font-size: 28.8px;
+    color: #263d5a;
+    margin-bottom: 60px;
+  }
+  .pricingcard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  .card1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 382px;
+    width: 182px;
+    background-color: rgba(255, 255, 255, 0.603);
+    backdrop-filter: blur(3.5px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 64px 48px;
+  }
+  .card1 > h1 {
+    font-family: Lexendbold;
+    font-size: 70.4px;
+    color: #263d5a;
+    text-align: start;
+  }
+  .card1 > h2 {
+    font-family: Lexendbold;
+    font-size: 28.8px;
+    color: #263d5a;
+    text-align: start;
+    margin-top: 40px;
+  }
+  .card1 > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    text-align: start;
+    line-height: 1.5;
+    margin-top: 30px;
+  }
+  .card1 > button {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #a148ff, #ff6f45 100%);
+    border: none;
+    transition: all 0.4s ease;
+    border-radius: 35px;
+    width: 150px;
+    height: 55px;
+    font-family: lexend;
+    color: white;
+    cursor: pointer;
+    margin-top: 25px;
+    font-weight: bold;
+  }
+  .card1 > button:hover {
+    transform: translateY(-6px);
+  }
+  .our-works {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-image: url(/Assets/Images/background5.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 706px;
+    align-content: center;
+  }
+  .our-works > p {
+    font-family: Lexend;
+    font-size: 20.8px;
+    color: #263d5a;
+    position: relative;
+    top: 83px;
+    font-weight: bold;
+  }
+  .our-works > h1 {
+    font-family: Lexendbold;
+    font-size: 28.8px;
+    color: black;
+    position: relative;
+    top: 100px;
+  }
+  .imagecard {
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    justify-content: flex-start;
+    gap: 40px;
+    position: relative;
+    top: 130px;
+  }
+  .imagecard1 {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .imagecard1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Assets/Images/tv.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.4s ease;
+    z-index: 1;
+  }
+  .imagecard1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.4s ease;
+    z-index: 2;
+  }
+  .imagecard1:hover::before {
+    transform: scale(1.2);
+  }
+  .imagecard1:hover::after {
+    background-color: rgb(0, 0, 0, 0.5);
+  }
+  .imagecard1 > h1 {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    color: white;
+    font-family: Lexendbold;
+    font-size: 20.8px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard1 > p {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-family: Lexend;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard1:hover > h1 {
+    opacity: 1;
+  }
+  .imagecard1:hover > p {
+    opacity: 1;
+  }
+  .imagecard1:hover {
+    cursor: pointer;
+  }
+  .imagecard2 {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .imagecard2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Assets/Images/Girl.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.4s ease;
+    z-index: 1;
+  }
+  .imagecard2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.4s ease;
+    z-index: 2;
+  }
+  .imagecard2:hover::before {
+    transform: scale(1.2);
+  }
+  .imagecard2:hover::after {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .imagecard2 > h1 {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    color: white;
+    font-family: Lexendbold;
+    font-size: 20.8px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard2 > p {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-family: Lexend;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard2:hover > h1 {
+    opacity: 1;
+  }
+  .imagecard2:hover > p {
+    opacity: 1;
+  }
+  .imagecard2:hover {
+    cursor: pointer;
+  }
+  .imagecard3 {
+    width: 251px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .imagecard3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Assets/Images/light.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.4s ease;
+    z-index: 1;
+  }
+  .imagecard3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.4s ease;
+    z-index: 2;
+  }
+  .imagecard3:hover::before {
+    transform: scale(1.2);
+  }
+  .imagecard3:hover::after {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .imagecard3 > h1 {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    color: white;
+    font-family: Lexendbold;
+    font-size: 20.8px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard3 > p {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-family: Lexend;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard3:hover > h1 {
+    opacity: 1;
+  }
+  .imagecard3:hover > p {
+    opacity: 1;
+  }
+  .imagecard3:hover {
+    cursor: pointer;
+  }
+  .progress {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 710px;
+    background-image: url(/Assets/Images/background1.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    position: relative;
+  }
+  .progress-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(3.5px);
+    width: 615px;
+    height: 410.27px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 48px 32px;
+  }
+  .progress-container > h1 {
+    font-family: Lexend;
+    color: #263d5a;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: start;
+    font-weight: bold;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+  }
+  .progress-container > h2 {
+    font-family: Lexendbold;
+    color: #263d5a;
+    font-size: 44px;
+    text-align: start;
+    line-height: 1.1;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+  }
+  .progress-container > p {
+    font-family: Lexend;
+    color: #263d5a;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: start;
+    font-weight: bold;
+    margin-bottom: 16px;
+    padding-bottom: 24px;
+  }
+  .progress1 {
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+  }
+  .progress1-heading {
+    display: flex;
+    justify-content: space-between;
+  }
+  .progress1-heading > h1 {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #232323;
+    margin-bottom: 16px;
+  }
+  .progress1-heading > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #232323;
+    margin-bottom: 16px;
+  }
+  .progressbar-container {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;
+    height: 8px;
+    position: relative;
+    z-index: 1;
+  }
+  .progressbar {
+    background-color: #a148ff;
+    width: 92%;
+    border-radius: 15px;
+  }
+  .progress2 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    height: 40px;
+  }
+  .progressbar2-container {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;
+    height: 8px;
+  }
+  .progressbar2 {
+    background-color: #a148ff;
+    width: 71%;
+    border-radius: 15px;
+  }
+  .progressbar3-container {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;
+    height: 8px;
+  }
+  .progressbar3 {
+    background-color: #a148ff;
+    width: 53%;
+    border-radius: 15px;
+  }
+  .faq {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 682px;
+    background-image: url(/Assets/Images/background5.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .faq-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+    width: 872px;
+    height: 317.5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 32px 26px;
+    gap: 80px;
+  }
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+  }
+  .faq-image {
+    display: flex;
+    height: 225.66px;
+    width: 400px;
+    background-image: url(/Assets/Images/Beach.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    margin-top: 45px;
+  }
+  .faq-list > h1 {
+    font-family: Lexendbold;
+    font-size: 44.8px;
+    color: #263d5a;
+    text-align: start;
+    line-height: 1.1;
+  }
+  .faq-list > h2 {
+    font-family: Lexendbold;
+    font-size: 44.8px;
+    color: #263d5a;
+    text-align: start;
+    line-height: 1.1;
+    margin-bottom: 4px;
+    padding-bottom: 16px;
+  }
+  .list {
+    display: flex;
+    height: 68.19px;
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: #ffff0026;
+    justify-content: space-between;
+  }
+  .list > h1 {
+    font-family: Lexend;
+    font-size: 18.68px;
+    color: #263d5a;
+    font-weight: bold;
+    padding: 24px 16px 13px 0px;
+  }
+  .list > p {
+    font-family: Lexend;
+    font-size: 27.8px;
+    color: #6d6d6d;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .client {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-image: url(/Assets/Images/background2.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .client-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 96px 0px;
+  }
+  .client-container > h1 {
+    font-family: Lexend;
+    font-size: 18.063px;
+    color: white;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  .client-container > h2 {
+    font-family: Lexendbold;
+    font-size: 28.8px;
+    color: white;
+    margin-bottom: 8px;
+    font-weight: bold;
+    padding-bottom: 24px;
+    display: flex;
+    width: 472px;
+  }
+  .client-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 987px;
+    gap: 40px;
+    margin-top: 33px;
+  }
+  .clientcard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 205px;
+    height: 114.84px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    backdrop-filter: blur(3.5px);
+    padding: 48px;
+  }
+  .clientcard > img {
+    height: 98.56px;
+  }
+  .sayhello {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-image: url(/Assets/Images/background7.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 411px;
+  }
+  .sayhello-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 205px;
+    width: 705px;
+    padding: 64px 48px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(3.5px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    text-align: center;
+    align-items: center;
+  }
+  .sayhello-card > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    margin-bottom: 16px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .sayhello-card > h1 {
+    font-family: Lexendbold;
+    font-size: 70.4px;
+    color: #263d5a;
+    margin-bottom: 32px;
+    line-height: 1.1;
+  }
+  .sayhello-card > h2 {
+    font-family: Lexend;
+    font-size: 20.8px;
+    color: #263d5a;
+    margin-bottom: 32px;
+    line-height: 1.1;
+    text-align: center;
+    cursor: pointer;
+  }
+  .sayhello-card > h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: black;
+    transition: 0.2s ease;
+  }
+  .sayhello-card > h2:hover:after {
+    width: 100%;
+  }
+  .map {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 482px;
+    background-image: url(/Assets/Images/background3.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    padding: 112px 0px;
+  }
+  .map-container {
+    height: 480px;
+    border-radius: 30px;
+    opacity: 0.8;
+    width: 945px;
+  }
+  .map-container > iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+  }
+  .article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 627.47px;
+    background-image: url(/Assets/Images/background5.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    gap: 30px;
+  }
+  .article-card1 {
+    background-image: url(/Assets/Images/girlwithcoffee.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 393.09px;
+    width: 287.98px;
+    border-radius: 30px;
+  }
+  .article-card2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 64px 48px;
+    width: 491.98px;
+    height: 267.75px;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    backdrop-filter: blur(3.5px);
+  }
+  .article-card2 > h1 {
+    font-family: Lexendbold;
+    font-size: 28.8px;
+    color: #263d5a;
+    line-height: 1.5;
+    text-align: start;
+    margin-bottom: 32px;
+  }
+  .article-card2 > p {
+    font-family: Lexen;
+    font-size: 18px;
+    color: #263d5a;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: start;
+  }
+  .inputbackground {
+    height: 1020px;
+    background-image: url(/Assets/Images/background1.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .overlay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 1020px;
+    background-color: rgb(255, 255, 255, 0.6);
+  }
+  .inputcard {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 497.72px;
+    width: 621px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(3.5px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 112px 48px;
+  }
+  .inputcard > h1 {
+    font-family: Lexend;
+    font-size: 28.8px;
+    color: #263d5a;
+    text-align: center;
+    margin-bottom: 48px;
+    font-weight: bold;
+  }
+  .inputcard-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 144px;
+    gap: 20px;
+    width: 622px;
+  }
+  .input-field {
+    height: 48;
+    width: 301px;
+    padding: 9.6px 19.2px;
+    border: 1px solid transparent;
+    outline: none;
+    font-family: Lexend;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  }
+  .input-field:hover {
+    border: none;
+  }
+  .input-field:focus {
+    border-color: #a148ff;
+  }
+  .textarea {
+    height: 250px;
+    width: 972.41px;
+    padding: 9.6px 19.2px;
+    border: 1px solid transparent;
+    outline: none;
+    font-family: Lexend;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  }
+  .textarea:hover {
+    border: none;
+  }
+  .textarea:focus {
+    border-color: #a148ff;
+  }
+  .inputcard-container > button {
+    height: 56px;
+    width: 972px;
+    background: linear-gradient(90deg, #a148ff, #ff6f45);
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    font-family: Lexend;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  .inputcard-container > button:hover {
+    transform: translateY(-4px);
+  }
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 128.69px;
+    background-color: #131729;
+    gap: 38px;
+    padding: 96px 30px 80px;
+  }
+  .footer-aboutus {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 332px;
+    text-align: start;
+  }
+  .footer-aboutus > h1 {
+    font-family: Lexendbold;
+    font-size: 20.8px;
+    color: white;
+    margin-bottom: 8px;
+  }
+  .footer-aboutus > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: white;
+    line-height: 1.5;
+  }
+  .company {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 172px;
+    text-align: start;
+  }
+  .company > h1 {
+    font-family: Lexendbold;
+    font-size: 20.8px;
+    color: white;
+    margin-bottom: 8px;
+  }
+  .company > h2 {
+    font-family: Lexend;
+    font-size: 16px;
+    color: white;
+    line-height: 1.5;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    width: 75px;
+  }
+  .company > h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.2s ease;
+  }
+  .company > h2:hover:after {
+    width: 45%;
+  }
+}
+
+/* ----------------------------------------------------------laptop view 1439px view 2559px--------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+@media only screen and (min-width: 1439px) and (max-width: 2259px) {
+  .header {
+    display: flex;
+    height: 719px;
+    flex-wrap: wrap;
+    background-image: url(/Assets/Images/background5.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .nav {
+    display: flex;
+    height: 100px;
+    position: fixed;
+    width: 92%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: transparent;
+    z-index: 10;
+  }
+  .nav > i {
+    display: none;
+  }
+  .nav-brand {
+    display: flex;
+    font-family: lexendbold;
+    color: #263d5a;
+    font-size: 28.8px;
+    cursor: pointer;
+  }
+  .nav-brand:hover {
+    color: black;
+    transition: 0.2s ease;
+  }
+  .nav-items {
+    display: flex;
+    font-family: lexendbold;
+    width: 1051px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    height: 41px;
+  }
+  .nav-items > button {
+    background-color: transparent;
+    border: none;
+    color: #263d5a;
+    font-size: 20.8px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .nav-items > button:hover {
+    color: black;
+    transition: 0.2s ease;
+  }
+  .message {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #a148ff, #ff6f45 100%);
+    border: none;
+    transition: all 0.4s ease;
+    border-radius: 35px;
+    width: 150px;
+    font-family: lexend;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  .message:hover {
+    transform: translateY(-5px);
+  }
+  .photographer-container {
+    display: flex;
+    flex-direction: column;
+    height: 299.38px;
+    width: 735px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 96px 48px;
+    border-radius: 48px;
+    position: relative;
+    top: 150px;
+    left: 100px;
+    z-index: 2;
+    backdrop-filter: blur(3px);
+  }
+  .photographer-container > h1 {
+    font-family: "lexendbold";
+    color: #263d5a;
+    font-size: 70.4px;
+    margin-bottom: 10px;
+  }
+  .photographer-container > p {
+    font-family: lexend;
+    color: #263d5a;
+    font-size: 20.8px;
+    line-height: 1.5;
+    margin-top: 35px;
+  }
+  .photographer-container > button {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #a148ff, #ff6f45 100%);
+    border: none;
+    transition: all 0.4s ease;
+    border-radius: 50px;
+    width: 170.47px;
+    height: 54.41px;
+    font-family: lexend;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    top: 35px;
+  }
+  .photographer-container > button:hover {
+    transform: translateY(-5px);
+  }
+  .photographer-container2 {
+    display: flex;
+    flex-direction: column;
+    height: 461.45px;
+    width: 757px;
+    background-image: url(/Assets/Images/girlwithcamera.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+    position: absolute;
+    top: 166px;
+    right: 0px;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .our-service {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: url(/Assets/Images/background3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 675px;
+    background-position: 50% 50%;
+    align-content: center;
+  }
+  .our-service > h1 {
+    text-align: center;
+    font-family: lexendbold;
+    font-size: 44.8px;
+    position: relative;
+    top: 140px;
+    color: #263d5a;
+  }
+  .servicecontainer {
+    display: flex;
+    justify-content: center;
+    height: 332px;
+    width: 1235px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(3px);
+    position: relative;
+    top: 187px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    gap: 75px;
+  }
+  .servicecontainer-content1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 310px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+  .servicecontainer-content1 > button {
+    background-color: rgba(255, 255, 255, 0.67);
+    height: 114px;
+    width: 112px;
+    text-align: center;
+    font-size: 64px;
+    border-radius: 109px;
+    border: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+    left: 98px;
+    color: #a148ff;
+  }
+  .servicecontainer-content1 > h1 {
+    font-family: "lexendbold";
+    font-weight: bold;
+    font-size: 20.8px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 20px;
+  }
+  .servicecontainer-content1 > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 10px;
+  }
+  .servicecontainer-content2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 310px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+  .servicecontainer-content2 > button {
+    background-color: rgba(255, 255, 255, 0.67);
+    height: 114px;
+    width: 112px;
+    text-align: center;
+    font-size: 64px;
+    border-radius: 109px;
+    border: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+    left: 98px;
+    color: #a148ff;
+  }
+  .servicecontainer-content2 > h1 {
+    font-family: "lexendbold";
+    font-weight: bold;
+    font-size: 20.8px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 20px;
+  }
+  .servicecontainer-content2 > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 10px;
+  }
+  .servicecontainer-content3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 310px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+  .servicecontainer-content3 > button {
+    background-color: rgba(255, 255, 255, 0.67);
+    height: 114px;
+    width: 112px;
+    text-align: center;
+    font-size: 64px;
+    border-radius: 109px;
+    border: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+    left: 98px;
+    color: #a148ff;
+  }
+  .servicecontainer-content3 > h1 {
+    font-family: "lexendbold";
+    font-weight: bold;
+    font-size: 20.8px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 20px;
+  }
+  .servicecontainer-content3 > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 10px;
+  }
+  .aboutus {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 814px;
+    background-image: url(/Assets/Images/background8.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .aboutus > img {
+    height: 645.45px;
+    width: 518px;
+    border-radius: 30px;
+  }
+  .aboutus-card {
+    display: flex;
+    flex-wrap: wrap;
+    left: 30px;
+    top: 90px;
+    position: relative;
+    width: 738px;
+    height: 437.44px;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0.6) 100%
+    );
+    backdrop-filter: blur(3.5px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+  }
+  .aboutus-card > h1 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 88px;
+    width: 680.77px;
+    font-family: Lexendbold;
+    color: #263d5a;
+    font-size: 70.4px;
+    position: relative;
+    top: 100px;
+    left: 36px;
+  }
+  .aboutus-card > h2 {
+    display: flex;
+    height: 120px;
+    width: 305px;
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    position: relative;
+    left: 35px;
+    line-height: 1.5;
+  }
+  .aboutus-card > p {
+    display: flex;
+    height: 120px;
+    width: 305px;
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    position: relative;
+    left: 50px;
+    line-height: 1.5;
+    margin-left: 25px;
+  }
+  .pricingcontainer1 {
+    height: 825px;
+    background-image: url(/Assets/Images/background4.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .pricingcontainer2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: center;
+    height: 825px;
+    background-color: rgba(255, 255, 255, 0.245);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .pricingcontainer2 > p {
+    position: relative;
+    top: 170px;
+    font-family: Lexend;
+    font-size: 20.8px;
+    color: #263d5a;
+    font-weight: 400;
+  }
+  .pricingcontainer2 > h1 {
+    font-family: Lexendbold;
+    font-size: 28.8px;
+    color: #263d5a;
+    position: relative;
+    top: 180px;
+  }
+  .pricingcard {
+    display: flex;
+    height: 450px;
+    margin-top: 227px;
+    gap: 40px;
+  }
+  .card1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 333px;
+    width: 308px;
+    background-color: rgba(255, 255, 255, 0.603);
+    backdrop-filter: blur(3.5px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 64px 48px;
+  }
+  .card1 > h1 {
+    font-family: Lexendbold;
+    font-size: 70.4px;
+    color: #263d5a;
+    text-align: start;
+  }
+  .card1 > h2 {
+    font-family: Lexendbold;
+    font-size: 28.8px;
+    color: #263d5a;
+    text-align: start;
+    margin-top: 40px;
+  }
+  .card1 > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    text-align: start;
+    line-height: 1.5;
+    margin-top: 30px;
+  }
+  .card1 > button {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #a148ff, #ff6f45 100%);
+    border: none;
+    transition: all 0.4s ease;
+    border-radius: 35px;
+    width: 150px;
+    height: 55px;
+    font-family: lexend;
+    color: white;
+    cursor: pointer;
+    margin-top: 25px;
+    font-weight: bold;
+  }
+  .card1 > button:hover {
+    transform: translateY(-6px);
+  }
+  .our-works {
+    display: flex;
+    flex-direction: column;
+    background-image: url(/Assets/Images/background5.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 680px;
+  }
+  .our-works > p {
+    font-family: Lexend;
+    font-size: 20.8px;
+    color: #263d5a;
+    position: relative;
+    left: 103px;
+    top: 83px;
+    font-weight: bold;
+  }
+  .our-works > h1 {
+    font-family: Lexendbold;
+    font-size: 28.8px;
+    color: black;
+    position: relative;
+    left: 103px;
+    top: 100px;
+  }
+  .imagecard {
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    justify-content: flex-start;
+    gap: 40px;
+    position: relative;
+    top: 130px;
+    left: 111px;
+  }
+  .imagecard1 {
+    width: 410px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .imagecard1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Assets/Images/tv.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.4s ease;
+    z-index: 1;
+  }
+  .imagecard1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.4s ease;
+    z-index: 2;
+  }
+  .imagecard1:hover::before {
+    transform: scale(1.2);
+  }
+  .imagecard1:hover::after {
+    background-color: rgb(0, 0, 0, 0.5);
+  }
+  .imagecard1 > h1 {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    color: white;
+    font-family: Lexendbold;
+    font-size: 20.8px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard1 > p {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-family: Lexend;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard1:hover > h1 {
+    opacity: 1;
+  }
+  .imagecard1:hover > p {
+    opacity: 1;
+  }
+  .imagecard1:hover {
+    cursor: pointer;
+  }
+  .imagecard2 {
+    width: 410px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .imagecard2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Assets/Images/Girl.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.4s ease;
+    z-index: 1;
+  }
+  .imagecard2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.4s ease;
+    z-index: 2;
+  }
+  .imagecard2:hover::before {
+    transform: scale(1.2);
+  }
+  .imagecard2:hover::after {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .imagecard2 > h1 {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    color: white;
+    font-family: Lexendbold;
+    font-size: 20.8px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard2 > p {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-family: Lexend;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard2:hover > h1 {
+    opacity: 1;
+  }
+  .imagecard2:hover > p {
+    opacity: 1;
+  }
+  .imagecard2:hover {
+    cursor: pointer;
+  }
+  .imagecard3 {
+    width: 410px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .imagecard3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Assets/Images/light.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.4s ease;
+    z-index: 1;
+  }
+  .imagecard3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.4s ease;
+    z-index: 2;
+  }
+  .imagecard3:hover::before {
+    transform: scale(1.2);
+  }
+  .imagecard3:hover::after {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .imagecard3 > h1 {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    color: white;
+    font-family: Lexendbold;
+    font-size: 20.8px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard3 > p {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-family: Lexend;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard3:hover > h1 {
+    opacity: 1;
+  }
+  .imagecard3:hover > p {
+    opacity: 1;
+  }
+  .imagecard3:hover {
+    cursor: pointer;
+  }
+  .progress {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 755px;
+    background-image: url(/Assets/Images/background1.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    position: relative;
+  }
+  .progress-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(3.5px);
+    width: 865px;
+    height: 386.27px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 80px;
+  }
+  .progress-container > h1 {
+    font-family: Lexend;
+    color: #263d5a;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+  }
+  .progress-container > h2 {
+    font-family: Lexendbold;
+    color: #263d5a;
+    font-size: 44.8px;
+    line-height: 1.5;
+    text-align: left;
+    line-height: 1.1;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+  }
+  .progress-container > p {
+    font-family: Lexend;
+    color: #263d5a;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 16px;
+    padding-bottom: 24px;
+  }
+  .progress1 {
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+  }
+  .progress1-heading {
+    display: flex;
+    justify-content: space-between;
+  }
+  .progress1-heading > h1 {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #232323;
+    margin-bottom: 16px;
+  }
+  .progress1-heading > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #232323;
+    margin-bottom: 16px;
+  }
+  .progressbar-container {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;
+    height: 8px;
+    position: relative;
+    z-index: 1;
+  }
+  .progressbar {
+    background-color: #a148ff;
+    width: 92%;
+    border-radius: 15px;
+  }
+  .progress2 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    height: 40px;
+  }
+  .progressbar2-container {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;
+    height: 8px;
+  }
+  .progressbar2 {
+    background-color: #a148ff;
+    width: 71%;
+    border-radius: 15px;
+  }
+  .progressbar3-container {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;
+    height: 8px;
+  }
+  .progressbar3 {
+    background-color: #a148ff;
+    width: 53%;
+    border-radius: 15px;
+  }
+  .faq {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 700px;
+    background-image: url(/Assets/Images/background5.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .faq-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    width: 1288px;
+    height: 385px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 64px 48px;
+  }
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    height: 376px;
+    width: 596px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .faq-image {
+    display: flex;
+    height: 376px;
+    width: 564px;
+    background-image: url(/Assets/Images/Beach.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+  }
+  .faq-list > h1 {
+    font-family: Lexendbold;
+    font-size: 44.8px;
+    color: #263d5a;
+    text-align: left;
+    line-height: 1.1;
+  }
+  .faq-list > h2 {
+    font-family: Lexendbold;
+    font-size: 44.8px;
+    color: #263d5a;
+    text-align: left;
+    line-height: 1.1;
+    margin-bottom: 4px;
+    padding-bottom: 16px;
+  }
+  .list {
+    display: flex;
+    justify-content: space-between;
+    height: 68.19px;
+    width: 564px;
+    cursor: pointer;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: #ffff0026;
+  }
+  .list > h1 {
+    font-family: Lexend;
+    font-size: 20.8px;
+    color: #263d5a;
+    padding: 24px 16px 13px 0px;
+  }
+  .list > p {
+    font-family: Lexend;
+    font-size: 27.8px;
+    color: #6d6d6d;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .client {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-image: url(/Assets/Images/background2.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 765px;
+  }
+  .client-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    height: 591.5px;
+    width: 1320px;
+    margin: 0px 16px;
+    padding: 0px 16px;
+  }
+  .client-container > h1 {
+    font-family: Lexend;
+    font-size: 20.8px;
+    color: white;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  .client-container > h2 {
+    font-family: Lexendbold;
+    font-size: 28.8px;
+    color: white;
+    margin-bottom: 8px;
+    font-weight: bold;
+    padding-bottom: 24px;
+  }
+  .client-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1320px;
+    gap: 40px;
+  }
+  .clientcard {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 130.56px;
+    width: 312px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    backdrop-filter: blur(3.5px);
+    padding: 48px;
+  }
+  .clientcard > img {
+    height: 98.56px;
+    width: 150px;
+    margin: 0px 81px;
+  }
+  .sayhello {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-image: url(/Assets/Images/background7.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 555px;
+  }
+  .sayhello-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 204.63px;
+    width: 929px;
+    padding: 64px 64px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(3.5px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+  }
+  .sayhello-card > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    margin-bottom: 16px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .sayhello-card > h1 {
+    font-family: Lexendbold;
+    font-size: 70.4px;
+    color: #263d5a;
+    margin-bottom: 32px;
+    line-height: 1.1;
+  }
+  .sayhello-card > h2 {
+    font-family: Lexend;
+    font-size: 20.8px;
+    color: #263d5a;
+    margin-bottom: 32px;
+    line-height: 1.1;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 190px;
+    left: 75px;
+  }
+  .sayhello-card > h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: black;
+    transition: 0.2s ease;
+  }
+  .sayhello-card > h2:hover:after {
+    width: 100%;
+  }
+  .map {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 695px;
+    background-image: url(/Assets/Images/background3.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .map-container {
+    width: 1320px;
+    height: 480px;
+    border-radius: 30px;
+    opacity: 0.8;
+  }
+  .map-container > iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+  }
+  .article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 695px;
+    background-image: url(/Assets/Images/background5.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    gap: 40px;
+  }
+  .article-card1 {
+    background-image: url(/Assets/Images/girlwithcoffee.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 556.91px;
+    width: 440px;
+    border-radius: 30px;
+  }
+  .article-card2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 64px 48px;
+    height: 202.56px;
+    width: 725px;
+    margin-top: 227.344px;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    backdrop-filter: blur(3.5px);
+  }
+  .article-card2 > h1 {
+    font-family: Lexendbold;
+    font-size: 28.8px;
+    color: #263d5a;
+    line-height: 1.5;
+    margin-bottom: 32px;
+  }
+  .article-card2 > p {
+    font-family: Lexen;
+    font-size: 16px;
+    color: #263d5a;
+    line-height: 1.5;
+    font-weight: bold;
+  }
+  .inputbackground {
+    height: 820px;
+    background-image: url(/Assets/Images/background1.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .overlay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 820px;
+    background-color: rgb(255, 255, 255, 0.6);
+  }
+  .inputcard {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 480px;
+    width: 1068px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(3.5px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 112px 48px;
+  }
+  .inputcard > h1 {
+    font-family: Lexend;
+    font-size: 28.8px;
+    color: #263d5a;
+    text-align: center;
+    margin-bottom: 48px;
+    font-weight: bold;
+  }
+  .inputcard-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 144px;
+    gap: 20px;
+  }
+  .input-field {
+    height: 48;
+    width: 476.41;
+    padding: 9.6px 19.2px;
+    border: 1px solid transparent;
+    outline: none;
+    font-family: Lexend;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  }
+  .input-field:hover {
+    border: none;
+  }
+  .input-field:focus {
+    border-color: #a148ff;
+  }
+  .textarea {
+    height: 250px;
+    width: 972.41px;
+    padding: 9.6px 19.2px;
+    border: 1px solid transparent;
+    outline: none;
+    font-family: Lexend;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  }
+  .textarea:hover {
+    border: none;
+  }
+  .textarea:focus {
+    border-color: #a148ff;
+  }
+  .inputcard-container > button {
+    height: 56px;
+    width: 972px;
+    background: linear-gradient(90deg, #a148ff, #ff6f45);
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    font-family: Lexend;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  .inputcard-container > button:hover {
+    transform: translateY(-4px);
+  }
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 175.19px;
+    background-color: #131729;
+    padding: 96px 0 80px;
+    gap: 127px;
+  }
+  .footer-aboutus {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 339px;
+    margin-right: 262px;
+  }
+  .footer-aboutus > h1 {
+    font-family: Lexendbold;
+    font-size: 20.8px;
+    color: white;
+    margin-bottom: 8px;
+  }
+  .footer-aboutus > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: white;
+    line-height: 1.5;
+  }
+  .company {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .company > h1 {
+    font-family: Lexendbold;
+    font-size: 20.8px;
+    color: white;
+    margin-bottom: 8px;
+  }
+  .company > h2 {
+    font-family: Lexend;
+    font-size: 16px;
+    color: white;
+    line-height: 1.5;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+  }
+  .company > h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.2s ease;
+  }
+  .company > h2:hover:after {
+    width: 45%;
+  }
+}
+/* ----------------------------------------------------------laptop view 2559px view 4000px--------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+@media only screen and (min-width: 2559px) and (max-width: 4000px) {
+  .header {
+    display: flex;
+    height: 719px;
+    flex-wrap: wrap;
+    background-image: url(/Assets/Images/background5.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .nav {
+    display: flex;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: transparent;
+    z-index: 10;
+  }
+  .nav > i {
+    display: none;
+  }
+  .nav-brand {
+    display: flex;
+    font-family: lexendbold;
+    color: #263d5a;
+    font-size: 28.8px;
+    cursor: pointer;
+  }
+  .nav-brand:hover {
+    color: black;
+    transition: 0.2s ease;
+  }
+  .nav-items {
+    display: flex;
+    font-family: lexendbold;
+    width: 82%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    height: 41px;
+  }
+  .nav-items > button {
+    background-color: transparent;
+    border: none;
+    color: #263d5a;
+    font-size: 20.8px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .nav-items > button:hover {
+    color: black;
+    transition: 0.2s ease;
+  }
+  .message {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #a148ff, #ff6f45 100%);
+    border: none;
+    transition: all 0.4s ease;
+    border-radius: 35px;
+    width: 150px;
+    font-family: lexend;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  .message:hover {
+    transform: translateY(-5px);
+  }
+  .photographer-container {
+    display: flex;
+        flex-direction: column;
+        height: 299.38px;
+        width: 735px;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 96px 48px;
+        border-radius: 48px;
+        position: relative;
+        top: 150px;
+        left: 698px;
+        z-index: 2;
+        backdrop-filter: blur(3px);
+  }
+  .photographer-container > h1 {
+    font-family: "lexendbold";
+    color: #263d5a;
+    font-size: 70.4px;
+    margin-bottom: 10px;
+  }
+  .photographer-container > p {
+    font-family: lexend;
+    color: #263d5a;
+    font-size: 20.8px;
+    line-height: 1.5;
+    margin-top: 35px;
+  }
+  .photographer-container > button {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #a148ff, #ff6f45 100%);
+    border: none;
+    transition: all 0.4s ease;
+    border-radius: 50px;
+    width: 170.47px;
+    height: 54.41px;
+    font-family: lexend;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    top: 35px;
+  }
+  .photographer-container > button:hover {
+    transform: translateY(-5px);
+  }
+  .photographer-container2 {
+    display: flex;
+    flex-direction: column;
+    height: 461.45px;
+    width: 757px;
+    background-image: url(/Assets/Images/girlwithcamera.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+    position: absolute;
+    top: 166px;
+    right: 511px;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .our-service {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: url(/Assets/Images/background3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 675px;
+    background-position: 50% 50%;
+    align-content: center;
+  }
+  .our-service > h1 {
+    text-align: center;
+    font-family: lexendbold;
+    font-size: 44.8px;
+    position: relative;
+    top: 140px;
+    color: #263d5a;
+  }
+  .servicecontainer {
+    display: flex;
+    justify-content: center;
+    height: 332px;
+    width: 1235px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(3px);
+    position: relative;
+    top: 187px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    gap: 75px;
+  }
+  .servicecontainer-content1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 310px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+  .servicecontainer-content1 > button {
+    background-color: rgba(255, 255, 255, 0.67);
+    height: 114px;
+    width: 112px;
+    text-align: center;
+    font-size: 64px;
+    border-radius: 109px;
+    border: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+    left: 98px;
+    color: #a148ff;
+  }
+  .servicecontainer-content1 > h1 {
+    font-family: "lexendbold";
+    font-weight: bold;
+    font-size: 20.8px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 20px;
+  }
+  .servicecontainer-content1 > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 10px;
+  }
+  .servicecontainer-content2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 310px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+  .servicecontainer-content2 > button {
+    background-color: rgba(255, 255, 255, 0.67);
+    height: 114px;
+    width: 112px;
+    text-align: center;
+    font-size: 64px;
+    border-radius: 109px;
+    border: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+    left: 98px;
+    color: #a148ff;
+  }
+  .servicecontainer-content2 > h1 {
+    font-family: "lexendbold";
+    font-weight: bold;
+    font-size: 20.8px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 20px;
+  }
+  .servicecontainer-content2 > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 10px;
+  }
+  .servicecontainer-content3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 310px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+  .servicecontainer-content3 > button {
+    background-color: rgba(255, 255, 255, 0.67);
+    height: 114px;
+    width: 112px;
+    text-align: center;
+    font-size: 64px;
+    border-radius: 109px;
+    border: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+    left: 98px;
+    color: #a148ff;
+  }
+  .servicecontainer-content3 > h1 {
+    font-family: "lexendbold";
+    font-weight: bold;
+    font-size: 20.8px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 20px;
+  }
+  .servicecontainer-content3 > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    line-height: 1.5;
+    padding-top: 10px;
+  }
+  .aboutus {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 814px;
+    background-image: url(/Assets/Images/background8.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .aboutus > img {
+    height: 645.45px;
+    width: 518px;
+    border-radius: 30px;
+  }
+  .aboutus-card {
+    display: flex;
+    flex-wrap: wrap;
+    left: 30px;
+    top: 90px;
+    position: relative;
+    width: 738px;
+    height: 437.44px;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0.6) 100%
+    );
+    backdrop-filter: blur(3.5px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+  }
+  .aboutus-card > h1 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 88px;
+    width: 680.77px;
+    font-family: Lexendbold;
+    color: #263d5a;
+    font-size: 70.4px;
+    position: relative;
+    top: 100px;
+    left: 36px;
+  }
+  .aboutus-card > h2 {
+    display: flex;
+    height: 120px;
+    width: 305px;
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    position: relative;
+    left: 35px;
+    line-height: 1.5;
+  }
+  .aboutus-card > p {
+    display: flex;
+    height: 120px;
+    width: 305px;
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    position: relative;
+    left: 50px;
+    line-height: 1.5;
+    margin-left: 25px;
+  }
+  .pricingcontainer1 {
+    height: 825px;
+    background-image: url(/Assets/Images/background4.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .pricingcontainer2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: center;
+    height: 825px;
+    background-color: rgba(255, 255, 255, 0.245);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .pricingcontainer2 > p {
+    position: relative;
+    top: 170px;
+    font-family: Lexend;
+    font-size: 20.8px;
+    color: #263d5a;
+    font-weight: 400;
+  }
+  .pricingcontainer2 > h1 {
+    font-family: Lexendbold;
+    font-size: 28.8px;
+    color: #263d5a;
+    position: relative;
+    top: 180px;
+  }
+  .pricingcard {
+    display: flex;
+    height: 450px;
+    margin-top: 227px;
+    gap: 40px;
+  }
+  .card1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 333px;
+    width: 308px;
+    background-color: rgba(255, 255, 255, 0.603);
+    backdrop-filter: blur(3.5px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 64px 48px;
+  }
+  .card1 > h1 {
+    font-family: Lexendbold;
+    font-size: 70.4px;
+    color: #263d5a;
+    text-align: start;
+  }
+  .card1 > h2 {
+    font-family: Lexendbold;
+    font-size: 28.8px;
+    color: #263d5a;
+    text-align: start;
+    margin-top: 40px;
+  }
+  .card1 > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    text-align: start;
+    line-height: 1.5;
+    margin-top: 30px;
+  }
+  .card1 > button {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #a148ff, #ff6f45 100%);
+    border: none;
+    transition: all 0.4s ease;
+    border-radius: 35px;
+    width: 150px;
+    height: 55px;
+    font-family: lexend;
+    color: white;
+    cursor: pointer;
+    margin-top: 25px;
+    font-weight: bold;
+  }
+  .card1 > button:hover {
+    transform: translateY(-6px);
+  }
+  .our-works {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-image: url(/Assets/Images/background5.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 680px;
+    align-content: end;
+  }
+  .our-works > p {
+    font-family: Lexend;
+    display: flex;
+    font-size: 20.8px;
+    color: #263d5a;
+    position: relative;
+    right: 102px;
+    top: 83px;
+    width: 145px;
+    font-weight: bold;
+  }
+  .our-works > h1 {
+    font-family: Lexendbold;
+    font-size: 28.8px;
+    color: black;
+    position: relative;
+    right: 100px;
+    top: 100px;
+  }
+  .imagecard {
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    justify-content: flex-start;
+    gap: 40px;
+    position: relative;
+    top: 130px;
+    right: 112px;
+  }
+  .imagecard1 {
+    width: 410px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .imagecard1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Assets/Images/tv.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.4s ease;
+    z-index: 1;
+  }
+  .imagecard1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.4s ease;
+    z-index: 2;
+  }
+  .imagecard1:hover::before {
+    transform: scale(1.2);
+  }
+  .imagecard1:hover::after {
+    background-color: rgb(0, 0, 0, 0.5);
+  }
+  .imagecard1 > h1 {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    color: white;
+    font-family: Lexendbold;
+    font-size: 20.8px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard1 > p {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-family: Lexend;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard1:hover > h1 {
+    opacity: 1;
+  }
+  .imagecard1:hover > p {
+    opacity: 1;
+  }
+  .imagecard1:hover {
+    cursor: pointer;
+  }
+  .imagecard2 {
+    width: 410px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .imagecard2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Assets/Images/Girl.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.4s ease;
+    z-index: 1;
+  }
+  .imagecard2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.4s ease;
+    z-index: 2;
+  }
+  .imagecard2:hover::before {
+    transform: scale(1.2);
+  }
+  .imagecard2:hover::after {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .imagecard2 > h1 {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    color: white;
+    font-family: Lexendbold;
+    font-size: 20.8px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard2 > p {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-family: Lexend;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard2:hover > h1 {
+    opacity: 1;
+  }
+  .imagecard2:hover > p {
+    opacity: 1;
+  }
+  .imagecard2:hover {
+    cursor: pointer;
+  }
+  .imagecard3 {
+    width: 410px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .imagecard3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Assets/Images/light.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.4s ease;
+    z-index: 1;
+  }
+  .imagecard3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.4s ease;
+    z-index: 2;
+  }
+  .imagecard3:hover::before {
+    transform: scale(1.2);
+  }
+  .imagecard3:hover::after {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .imagecard3 > h1 {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    color: white;
+    font-family: Lexendbold;
+    font-size: 20.8px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard3 > p {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-family: Lexend;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 3;
+  }
+  .imagecard3:hover > h1 {
+    opacity: 1;
+  }
+  .imagecard3:hover > p {
+    opacity: 1;
+  }
+  .imagecard3:hover {
+    cursor: pointer;
+  }
+  .progress {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 755px;
+    background-image: url(/Assets/Images/background1.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    position: relative;
+  }
+  .progress-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(3.5px);
+    width: 865px;
+    height: 386.27px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 80px;
+  }
+  .progress-container > h1 {
+    font-family: Lexend;
+    color: #263d5a;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+  }
+  .progress-container > h2 {
+    font-family: Lexendbold;
+    color: #263d5a;
+    font-size: 44.8px;
+    line-height: 1.5;
+    text-align: left;
+    line-height: 1.1;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+  }
+  .progress-container > p {
+    font-family: Lexend;
+    color: #263d5a;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 16px;
+    padding-bottom: 24px;
+  }
+  .progress1 {
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+  }
+  .progress1-heading {
+    display: flex;
+    justify-content: space-between;
+  }
+  .progress1-heading > h1 {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #232323;
+    margin-bottom: 16px;
+  }
+  .progress1-heading > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #232323;
+    margin-bottom: 16px;
+  }
+  .progressbar-container {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;
+    height: 8px;
+    position: relative;
+    z-index: 1;
+  }
+  .progressbar {
+    background-color: #a148ff;
+    width: 92%;
+    border-radius: 15px;
+  }
+  .progress2 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    height: 40px;
+  }
+  .progressbar2-container {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;
+    height: 8px;
+  }
+  .progressbar2 {
+    background-color: #a148ff;
+    width: 71%;
+    border-radius: 15px;
+  }
+  .progressbar3-container {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;
+    height: 8px;
+  }
+  .progressbar3 {
+    background-color: #a148ff;
+    width: 53%;
+    border-radius: 15px;
+  }
+  .faq {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 700px;
+    background-image: url(/Assets/Images/background5.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .faq-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    width: 1288px;
+    height: 385px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 64px 48px;
+  }
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    height: 376px;
+    width: 596px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .faq-image {
+    display: flex;
+    height: 376px;
+    width: 564px;
+    background-image: url(/Assets/Images/Beach.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+  }
+  .faq-list > h1 {
+    font-family: Lexendbold;
+    font-size: 44.8px;
+    color: #263d5a;
+    text-align: left;
+    line-height: 1.1;
+  }
+  .faq-list > h2 {
+    font-family: Lexendbold;
+    font-size: 44.8px;
+    color: #263d5a;
+    text-align: left;
+    line-height: 1.1;
+    margin-bottom: 4px;
+    padding-bottom: 16px;
+  }
+  .list {
+    display: flex;
+    justify-content: space-between;
+    height: 68.19px;
+    width: 564px;
+    cursor: pointer;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: #ffff0026;
+  }
+  .list > h1 {
+    font-family: Lexend;
+    font-size: 20.8px;
+    color: #263d5a;
+    padding: 24px 16px 13px 0px;
+  }
+  .list > p {
+    font-family: Lexend;
+    font-size: 27.8px;
+    color: #6d6d6d;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .client {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-image: url(/Assets/Images/background2.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 765px;
+  }
+  .client-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    height: 591.5px;
+    width: 1320px;
+    margin: 0px 16px;
+    padding: 0px 16px;
+  }
+  .client-container > h1 {
+    font-family: Lexend;
+    font-size: 20.8px;
+    color: white;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  .client-container > h2 {
+    font-family: Lexendbold;
+    font-size: 28.8px;
+    color: white;
+    margin-bottom: 8px;
+    font-weight: bold;
+    padding-bottom: 24px;
+  }
+  .client-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1320px;
+    gap: 40px;
+  }
+  .clientcard {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 130.56px;
+    width: 312px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    backdrop-filter: blur(3.5px);
+    padding: 48px;
+  }
+  .clientcard > img {
+    height: 98.56px;
+    width: 150px;
+    margin: 0px 81px;
+  }
+  .sayhello {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-image: url(/Assets/Images/background7.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 555px;
+  }
+  .sayhello-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 204.63px;
+    width: 929px;
+    padding: 64px 64px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(3.5px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+  }
+  .sayhello-card > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: #263d5a;
+    margin-bottom: 16px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .sayhello-card > h1 {
+    font-family: Lexendbold;
+    font-size: 70.4px;
+    color: #263d5a;
+    margin-bottom: 32px;
+    line-height: 1.1;
+  }
+  .sayhello-card > h2 {
+    font-family: Lexend;
+    font-size: 20.8px;
+    color: #263d5a;
+    margin-bottom: 32px;
+    line-height: 1.1;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 190px;
+    left: 75px;
+  }
+  .sayhello-card > h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: black;
+    transition: 0.2s ease;
+  }
+  .sayhello-card > h2:hover:after {
+    width: 100%;
+  }
+  .map {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 695px;
+    background-image: url(/Assets/Images/background3.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .map-container {
+    width: 1320px;
+    height: 480px;
+    border-radius: 30px;
+    opacity: 0.8;
+  }
+  .map-container > iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+  }
+  .article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 695px;
+    background-image: url(/Assets/Images/background5.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    gap: 40px;
+  }
+  .article-card1 {
+    background-image: url(/Assets/Images/girlwithcoffee.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 556.91px;
+    width: 440px;
+    border-radius: 30px;
+  }
+  .article-card2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 64px 48px;
+    height: 202.56px;
+    width: 725px;
+    margin-top: 227.344px;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    backdrop-filter: blur(3.5px);
+  }
+  .article-card2 > h1 {
+    font-family: Lexendbold;
+    font-size: 28.8px;
+    color: #263d5a;
+    line-height: 1.5;
+    margin-bottom: 32px;
+  }
+  .article-card2 > p {
+    font-family: Lexen;
+    font-size: 16px;
+    color: #263d5a;
+    line-height: 1.5;
+    font-weight: bold;
+  }
+  .inputbackground {
+    height: 820px;
+    background-image: url(/Assets/Images/background1.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .overlay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 820px;
+    background-color: rgb(255, 255, 255, 0.6);
+  }
+  .inputcard {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 480px;
+    width: 1068px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(3.5px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 112px 48px;
+  }
+  .inputcard > h1 {
+    font-family: Lexend;
+    font-size: 28.8px;
+    color: #263d5a;
+    text-align: center;
+    margin-bottom: 48px;
+    font-weight: bold;
+  }
+  .inputcard-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 144px;
+    gap: 20px;
+  }
+  .input-field {
+    height: 48;
+    width: 476.41;
+    padding: 9.6px 19.2px;
+    border: 1px solid transparent;
+    outline: none;
+    font-family: Lexend;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  }
+  .input-field:hover {
+    border: none;
+  }
+  .input-field:focus {
+    border-color: #a148ff;
+  }
+  .textarea {
+    height: 250px;
+    width: 972.41px;
+    padding: 9.6px 19.2px;
+    border: 1px solid transparent;
+    outline: none;
+    font-family: Lexend;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  }
+  .textarea:hover {
+    border: none;
+  }
+  .textarea:focus {
+    border-color: #a148ff;
+  }
+  .inputcard-container > button {
+    height: 56px;
+    width: 972px;
+    background: linear-gradient(90deg, #a148ff, #ff6f45);
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    font-family: Lexend;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  .inputcard-container > button:hover {
+    transform: translateY(-4px);
+  }
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 175.19px;
+    background-color: #131729;
+    padding: 96px 0 80px;
+    gap: 127px;
+  }
+  .footer-aboutus {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 339px;
+    margin-right: 262px;
+  }
+  .footer-aboutus > h1 {
+    font-family: Lexendbold;
+    font-size: 20.8px;
+    color: white;
+    margin-bottom: 8px;
+  }
+  .footer-aboutus > p {
+    font-family: Lexend;
+    font-size: 16px;
+    color: white;
+    line-height: 1.5;
+  }
+  .company {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .company > h1 {
+    font-family: Lexendbold;
+    font-size: 20.8px;
+    color: white;
+    margin-bottom: 8px;
+  }
+  .company > h2 {
+    font-family: Lexend;
+    font-size: 16px;
+    color: white;
+    line-height: 1.5;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+  }
+  .company > h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.2s ease;
+  }
+  .company > h2:hover:after {
+    width: 45%;
+  }
+}
