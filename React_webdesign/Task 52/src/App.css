@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  height: 50px;
+  justify-content: space-evenly;
+  align-content: center;
+  margin-top: 10px;
+}
+.heading {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: large;
+  margin-top: 12px;
+}
+.section {
+  display: flex;
+  height: 352px;
+  background-image: url(Assets/Images/japan-background-digital-art.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.section img {
+  width: 1200px;
+  height: 300px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 510px;
+  height: 338px;
+  margin-left: 326px;
+}
+.content {
+  display: flex;
+  font-weight: bold;
+  height: 90px;
+  margin-top: 40px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.content2 {
+  display: flex;
+  flex-direction: row;
+  background-color: blue;
+  color: white;
+}
+.button {
+  display: flex;
+  margin-top: 76px;
+  height: 50px;
+}
+.button-style {
+  background-color: aqua;
+  border: none;
+  text-align: center;
+  color: white;
+  border-radius: 30px;
+  width: 130px;
+  height: 50px;
+  cursor: pointer;
+}
+.container-form {
+  display: flex;
+  width: 400px;
+  height: 467px;
+  background-color: lightgray;
+  padding: 20px;
+}
+.container-form1 {
+  display: flex;
+  flex-direction: column;
+  width: 225px;
+  height: 250px;
+  background-color: white;
+  padding: 10px;
+  margin-top: 36px;
+  margin-left: 165px;
+}
+.container-form2 {
+  display: flex;
+  flex-direction: column;
+  width: 225px;
+  height: 250px;
+  background-color: gold;
+}
+.container-form3 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+}
+.form-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  height: 80px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+.input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 310px;
+}
+.input-style {
+  display: flex;
+  flex-wrap: wrap;
+  height: 20px;
+  width: 188px;
+}
+.form-button {
+  position: absolute;
+  margin-top: 242px;
+  margin-left: 65px;
+  height: 30px;
+  width: 100px;
+  background-color: gray;
+  color: white;
+  border: none;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 10px;
+}
+.content-block {
+  height: 100px;
+  width: 519px;
+  margin-left: 366px;
+  margin-top: 50px;
+}
+.content-block-image {
+  width: 150px;
+  height: 150px;
+  margin-left: 178px;
+  margin-top: 56px;
+}
+.content-block-container {
+  display: flex;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 51px;
+  width: 100px;
+  margin-left: 367px;
+}
+.grid-image {
+  height: 100px;
+  width: 160px;
+}
+.button2 {
+  margin-left: 700px;
+  margin-top: 18px;
+}
+.tour-content {
+  width: 225px;
+  text-align: center;
+  margin-left: 657px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-bottom: 35px;
+}

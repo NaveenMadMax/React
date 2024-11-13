@@ -1,0 +1,1240 @@
+@font-face {
+  font-family: lexend;
+  src: url(./Assets/Fonts/Lexend/static/Lexend-Light.ttf);
+}
+@font-face {
+  font-family: lexendbold;
+  src: url(./Assets/Fonts/Lexend/static/Lexend-Bold.ttf);
+}
+.header {
+  display: flex;
+  height: 719px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: url(./Assets/Images/background5.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.nav {
+  display: flex;
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  background-color: transparent;
+  z-index: 10;
+}
+.nav-brand {
+  display: flex;
+  font-family: lexendbold;
+  color: #263d5a;
+  font-size: 28.8px;
+  cursor: pointer;
+}
+.nav-brand:hover {
+  color: black;
+  transition: 0.2s ease;
+}
+.nav-items {
+  display: flex;
+  font-family: lexendbold;
+  width: 1127px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  height: 41px;
+}
+.nav-items > button {
+  background-color: transparent;
+  border: none;
+  color: #263d5a;
+  font-size: 20.8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.nav-items > button:hover {
+  color: black;
+  transition: 0.2s ease;
+}
+.message {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #a148ff, #ff6f45 100%);
+  border: none;
+  transition: all 0.4s ease;
+  border-radius: 35px;
+  width: 150px;
+  font-family: lexend;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+.message:hover {
+  transform: translateY(-5px);
+}
+.photographer-container {
+  display: flex;
+  flex-direction: column;
+  height: 223.19px;
+  width: 715px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 96px 48px;
+  border-radius: 48px;
+  position: relative;
+  top: 150px;
+  left: 217px;
+  z-index: 2;
+  backdrop-filter: blur(3px);
+}
+.photographer-container > h1 {
+  font-family: "lexendbold";
+  color: #263d5a;
+  font-size: 70.4px;
+  margin-bottom: 10px;
+}
+.photographer-container > p {
+  font-family: lexend;
+  color: #263d5a;
+  font-size: 20.8px;
+  line-height: 1.5;
+}
+.photographer-container > button {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #a148ff, #ff6f45 100%);
+  border: none;
+  transition: all 0.4s ease;
+  border-radius: 35px;
+  width: 160px;
+  font-family: lexend;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  height: 80px;
+  position: relative;
+  top: 35px;
+}
+.photographer-container > button:hover {
+  transform: translateY(-5px);
+}
+.photographer-container2 {
+  display: flex;
+  flex-direction: column;
+  height: 388px;
+  width: 707px;
+  background-image: url(./Assets/Images/girlwithcamera.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 40px;
+  position: relative;
+  top: 166px;
+  z-index: 1;
+}
+.our-service {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-image: url(./Assets/Images/background3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 675px;
+  background-position: 50% 50%;
+  align-content: center;
+}
+.our-service > h1 {
+  text-align: center;
+  font-family: lexendbold;
+  font-size: 44.8px;
+  position: relative;
+  top: 140px;
+  color: #263d5a;
+}
+.servicecontainer {
+  display: flex;
+  justify-content: center;
+  height: 332px;
+  width: 1235px;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(3px);
+  position: relative;
+  top: 187px;
+  border-radius: 30px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  gap: 75px;
+}
+.servicecontainer-content1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 310px;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.servicecontainer-content1 > button {
+  background-color: rgba(255, 255, 255, 0.67);
+  height: 114px;
+  width: 112px;
+  text-align: center;
+  font-size: 64px;
+  border-radius: 109px;
+  border: none;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  left: 98px;
+  color: #a148ff;
+}
+.servicecontainer-content1 > h1 {
+  font-family: "lexendbold";
+  font-weight: bold;
+  font-size: 20.8px;
+  color: #263d5a;
+  line-height: 1.5;
+  padding-top: 20px;
+}
+.servicecontainer-content1 > p {
+  font-family: Lexend;
+  font-size: 16px;
+  color: #263d5a;
+  line-height: 1.5;
+  padding-top: 10px;
+}
+.servicecontainer-content2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 310px;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.servicecontainer-content2 > button {
+  background-color: rgba(255, 255, 255, 0.67);
+  height: 114px;
+  width: 112px;
+  text-align: center;
+  font-size: 64px;
+  border-radius: 109px;
+  border: none;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  left: 98px;
+  color: #a148ff;
+}
+.servicecontainer-content2 > h1 {
+  font-family: "lexendbold";
+  font-weight: bold;
+  font-size: 20.8px;
+  color: #263d5a;
+  line-height: 1.5;
+  padding-top: 20px;
+}
+.servicecontainer-content2 > p {
+  font-family: Lexend;
+  font-size: 16px;
+  color: #263d5a;
+  line-height: 1.5;
+  padding-top: 10px;
+}
+.servicecontainer-content3 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 310px;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.servicecontainer-content3 > button {
+  background-color: rgba(255, 255, 255, 0.67);
+  height: 114px;
+  width: 112px;
+  text-align: center;
+  font-size: 64px;
+  border-radius: 109px;
+  border: none;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  left: 98px;
+  color: #a148ff;
+}
+.servicecontainer-content3 > h1 {
+  font-family: "lexendbold";
+  font-weight: bold;
+  font-size: 20.8px;
+  color: #263d5a;
+  line-height: 1.5;
+  padding-top: 20px;
+}
+.servicecontainer-content3 > p {
+  font-family: Lexend;
+  font-size: 16px;
+  color: #263d5a;
+  line-height: 1.5;
+  padding-top: 10px;
+}
+.aboutus {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  height: 814px;
+  background-image: url(./Assets/Images/background8.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.aboutus > img {
+  height: 645.45px;
+  width: 518px;
+  border-radius: 30px;
+}
+.aboutus-card {
+  display: flex;
+  flex-wrap: wrap;
+  left: 30px;
+  top: 90px;
+  position: relative;
+  width: 738px;
+  height: 437.44px;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0.6) 100%
+  );
+  backdrop-filter: blur(3.5px);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+}
+.aboutus-card > h1 {
+  display: flex;
+  flex-wrap: wrap;
+  height: 88px;
+  width: 680.77px;
+  font-family: Lexendbold;
+  color: #263d5a;
+  font-size: 70.4px;
+  position: relative;
+  top: 100px;
+  left: 36px;
+}
+.aboutus-card > h2 {
+  display: flex;
+  height: 120px;
+  width: 305px;
+  font-family: Lexend;
+  font-size: 16px;
+  color: #263d5a;
+  position: relative;
+  left: 35px;
+  line-height: 1.5;
+}
+.aboutus-card > p {
+  display: flex;
+  height: 120px;
+  width: 305px;
+  font-family: Lexend;
+  font-size: 16px;
+  color: #263d5a;
+  position: relative;
+  left: 50px;
+  line-height: 1.5;
+}
+.pricingcontainer1 {
+  height: 825px;
+  background-image: url(./Assets/Images/background4.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pricingcontainer2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  align-content: center;
+  height: 825px;
+  background-color: rgba(255, 255, 255, 0.245);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pricingcontainer2 > p {
+  position: relative;
+  top: 170px;
+  font-family: Lexend;
+  font-size: 20.8px;
+  color: #263d5a;
+  font-weight: 400;
+}
+.pricingcontainer2 > h1 {
+  font-family: Lexendbold;
+  font-size: 28.8px;
+  color: #263d5a;
+  position: relative;
+  top: 180px;
+}
+.pricingcard {
+  display: flex;
+  height: 450px;
+  margin-top: 227px;
+  gap: 40px;
+}
+.card1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 333px;
+  width: 308px;
+  background-color: rgba(255, 255, 255, 0.603);
+  backdrop-filter: blur(3.5px);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  padding: 64px 48px;
+}
+.card1 > h1 {
+  font-family: Lexendbold;
+  font-size: 70.4px;
+  color: #263d5a;
+  text-align: start;
+}
+.card1 > h2 {
+  font-family: Lexendbold;
+  font-size: 28.8px;
+  color: #263d5a;
+  text-align: start;
+  margin-top: 40px;
+}
+.card1 > p {
+  font-family: Lexend;
+  font-size: 16px;
+  color: #263d5a;
+  text-align: start;
+  line-height: 1.5;
+  margin-top: 30px;
+}
+.card1 > button {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #a148ff, #ff6f45 100%);
+  border: none;
+  transition: all 0.4s ease;
+  border-radius: 35px;
+  width: 150px;
+  height: 55px;
+  font-family: lexend;
+  color: white;
+  cursor: pointer;
+  margin-top: 25px;
+  font-weight: bold;
+}
+.card1 > button:hover {
+  transform: translateY(-6px);
+}
+.our-works {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./Assets/Images/background5.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 680px;
+}
+.our-works > p {
+  font-family: Lexend;
+  font-size: 20.8px;
+  color: #263d5a;
+  position: relative;
+  left: 103px;
+  top: 83px;
+  font-weight: bold;
+}
+.our-works > h1 {
+  font-family: Lexendbold;
+  font-size: 28.8px;
+  color: black;
+  position: relative;
+  left: 103px;
+  top: 100px;
+}
+.imagecard {
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+  justify-content: flex-start;
+  gap: 40px;
+  position: relative;
+  top: 130px;
+  left: 111px;
+}
+.imagecard1 {
+  width: 410px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.imagecard1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./Assets/Images/tv.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.4s ease;
+  z-index: 1;
+}
+.imagecard1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.4s ease;
+  z-index: 2;
+}
+.imagecard1:hover::before {
+  transform: scale(1.2);
+}
+.imagecard1:hover::after {
+  background-color: rgb(0, 0, 0, 0.5);
+}
+.imagecard1 > h1 {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+  color: white;
+  font-family: Lexendbold;
+  font-size: 20.8px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 3;
+}
+.imagecard1 > p {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-family: Lexend;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 3;
+}
+.imagecard1:hover > h1 {
+  opacity: 1;
+}
+.imagecard1:hover > p {
+  opacity: 1;
+}
+.imagecard1:hover {
+  cursor: pointer;
+}
+.imagecard2 {
+  width: 410px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.imagecard2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./Assets/Images/Girl.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.4s ease;
+  z-index: 1;
+}
+.imagecard2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.4s ease;
+  z-index: 2;
+}
+.imagecard2:hover::before {
+  transform: scale(1.2);
+}
+.imagecard2:hover::after {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.imagecard2 > h1 {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+  color: white;
+  font-family: Lexendbold;
+  font-size: 20.8px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 3;
+}
+.imagecard2 > p {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-family: Lexend;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 3;
+}
+.imagecard2:hover > h1 {
+  opacity: 1;
+}
+.imagecard2:hover > p {
+  opacity: 1;
+}
+.imagecard2:hover {
+  cursor: pointer;
+}
+.imagecard3 {
+  width: 410px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.imagecard3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./Assets/Images/light.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.4s ease;
+  z-index: 1;
+}
+.imagecard3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.4s ease;
+  z-index: 2;
+}
+.imagecard3:hover::before {
+  transform: scale(1.2);
+}
+.imagecard3:hover::after {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.imagecard3 > h1 {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+  color: white;
+  font-family: Lexendbold;
+  font-size: 20.8px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 3;
+}
+.imagecard3 > p {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-family: Lexend;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 3;
+}
+.imagecard3:hover > h1 {
+  opacity: 1;
+}
+.imagecard3:hover > p {
+  opacity: 1;
+}
+.imagecard3:hover {
+  cursor: pointer;
+}
+.progress {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: 755px;
+  background-image: url(./Assets/Images/background1.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  position: relative;
+}
+.progress-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(3.5px);
+  width: 865px;
+  height: 386.27px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  padding: 80px;
+}
+.progress-container > h1 {
+  font-family: Lexend;
+  color: #263d5a;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+}
+.progress-container > h2 {
+  font-family: Lexendbold;
+  color: #263d5a;
+  font-size: 44.8px;
+  line-height: 1.5;
+  text-align: left;
+  line-height: 1.1;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+}
+.progress-container > p {
+  font-family: Lexend;
+  color: #263d5a;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 16px;
+  padding-bottom: 24px;
+}
+.progress1 {
+  display: flex;
+  flex-direction: column;
+  height: 40px;
+}
+.progress1-heading {
+  display: flex;
+  justify-content: space-between;
+}
+.progress1-heading > h1 {
+  font-family: Lexend;
+  font-size: 16px;
+  color: #232323;
+  margin-bottom: 16px;
+}
+.progress1-heading > p {
+  font-family: Lexend;
+  font-size: 16px;
+  color: #232323;
+  margin-bottom: 16px;
+}
+.progressbar-container {
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+  width: 100%;
+  height: 8px;
+  position: relative;
+  z-index: 1;
+}
+.progressbar {
+  background-color: #a148ff;
+  width: 92%;
+  border-radius: 15px;
+}
+.progress2 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+  height: 40px;
+}
+.progressbar2-container {
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+  width: 100%;
+  height: 8px;
+}
+.progressbar2 {
+  background-color: #a148ff;
+  width: 71%;
+  border-radius: 15px;
+}
+.progressbar3-container {
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+  width: 100%;
+  height: 8px;
+}
+.progressbar3 {
+  background-color: #a148ff;
+  width: 53%;
+  border-radius: 15px;
+}
+.faq {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  height: 700px;
+  background-image: url(./Assets/Images/background5.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.faq-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  width: 1288px;
+  height: 385px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  padding: 64px 48px;
+}
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  height: 376px;
+  width: 596px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.faq-image {
+  display: flex;
+  height: 376px;
+  width: 564px;
+  background-image: url(./Assets/Images/Beach.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+}
+.faq-list > h1 {
+  font-family: Lexendbold;
+  font-size: 44.8px;
+  color: #263d5a;
+  text-align: left;
+  line-height: 1.1;
+}
+.faq-list > h2 {
+  font-family: Lexendbold;
+  font-size: 44.8px;
+  color: #263d5a;
+  text-align: left;
+  line-height: 1.1;
+  margin-bottom: 4px;
+  padding-bottom: 16px;
+}
+.list {
+  display: flex;
+  justify-content: space-between;
+  height: 68.19px;
+  width: 564px;
+  cursor: pointer;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: #ffff0026;
+}
+.list > h1 {
+  font-family: Lexend;
+  font-size: 20.8px;
+  color: #263d5a;
+  padding: 24px 16px 13px 0px;
+}
+.list > p {
+  font-family: Lexend;
+  font-size: 27.8px;
+  color: #6d6d6d;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.client {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  background-image: url(./Assets/Images/background2.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 765px;
+}
+.client-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  height: 591.5px;
+  width: 1320px;
+  margin: 0px 16px;
+  padding: 0px 16px;
+}
+.client-container > h1 {
+  font-family: Lexend;
+  font-size: 20.8px;
+  color: white;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.client-container > h2 {
+  font-family: Lexendbold;
+  font-size: 28.8px;
+  color: white;
+  margin-bottom: 8px;
+  font-weight: bold;
+  padding-bottom: 24px;
+}
+.client-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1320px;
+  gap: 40px;
+}
+.clientcard {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  height: 130.56px;
+  width: 312px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  backdrop-filter: blur(3.5px);
+  padding: 48px;
+}
+.clientcard > img {
+  height: 98.56px;
+  width: 150px;
+  margin: 0px 81px;
+}
+.sayhello {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  background-image: url(./Assets/Images/background7.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 555px;
+}
+.sayhello-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: 204.63px;
+  width: 929px;
+  padding: 64px 64px;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(3.5px);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+}
+.sayhello-card > p {
+  font-family: Lexend;
+  font-size: 16px;
+  color: #263d5a;
+  margin-bottom: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+.sayhello-card > h1 {
+  font-family: Lexendbold;
+  font-size: 70.4px;
+  color: #263d5a;
+  margin-bottom: 32px;
+  line-height: 1.1;
+}
+.sayhello-card > h2 {
+  font-family: Lexend;
+  font-size: 20.8px;
+  color: #263d5a;
+  margin-bottom: 32px;
+  line-height: 1.1;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  width: 190px;
+  left: 75px;
+}
+.sayhello-card > h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: black;
+  transition: 0.2s ease;
+}
+.sayhello-card > h2:hover:after {
+  width: 100%;
+}
+.map {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  height: 695px;
+  background-image: url(./Assets/Images/background3.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.map-container {
+  width: 1320px;
+  height: 480px;
+  border-radius: 30px;
+  opacity: 0.8;
+}
+.map-container > iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+.article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  height: 695px;
+  background-image: url(./Assets/Images/background5.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  gap: 40px;
+}
+.article-card1 {
+  background-image: url(./Assets/Images/girlwithcoffee.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 556.91px;
+  width: 440px;
+  border-radius: 30px;
+}
+.article-card2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 64px 48px;
+  height: 202.56px;
+  width: 725px;
+  margin-top: 227.344px;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  backdrop-filter: blur(3.5px);
+}
+.article-card2 > h1 {
+  font-family: Lexendbold;
+  font-size: 28.8px;
+  color: #263d5a;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+.article-card2 > p {
+  font-family: Lexen;
+  font-size: 16px;
+  color: #263d5a;
+  line-height: 1.5;
+  font-weight: bold;
+}
+.inputbackground {
+  height: 820px;
+  background-image: url(./Assets/Images/background1.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.overlay {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  height: 820px;
+  background-color: rgb(255, 255, 255, 0.6);
+}
+.inputcard {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 480px;
+  width: 1068px;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(3.5px);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  padding: 112px 48px;
+}
+.inputcard > h1 {
+  font-family: Lexend;
+  font-size: 28.8px;
+  color: #263d5a;
+  text-align: center;
+  margin-bottom: 48px;
+  font-weight: bold;
+}
+.inputcard-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 144px;
+  gap: 20px;
+}
+.input-field {
+  height: 30px;
+  width: 455.41px;
+  padding: 9.6px 19.2px;
+  border: 1px solid transparent;
+  outline: none;
+  font-family: Lexend;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+.input-field:hover {
+  border: none;
+}
+.input-field:focus {
+  border-color: #a148ff;
+}
+.textarea {
+  height: 250px;
+  width: 972.41px;
+  padding: 9.6px 19.2px;
+  border: 1px solid transparent;
+  outline: none;
+  font-family: Lexend;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+.textarea:hover {
+  border: none;
+}
+.textarea:focus {
+  border-color: #a148ff;
+}
+.inputcard-container > button {
+  height: 56px;
+  width: 972px;
+  background: linear-gradient(90deg, #a148ff, #ff6f45);
+  border: none;
+  border-radius: 30px;
+  text-align: center;
+  font-family: Lexend;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.inputcard-container > button:hover {
+  transform: translateY(-4px);
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 175.19px;
+  background-color: #131729;
+  padding: 96px 0 80px;
+  gap: 127px;
+}
+.footer-aboutus {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 478px;
+}
+.footer-aboutus > h1 {
+  font-family: Lexendbold;
+  font-size: 20.8px;
+  color: white;
+  margin-bottom: 8px;
+}
+.footer-aboutus > p {
+  font-family: Lexend;
+  font-size: 16px;
+  color: white;
+  line-height: 1.5;
+}
+.company {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.company > h1 {
+  font-family: Lexendbold;
+  font-size: 20.8px;
+  color: white;
+  margin-bottom: 8px;
+}
+.company > h2 {
+  font-family: Lexend;
+  font-size: 16px;
+  color: white;
+  line-height: 1.5;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+.company > h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  transition: 0.2s ease;
+}
+.company > h2:hover:after {
+  width: 45%;
+}

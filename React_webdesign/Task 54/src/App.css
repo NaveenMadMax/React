@@ -1,0 +1,651 @@
+@font-face {
+  font-family: Mont;
+  src: url(./assets/Fonts/Montserrat/static/Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: Montbold;
+  src: url(./assets/Fonts/Montserrat/static/Montserrat-SemiBold.ttf);
+
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 735px;
+  background-image: url(./assets/Images/headerimage.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 115%;;
+}
+.header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  height: 100px;
+  align-content: center;
+  gap: 35px;
+  padding-right: 40px;
+}
+
+.button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: mont;
+}
+.dropdown {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex; 
+  align-items: center;
+  font-family: Mont; 
+}
+
+.dropdown span {
+  color: #000000;
+}
+
+.dropdown .arrow {
+  color: #000000;
+  font-size: 23px;
+  margin-left: 5px;
+}
+
+.buy-button{
+  background-color: rgb(87, 207, 207);
+  border: none;
+  border-radius: 5px;
+  height: 35px;
+  width: 102px;
+  color: white;
+  font-family: Mont;
+  cursor: pointer;
+}
+.buy-button:hover{
+  background-color: darkcyan;
+  transition: 0.20s;
+}
+.traveltext{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  height: 160px;
+  text-align: center;
+  font-family: Mont;
+  margin-top: 214px;
+}
+.travelbold{
+  font-weight: bold;
+  color: rgb(68, 66, 66);
+  font-family: Montbold;
+  font-size: 43px;
+}
+.travellight{
+  color: white;
+  font-size: 24px;
+}
+.button1{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  height: 100px;
+}
+.button1-style{
+  background-color:white;
+  border: none;
+  font-family: Mont;
+  height: 40px;
+  width: 140px;
+  border-radius: 5px;
+  font-size: 15px;
+  color: gray;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+.button1-style:hover {
+  background-color: lightgray;
+  color: gray;  
+}
+.button2-style{
+  background-color: transparent;
+  border-style: solid;
+  border-color: white;
+  color: white;
+  font-family: Mont;
+  height: 40px;
+  width: 160px;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+.button2-style:hover{
+  background-color: white;
+  color: black;
+}
+.Journal{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100px;
+  justify-content: center;
+  width: 590px;
+  font-family: Mont;
+  color: gray;
+  margin-left: 288px;
+  line-height: 1.6;
+  margin-top: 50px;
+  font-size: 14px;
+}
+.journal-heading{
+  font-family: Mont;
+  font-size: 23px;
+  color: #5d5959;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.journal-grid{
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px;
+  border-style: solid;
+  border-color: rgb(236 233 233);
+  height: 433px;
+  width: 975px;
+  border-radius: 1px;
+  margin-left: 288px;
+  font-family: Mont;
+  font-size: 14px;
+  color: gray;
+}
+.journal-gridtext{
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 325px;
+}
+.journal-gridtext > p{
+  padding-top: 49px;
+  line-height: 1.6;
+  padding-left: 30px;
+  padding-bottom: 13px;
+  padding-right: 25px;
+}
+.read-more {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.4s;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  padding-bottom: 58px;
+  padding-top: 10px;
+  font-family: 'Mont';
+}
+
+.read-more span {
+  color: cyan;
+  transition: color 0.4s;
+}
+
+.read-more .arrow {
+  color: cyan; 
+  font-size: 20px; 
+  margin-left: 5px; 
+  transition: color 0.4s, margin 0.4s;
+}
+
+.read-more:hover span, .read-more:hover .arrow {
+  color: darkcyan; 
+}
+
+.read-more:hover .arrow {
+  margin-left: 10px; 
+}
+
+.aftergrid-content{
+  display: flex;
+  flex-wrap: wrap;
+  height: 200px;
+  width: 741px;
+  font-family: Mont;
+  line-height: 1.6;
+  font-size: 16px;
+  margin-left: 462px;
+  text-align: justify;
+  margin-top: 80px;
+  color: #8d97ad;
+}
+.inputcontainer{
+  display: flex;
+  flex-direction: column;
+  height: 309px;
+  background-image:url(./Assets/Images/backgroundimage.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 137%;
+}
+.inputcontainer > p{
+  display: flex;
+  font-family: Mont;
+  color: white;
+  font-size: 45px;
+  padding-top: 70px;
+  justify-content: center;
+  height: 85px;
+}
+.input{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 50px;
+}
+.input>input{
+  width: 511px;
+  padding-left: 25px;
+  border: none;
+  font-family: 'Mont';
+  font-size: 15px;
+  font-weight: bold;
+}
+.input>button{
+  width: 126px;
+  background-color: rgb(87, 207, 207);
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-family: 'Mont';
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.input>button:hover{
+  background-color: darkcyan;
+  transition: 1s;
+}
+.countries{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 300px;
+  align-content: center;
+  gap: 35px;
+}
+.southern-countries{
+  flex-direction: column;
+  height: 137px;
+  width: 277px;
+  font-family: Mont;
+  color: white;
+  background: linear-gradient(45deg, #2bdc9d, #1dc9cb);
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px;
+  padding: 36px
+}
+.southern-countries>h1{
+  font-weight: bold;
+  font-size: 19.2px;
+}
+.southern-countries>button{
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.4s;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  font-family: 'Mont';
+}
+.southern-countries>button span{
+  color: white;
+  transition: color 0.4s;
+}
+.southern-countries>button .arrow {
+  color: white; 
+  font-size: 20px; 
+  margin-left: 5px; 
+  transition: color 0.4s, margin 0.4s;
+}
+.southern-countries>button:hover span, .southern-countries>button:hover .arrow {
+  color: gray; 
+}
+.southern-countries>button:hover .arrow {
+  margin-left: 10px; 
+}
+.Nordic-countries{
+  flex-direction: column;
+  height: 137px;
+  width: 277px;
+  font-family: Mont;
+  color: white;
+  background: linear-gradient(45deg, #188ef4, #306de8);
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px;
+  padding: 36px
+}
+.Nordic-countries>h1{
+  font-weight: bold;
+  font-size: 19.2px;
+}
+.Nordic-countries>button{
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.4s;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  font-family: 'Mont';
+}
+.Nordic-countries>button span{
+  color: white;
+  transition: color 0.4s;
+}
+.Nordic-countries>button .arrow {
+  color: white; 
+  font-size: 20px; 
+  margin-left: 5px; 
+  transition: color 0.4s, margin 0.4s;
+}
+.Nordic-countries>button:hover span, .southern-countries>button:hover .arrow {
+  color: gray; 
+}
+.Nordic-countries>button:hover .arrow {
+  margin-left: 10px; 
+}
+.African-countries{
+  flex-direction: column;
+  height: 137px;
+  width: 277px;
+  font-family: Mont;
+  color: white;
+  background: linear-gradient(45deg, #ff4f7b, #ff695c);
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px;
+  padding: 36px
+}
+.African-countries>h1{
+  font-weight: bold;
+  font-size: 19.2px;
+}
+.African-countries>button{
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.4s;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  font-family: 'Mont';
+}
+.African-countries>button span{
+  color: white;
+  transition: color 0.4s;
+}
+.African-countries>button .arrow {
+  color: white; 
+  font-size: 20px; 
+  margin-left: 5px; 
+  transition: color 0.4s, margin 0.4s;
+}
+.African-countries>button:hover span, .southern-countries>button:hover .arrow {
+  color: gray; 
+}
+.African-countries>button:hover .arrow {
+  margin-left: 10px; 
+}
+.national-geographic{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 270px;
+  width: 718px;
+  margin-left: 399px;
+  font-family: 'Mont';
+  font-size: 20px;
+  color: #cccbcb;
+  line-height: 1.6;
+}
+.national-geographic>h1{
+  font-size: 17px;
+  color: black;
+  padding-top: 22px;
+  font-weight: 500;
+}
+.travel{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 425px;
+  gap: 32px;
+}
+.travel-card1{
+  display: flex;
+  flex-direction: column;
+  width: 344px;
+  font-family: Mont;
+}
+.travel-card1>h1{
+  color: #484848;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.2;
+}
+.travel-card1>p{
+  line-height: 1.6;
+  color: #8d97ad;
+  font-size: 1rem;
+  padding-top: 30px;
+}
+.travel-card1>button{
+  background-color: #1dc9cb;
+  border: none;
+  font-family: Mont;
+  font-size: 16px;
+  width: 289px;
+  height: 51px;
+  color: white;
+  border-radius: 5px;
+  margin-top: 22px;
+  cursor: pointer;
+}
+.travel-card1>button:hover{
+  background-color: darkcyan;
+  transition: 0.50s;
+}
+.travel-card2{
+  display: flex;
+  flex-direction: column;
+  width: 344px;
+  font-family: Mont;
+}
+.travel-card2>h1{
+  font-family: Mont;
+  font-size: 20px;
+  color: #000000;
+  margin-top: 32px;
+  
+}
+.travel-card2>p{
+  font-size: 16px;
+  color: #8d97ad;
+  line-height: 1.6;
+  margin-top: 12px;
+}
+.travel-card2>button{
+  padding: 0;
+  margin-top: 16px;
+}
+.travel-card3{
+  display: flex;
+  flex-direction: column;
+  width: 344px;
+  font-family: Mont;
+}
+.travel-card3>h1{
+  font-family: Mont;
+  font-size: 20px;
+  color: #000000;
+  margin-top: 32px;
+  
+}
+.travel-card3>p{
+  font-size: 16px;
+  color: #8d97ad;
+  line-height: 1.6;
+  margin-top: 12px;
+}
+.travel-card3>button{
+  padding: 0;
+  margin-top: 16px;
+}
+.read-ourblog{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 145px;
+  text-align:  center;
+}
+.read-ourblog>h1{
+  font-family: Mont;
+  font-weight: bold;
+  font-size: 28.8px;
+  color: #232323;
+}
+.read-ourblog>p{
+  font-family: Mont;
+  color: #8d97ad;
+  line-height: 1.6;
+  margin-top: 24px;
+  font-size: 16px;
+}
+.card{
+  display: flex;
+  flex-wrap: wrap;
+  height: 595px;
+  justify-content: center;
+  gap: 30px;
+}
+.grid-card1{
+  display: flex;
+  flex-direction: column;
+  width: 344px;
+  height: 493px;
+  font-family: Mont;
+  box-shadow: 0 0px 26px 0px rgba(0, 0, 0, 0.1);
+}
+.grid-card1>h1{
+  font-family: Mont;
+  font-size: 20px;
+  color: #000000;
+  margin-top: 32px;
+  text-align: center;
+  
+}
+.grid-card1>p{
+  font-size: 16px;
+  color: #8d97ad;
+  line-height: 1.6;
+  margin-top: 12px;
+  text-align: center;
+}
+.grid-card1>button{
+  display: flex;
+  padding: 0;
+  margin-top: 16px;
+  justify-content: center;
+}
+.footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  background-color: #f4f8fa;
+  height: 200px;
+  gap: 105px;
+}
+.address{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 210px;
+}
+.address>h1{
+  font-family: Montbold;
+  font-size: 20px;
+}
+.address>p{
+  font-family: Mont;
+  font-size: 17px;
+  color: #8d97ad;
+  margin-top: 16px;
+  line-height: 1.6;
+}
+.phone{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 210px;
+}
+.phone>h1{
+  font-family: Mont;
+  font-weight: bold;
+  font-size: 20px;
+}
+.phone>p{
+  font-family: Mont;
+  
+  font-size: 17px;
+  color: #8d97ad;
+  margin-top: 16px;
+  line-height: 1.6;
+}
+.email{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 210px;
+}
+.email>h1{
+  font-family: Mont;
+  font-weight: bold;
+  font-size: 20px;
+}
+.email>p{
+  font-family: Mont;
+  font-size: 17px;
+  color: #8d97ad;
+  margin-top: 16px;
+  line-height: 1.6;
+}
+.social{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 210px;
+}
+.social>div{
+  font-family: Mont;
+  font-weight: bold;
+  font-size: 20px;
+}
+.icon{
+  background-color: #52e5e5;
+  border: none;
+  width: 50px;
+  height: 50px;
+  color: white;
+  text-align: center;
+  border-radius: 50px;
+  margin-top: 20px;
+  font-size: 17px;
+}
