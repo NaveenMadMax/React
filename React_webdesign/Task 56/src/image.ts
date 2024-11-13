@@ -1,0 +1,22 @@
+// images.ts
+export { default as headerimage } from './assets/Images/logo.png';
+export { default as heroimage } from './assets/Images/hero-img.png';
+export { default as aboutimage } from './assets/Images/about-img.png';
+export { default as P1 } from './assets/Images/p1.jpg';
+export { default as P2 } from './assets/Images/p2.jpg';
+export { default as P3 } from './assets/Images/p3.jpg';
+export { default as P4 } from './assets/Images/p4.jpg';
+export { default as P5 } from './assets/Images/p5.jpg';
+export { default as P6 } from './assets/Images/p6.jpg';
+export { default as previewpng } from './assets/Images/preview.png';
+export { default as profilepic1 } from './assets/Images/1.jpg';
+export { default as profilepic2 } from './assets/Images/2.jpg';
+export { default as profilepic3 } from './assets/Images/3.jpg';
+export { default as smallprofileimage1 } from './assets/Images/gv.jpg';
+export { default as smallprofileimage2 } from './assets/Images/user.png';
+export { default as smallprofileimage3 } from './assets/Images/am.jpg';
+export { default as logo1 } from './assets/Images/3.png';
+export { default as logo2 } from './assets/Images/4.png';
+export { default as logo3 } from './assets/Images/5.png';
+export { default as logo4 } from './assets/Images/1.png';
+export { default as logo5 } from './assets/Images/2.png';
