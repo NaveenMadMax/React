@@ -1,0 +1,10 @@
+.displayName{
+  display: flex;
+  flex-direction: column;
+  margin-left: 450px;
+  align-items: center;
+}
+.showName>p{
+  display: flex;
+ justify-content: center;
+}
