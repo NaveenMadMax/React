@@ -1,7 +1,7 @@
 const findHCF = () => {
     // Get numbers from input
-    const num1 = parseInt(document.getElementById("num1").value);
-    const num2 = parseInt(document.getElementById("num2").value);
+    const num1 = (document.getElementById("num1").value);
+    const num2 = (document.getElementById("num2").value);
   
     // Validate input
     if (isNaN(num1) || isNaN(num2) || num1 <= 0 || num2 <= 0) {
