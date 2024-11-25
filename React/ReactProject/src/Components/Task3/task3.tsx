@@ -9,15 +9,24 @@ function InputList() {
     if (inputValue.trim() !== "") {
       setValues([...values, inputValue]); // Add the input value to the list
       setInputValue(""); // Clear the input box
-    }
-    else{
-        alert ('Type something');
+    } else {
+      alert("Type something");
     }
   };
   //this function is to reset the output
-  const handleReset=()=>{
+  const handleReset = () => {
     setValues([]);
-  }
+  };
+  //This function is to check the input is number or not
+  const handleInputChange = (event: { target: { value: any; }; }) => {
+    const value = event.target.value;
+  
+    if (isNaN(Number(value))) {
+      alert("User should enter only numbers");
+    } else {
+      setInputValue(value);
+    }
+  };
 
   return (
     <div>
@@ -27,7 +36,7 @@ function InputList() {
           type="text"
           placeholder="Type something"
           value={inputValue} // Current value of the input box
-          onChange={(e) => setInputValue(e.target.value)} // Update inputValue as the user types
+          onChange={handleInputChange} // Update inputValue as the user types
         />
         <button onClick={handleAddValue}>Add</button>
         <button onClick={handleReset}>Reset</button>
