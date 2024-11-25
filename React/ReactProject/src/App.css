@@ -1,10 +1,12 @@
-.displayName{
+.displayName {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  margin-left: 450px;
+  align-content: center;
   align-items: center;
+  width: 1535px;
 }
-.showName>p{
+.showName > p {
   display: flex;
- justify-content: center;
+  justify-content: center;
 }

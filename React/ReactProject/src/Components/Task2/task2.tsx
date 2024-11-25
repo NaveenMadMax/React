@@ -9,7 +9,8 @@ function InputAlert() {
   };
 
   return (
-    <div>
+    <div className="inputValueContainer">
+      <label htmlFor="input" className="inputLabel">Enter any value then select Show Alert button to see the valu in the alert message: </label>
       <input
         type="text"
         placeholder="Type something..."

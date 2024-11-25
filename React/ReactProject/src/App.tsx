@@ -4,7 +4,7 @@ import './App.css'
 const App= () => {
   return (
     <div className='displayName'>
-      <h1>Welcome to Reactproject</h1>
+      <h1>Welcome to ReactProject</h1>
       <Task2 />
     </div>
   );
