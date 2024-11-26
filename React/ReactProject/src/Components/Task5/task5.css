@@ -1,0 +1,25 @@
+.formContainer>form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.submitButton:hover{
+    background-color: aqua;
+    transition: 0.4s ease all;
+    color: black;
+}
+.firstNameInputBox{
+    display: flex;
+    gap: 10px;
+}
+
+.firstNameInputBox>input{
+ height: 30px;
+ margin-bottom: 20px;
+}
+.dobInputField>input{
+    height: 30px;
+    cursor: pointer;
+}
+

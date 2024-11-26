@@ -1,11 +1,11 @@
 
-import Task4 from './Components/Task4/task4';
+import Task5 from './Components/Task5/task5';
 import './App.css'
 const App= () => {
   return (
     <div className='displayName'>
       <h1>Welcome to ReactProject</h1>
-      <Task4 />
+      <Task5 />
     </div>
   );
 };
