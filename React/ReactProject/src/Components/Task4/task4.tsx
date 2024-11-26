@@ -1,22 +1,25 @@
 import { useState } from "react";
-import "./task3.css";
+import "./task4.css";
 function InputList() {
-  const [inputValue, setInputValue] = useState<number>(0); // Tracks the input box value
-  const [values, setValues] = useState<number[]>([]); // Stores all the added values
+  const [inputValue, setInputValue] = useState<string>(""); // Tracks the input box value
+  const [values, setValues] = useState<string[]>([]); // Stores all the added values
 
   //This function is to handle input value
   const handleAddValue = () => {
-    if (inputValue!==0){
+    if (inputValue!==""){
       setValues([...values, inputValue]); // Add the input value to the list
-      setInputValue(0);  // Clear the input box
+      setInputValue("");  // Clear the input box
     }else{
-        alert('Enter any Number')
+        alert('Enter any Value');
     }
   };
   //this function is to reset the output
   const handleReset = () => {
     setValues([]);
   };
+  const handleDelete = () =>{
+    setValues(values.slice(0,-1));
+  }
 
   return (
     <div>
@@ -26,10 +29,11 @@ function InputList() {
           type="text"
           placeholder="Type something"
           value={inputValue} // Current value of the input box
-          onChange={(event)=>setInputValue(Number(event.target.value))} // Update inputValue as the user types
+          onChange={(event)=>setInputValue(event.target.value)} // Update inputValue as the user types
         />
         <button onClick={handleAddValue}>Add</button>
         <button onClick={handleReset}>Reset</button>
+        <button onClick={handleDelete}>Delete</button>
       </div>
       <div className="outputContainer">
         {values.map((value) => (

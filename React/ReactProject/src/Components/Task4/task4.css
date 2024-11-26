@@ -1,0 +1,18 @@
+.inputValue{
+    height: 50px;
+}
+.inputContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 170px;
+    justify-content: center;
+    gap: 10px;
+}
+.outputContainer{
+   display: flex;
+   flex-direction: column;
+   height: 150px;
+   overflow: auto;
+   margin-top: 20px;
+   color:rgb(4, 59, 255);
+}
