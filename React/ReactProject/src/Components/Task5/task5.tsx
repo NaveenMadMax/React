@@ -1,19 +1,76 @@
 import { useState } from "react";
-import './task5.css'
+import "./task5.css";
+
 function UserForm() {
   // State variables for the form fields
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [dob, setDob] = useState("");
+  const [firstName, setFirstName] = useState<string>("");
+  const [lastName, setLastName] = useState<string>("");
+  const [dob, setDob] = useState<string>("");
   const [dateTime, setDateTime] = useState("");
-  const [mobileNumber, setMobileNumber] = useState("");
-  const [password, setPassword] = useState("");
-  const [email, setEmail] = useState("");
-  const [gender, setGender] = useState("");
-  const [isChecked, setIsChecked] = useState(false);
-  const [textarea, setTextarea] = useState("");
-  const [dropdown, setDropdown] = useState("");
+  const [mobileNumber, setMobileNumber] = useState<number>();
+  const [password, setPassword] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [gender, setGender] = useState<string>("");
+  const [isChecked, setIsChecked] = useState<boolean>(false);
+  const [textarea, setTextarea] = useState<string>("");
+  const [dropdown, setDropdown] = useState<string>("");
 
+  // Dropdown options
+  const countries = ["India", "USA", "UK", "Canada", "Australia"];
+
+  // Handlers for input changes
+  const handleFirstNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setFirstName(event.target.value);
+  };
+
+  const handleLastNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setLastName(event.target.value);
+  };
+
+  const handleDobChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setDob(event.target.value);
+  };
+
+  const handleDateTimeChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setDateTime(event.target.value);
+  };
+
+  const handleMobileNumberChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setMobileNumber(Number(event.target.value));
+  };
+
+  const handlePasswordChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setPassword(event.target.value);
+  };
+
+  const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(event.target.value);
+  };
+
+  const handleGenderChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setGender(event.target.value);
+  };
+
+  const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setIsChecked(event.target.checked);
+  };
+
+  const handleTextareaChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setTextarea(event.target.value);
+  };
+
+  const handleDropdownChange = (
+    event: React.ChangeEvent<HTMLSelectElement>
+  ) => {
+    setDropdown(event.target.value);
+  };
+  const renderDropDown = () => {
+    return countries.map((country, index) => (
+      <option key={index} value={country}>
+        {country}
+      </option>
+    ));
+  };
   // Function to handle form submission
   const handleSubmit = () => {
     // Show alert with the entered details
@@ -37,14 +94,13 @@ function UserForm() {
       <form>
         {/* First Name */}
         <div>
-          <label htmlFor="firstName">First Name: </label>
+          <label htmlFor="firstName">First Name:</label>
           <input
             type="text"
             id="firstName"
             value={firstName}
-            onChange={(event) => setFirstName(event.target.value)}
+            onChange={handleFirstNameChange}
             placeholder="Enter your first name"
-            style={{marginLeft:"10px"}}
           />
         </div>
 
@@ -55,22 +111,15 @@ function UserForm() {
             type="text"
             id="lastName"
             value={lastName}
-            onChange={(event) => setLastName(event.target.value)}
+            onChange={handleLastNameChange}
             placeholder="Enter your last name"
-            style={{marginLeft:"10px"}}
           />
         </div>
 
         {/* Date of Birth */}
         <div>
           <label htmlFor="dob">Date of Birth:</label>
-          <input
-            type="date"
-            id="dob"
-            value={dob}
-            onChange={(event) => setDob(event.target.value)}
-            style={{marginLeft:"10px"}}
-          />
+          <input type="date" id="dob" value={dob} onChange={handleDobChange} />
         </div>
 
         {/* Date & Time */}
@@ -80,8 +129,7 @@ function UserForm() {
             type="datetime-local"
             id="dateTime"
             value={dateTime}
-            onChange={(event) => setDateTime(event.target.value)}
-            style={{marginLeft:"10px"}}
+            onChange={handleDateTimeChange}
           />
         </div>
 
@@ -92,9 +140,8 @@ function UserForm() {
             type="tel"
             id="mobileNumber"
             value={mobileNumber}
-            onChange={(event) => setMobileNumber(event.target.value)}
+            onChange={handleMobileNumberChange}
             placeholder="Enter your mobile number"
-            style={{marginLeft:"10px"}}
           />
         </div>
 
@@ -105,9 +152,8 @@ function UserForm() {
             type="password"
             id="password"
             value={password}
-            onChange={(event) => setPassword(event.target.value)}
+            onChange={handlePasswordChange}
             placeholder="Enter your password"
-            style={{marginLeft:"10px"}}
           />
         </div>
 
@@ -118,9 +164,8 @@ function UserForm() {
             type="email"
             id="email"
             value={email}
-            onChange={(event) => setEmail(event.target.value)}
+            onChange={handleEmailChange}
             placeholder="Enter your email"
-            style={{marginLeft:"10px"}}
           />
         </div>
 
@@ -132,16 +177,14 @@ function UserForm() {
               type="radio"
               name="gender"
               value="Male"
-              onChange={(event) => setGender(event.target.value)}
-              style={{marginLeft:"10px"}}
+              onChange={handleGenderChange}
             />
             Male
             <input
               type="radio"
               name="gender"
               value="Female"
-              onChange={(event) => setGender(event.target.value)}
-              style={{marginLeft:"10px"}}
+              onChange={handleGenderChange}
             />
             Female
           </div>
@@ -153,8 +196,7 @@ function UserForm() {
             <input
               type="checkbox"
               checked={isChecked}
-              onChange={(event) => setIsChecked(event.target.checked)}
-              style={{marginLeft:"10px"}}
+              onChange={handleCheckboxChange}
             />
             I agree to the terms and conditions
           </label>
@@ -162,13 +204,12 @@ function UserForm() {
 
         {/* Text Area */}
         <div style={{display:"flex"}}>
-          <label htmlFor="textarea">Comments:</label>
+          <label htmlFor="textarea" >Comments:</label>
           <textarea
             id="textarea"
             value={textarea}
-            onChange={(event) => setTextarea(event.target.value)}
+            onChange={handleTextareaChange}
             placeholder="Enter your comments here"
-            style={{marginLeft:"10px",height:"50px"}}
           ></textarea>
         </div>
 
@@ -178,13 +219,10 @@ function UserForm() {
           <select
             id="dropdown"
             value={dropdown}
-            onChange={(event) => setDropdown(event.target.value)}
-            style={{marginLeft:"10px"}}
+            onChange={handleDropdownChange}
           >
             <option value="">--Select--</option>
-            <option value="India">India</option>
-            <option value="USA">USA</option>
-            <option value="UK">UK</option>
+            {renderDropDown()}
           </select>
         </div>
 
