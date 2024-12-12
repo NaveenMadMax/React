@@ -1,11 +1,11 @@
 
-import Task5 from './Components/Task5/task5';
+import Task6 from './Components/Task6/task6';
 import './App.css'
 const App= () => {
   return (
     <div className='displayName'>
-      <h1>Fill The Form to see Output in Alert Message</h1>
-      <Task5 />
+      <h1>Enter input to add , delete and reset</h1>
+      <Task6 />
     </div>
   );
 };

@@ -66,3 +66,9 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+.MuiStack-root {
+  margin-left: 0 !important;
+}
+.MuiButton-outlined {
+  margin-left: 0 !important;
+}
