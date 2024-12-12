@@ -29,7 +29,7 @@ function InputList() {
   };
 
   return (
-    <Box sx={{ padding: 2 }}>
+    <Box>
       <Stack
         spacing={2}
         className="inputContainer"
