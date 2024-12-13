@@ -1,11 +1,11 @@
 
-import Task6 from './Components/Task6/task6';
+import Task7 from './Components/Task7/task7';
 import './App.css'
 const App= () => {
   return (
     <div className='displayName'>
-      <h1>Enter input to add , delete and reset</h1>
-      <Task6 />
+      <h1>Fill this From</h1>
+      <Task7 />
     </div>
   );
 };
