@@ -1,79 +1,19 @@
 import { useState } from "react";
 import "./task5.css";
 
-function UserForm() {
+  const UserForm=()=> {
   // State variables for the form fields
   const [firstName, setFirstName] = useState<string>("");
   const [lastName, setLastName] = useState<string>("");
   const [dob, setDob] = useState<string>("");
-  const [dateTime, setDateTime] = useState("");
-  const [mobileNumber, setMobileNumber] = useState<string>("");
+  const [dateTime, setDateTime] = useState<string>("");
+  const [mobileNumber, setMobileNumber] = useState<number>();
   const [password, setPassword] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [gender, setGender] = useState<string>("");
   const [isChecked, setIsChecked] = useState<boolean>(false);
   const [textarea, setTextarea] = useState<string>("");
   const [dropdown, setDropdown] = useState<string>("");
-
-  // Dropdown options
-  const countries = ["India", "USA", "UK", "Canada", "Australia"];
-
-  // Error state
-  const [errors, setErrors] = useState<{
-    [key: string]: string;
-  }>({});
-
-  // Validation functions
-  const validate = () => {
-    const newErrors: { [key: string]: string } = {};
-
-    if (!/^[a-zA-Z\s]+$/.test(firstName)) {
-      newErrors.firstName = "*Enter a proper name*";
-    }
-
-    if (!/^[a-zA-Z\s]+$/.test(lastName)) {
-      newErrors.lastName = "*Enter a proper name*";
-    }
-
-    if (!dob) {
-      newErrors.dob = "*Date of Birth is required*";
-    }
-
-    if (!dateTime) {
-      newErrors.dateTime = "*Date & Time is required*";
-    }
-
-    if (!/^\d{10}$/.test(mobileNumber)) {
-      newErrors.mobileNumber = "*Enter a valid 10-digit mobile number*";
-    }
-
-    if (password.length < 6) {
-      newErrors.password = "*Password must be at least 6 characters long*";
-    }
-
-    if (!/\S+@\S+\.\S+/.test(email)) {
-      newErrors.email = "*Enter a valid email*";
-    }
-
-    if (!gender) {
-      newErrors.gender = "*Gender is required*";
-    }
-
-    if (!isChecked) {
-      newErrors.checkbox = "*You must agree to the terms and conditions*";
-    }
-
-    if (!textarea) {
-      newErrors.textarea = "*Comments are required*";
-    }
-
-    if (!dropdown) {
-      newErrors.dropdown = "*Please select a country*";
-    }
-
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0; // Return true if no errors
-  };
 
   // Handlers for input changes
   const handleFirstNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -93,7 +33,7 @@ function UserForm() {
   };
 
   const handleMobileNumberChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setMobileNumber(String(event.target.value));
+    setMobileNumber(Number(event.target.value));
   };
 
   const handlePasswordChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -121,17 +61,10 @@ function UserForm() {
   ) => {
     setDropdown(event.target.value);
   };
-  const renderDropDown = () => {
-    return countries.map((country, index) => (
-      <option key={index} value={country}>
-        {country}
-      </option>
-    ));
-  };
+  
   // Function to handle form submission
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
-    if (validate()) {
       alert(`
         First Name: ${firstName}
         Last Name: ${lastName}
@@ -145,7 +78,6 @@ function UserForm() {
         Text Area: ${textarea}
         Dropdown: ${dropdown}
       `);
-    }
   };
 
   return (
@@ -161,7 +93,6 @@ function UserForm() {
             onChange={handleFirstNameChange}
             placeholder="Enter your first name"
           />
-          {errors.firstName && <p className="error">{errors.firstName}</p>}
         </div>
 
         {/* Last Name */}
@@ -174,14 +105,12 @@ function UserForm() {
             onChange={handleLastNameChange}
             placeholder="Enter your last name"
           />
-          {errors.lastName && <p className="error">{errors.lastName}</p>}
         </div>
 
         {/* Date of Birth */}
         <div>
           <label htmlFor="dob">Date of Birth: </label>
           <input type="date" id="dob" value={dob} onChange={handleDobChange} />
-          {errors.dob && <p className="error">{errors.dob}</p>}
         </div>
 
         {/* Date & Time */}
@@ -193,20 +122,18 @@ function UserForm() {
             value={dateTime}
             onChange={handleDateTimeChange}
           />
-          {errors.dateTime && <p className="error">{errors.dateTime}</p>}
         </div>
 
         {/* Mobile Number */}
         <div>
           <label htmlFor="mobileNumber">Mobile Number: </label>
           <input
-            type="tel"
+            type="number"
             id="mobileNumber"
             value={mobileNumber}
             onChange={handleMobileNumberChange}
             placeholder="Enter your mobile number"
           />
-          {errors.mobileNumber && <p className="error">{errors.mobileNumber}</p>}
         </div>
 
         {/* Password */}
@@ -219,7 +146,6 @@ function UserForm() {
             onChange={handlePasswordChange}
             placeholder="Enter your password"
           />
-          {errors.password && <p className="error">{errors.password}</p>}
         </div>
 
         {/* Email */}
@@ -232,7 +158,6 @@ function UserForm() {
             onChange={handleEmailChange}
             placeholder="Enter your email"
           />
-          {errors.email && <p className="error">{errors.email}</p>}
         </div>
 
         {/* Radio Buttons */}
@@ -253,7 +178,6 @@ function UserForm() {
               onChange={handleGenderChange}
             />
             Female
-            {errors.gender && <p className="error">{errors.gender}</p>}
           </div>
         </div>
 
@@ -266,7 +190,6 @@ function UserForm() {
               onChange={handleCheckboxChange}
             />
             I agree to the terms and conditions
-            {errors.checkbox && <p className="error">{errors.checkbox}</p>}
           </label>
         </div>
 
@@ -279,7 +202,6 @@ function UserForm() {
             onChange={handleTextareaChange}
             placeholder="Enter your comments here"
           ></textarea>
-          {errors.textarea && <p className="error">{errors.textarea}</p>}
         </div>
 
         {/* Dropdown */}
@@ -291,11 +213,11 @@ function UserForm() {
             onChange={handleDropdownChange}
           >
             <option value="">--Select--</option>
-            {renderDropDown()}
+            <option value="India">India</option>
+            <option value="UK">UK</option>
+            <option value="USA">USA</option>
           </select>
-          {errors.dropdown && <p className="error">{errors.dropdown}</p>}
         </div>
-
         {/* Submit Button */}
         <button onClick={handleSubmit} className="submitButton">Submit</button>
       </form>

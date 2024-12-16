@@ -1,61 +1,33 @@
 import { useState } from "react";
-import {
-  Box,
-  Button,
-  Checkbox,
-  FormControl,
-  FormControlLabel,
-  FormHelperText,
-  InputLabel,
-  MenuItem,
-  Radio,
-  RadioGroup,
-  Select,
-  TextField,
-} from "@mui/material";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Checkbox from "@mui/material/Checkbox";
+import FormControl from "@mui/material/FormControl";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import Radio from "@mui/material/Radio";
+import RadioGroup from "@mui/material/RadioGroup";
+import Select from "@mui/material/Select";
+import TextField from "@mui/material/TextField";
 
-function UserForm() {
+
+ const UserForm=()=> {
   const [firstName, setFirstName] = useState<string>("");
   const [lastName, setLastName] = useState<string>("");
   const [dob, setDob] = useState<string>("");
   const [dateTime, setDateTime] = useState<string>("");
-  const [mobileNumber, setMobileNumber] = useState<string>("");
+  const [mobileNumber, setMobileNumber] = useState<number>();
   const [password, setPassword] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [gender, setGender] = useState<string>("");
   const [isChecked, setIsChecked] = useState<boolean>(false);
   const [textarea, setTextarea] = useState<string>("");
   const [dropdown, setDropdown] = useState<string>("");
-  const countries = ["India", "USA", "UK", "Canada", "Australia"];
-  const [errors, setErrors] = useState<{ [key: string]: string }>({});
-
-  const validate = () => {
-    const newErrors: { [key: string]: string } = {};
-    if (!/^[a-zA-Z\s]+$/.test(firstName))
-      newErrors.firstName = "*Enter a proper name*";
-    if (!/^[a-zA-Z\s]+$/.test(lastName))
-      newErrors.lastName = "*Enter a proper name*";
-    if (!dob) newErrors.dob = "*Date of Birth is required*";
-    if (!dateTime) newErrors.dateTime = "*Date & Time is required*";
-    if (!/^\d{10}$/.test(mobileNumber))
-      newErrors.mobileNumber = "*Enter a valid 10-digit mobile number*";
-    if (password.length < 6)
-      newErrors.password = "*Password must be at least 6 characters long*";
-    if (!/\S+@\S+\.\S+/.test(email)) newErrors.email = "*Enter a valid email*";
-    if (!gender) newErrors.gender = "*Gender is required*";
-    if (!isChecked)
-      newErrors.checkbox = "*You must agree to the terms and conditions*";
-    if (!textarea) newErrors.textarea = "*Comments are required*";
-    if (!dropdown) newErrors.dropdown = "*Please select a country*";
-
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
-    if (validate()) {
-      alert(`
+    alert(`
         First Name: ${firstName}
         Last Name: ${lastName}
         DOB: ${dob}
@@ -68,7 +40,6 @@ function UserForm() {
         Comments: ${textarea}
         Country: ${dropdown}
       `);
-    }
   };
 
   return (
@@ -79,9 +50,7 @@ function UserForm() {
           fullWidth
           label="First Name"
           value={firstName}
-          onChange={(e) => setFirstName(e.target.value)}
-          error={!!errors.firstName}
-          helperText={errors.firstName}
+          onChange={(event) => setFirstName(event.target.value)}
           sx={{ mb: 2 }}
         />
 
@@ -90,9 +59,7 @@ function UserForm() {
           fullWidth
           label="Last Name"
           value={lastName}
-          onChange={(e) => setLastName(e.target.value)}
-          error={!!errors.lastName}
-          helperText={errors.lastName}
+          onChange={(event) => setLastName(event.target.value)}
           sx={{ mb: 2 }}
         />
 
@@ -103,17 +70,8 @@ function UserForm() {
           type="date"
           InputLabelProps={{ shrink: true }}
           value={dob}
-          onChange={(e) => setDob(e.target.value)}
-          error={!!errors.dob}
-          helperText={errors.dob}
-          sx={{
-            mb: 2,
-            "& input::-webkit-calendar-picker-indicator": {
-              cursor: "pointer", 
-              filter:
-                "invert(50%) sepia(100%) saturate(200%) hue-rotate(200deg)",
-            },
-          }}
+          onChange={(event) => setDob(event.target.value)}
+          sx={{ mb: 2 }}
         />
 
         {/* Date & Time */}
@@ -123,25 +81,17 @@ function UserForm() {
           type="datetime-local"
           InputLabelProps={{ shrink: true }}
           value={dateTime}
-          onChange={(e) => setDateTime(e.target.value)}
-          error={!!errors.dateTime}
-          helperText={errors.dateTime}
-          sx={{ mb: 2,
-            "& input::-webkit-calendar-picker-indicator": {
-              cursor: "pointer", 
-              filter:
-                "invert(50%) sepia(100%) saturate(200%) hue-rotate(200deg)",
-            },  }}
+          onChange={(event) => setDateTime(event.target.value)}
+          sx={{ mb: 2 }}
         />
 
         {/* Mobile Number */}
         <TextField
           fullWidth
           label="Mobile Number"
+          type="number"
           value={mobileNumber}
-          onChange={(e) => setMobileNumber(e.target.value)}
-          error={!!errors.mobileNumber}
-          helperText={errors.mobileNumber}
+          onChange={(event) => setMobileNumber(Number(event.target.value))}
           sx={{ mb: 2 }}
         />
 
@@ -151,9 +101,7 @@ function UserForm() {
           label="Password"
           type="password"
           value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          error={!!errors.password}
-          helperText={errors.password}
+          onChange={(event) => setPassword(event.target.value)}
           sx={{ mb: 2 }}
         />
 
@@ -162,19 +110,17 @@ function UserForm() {
           fullWidth
           label="Email"
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          error={!!errors.email}
-          helperText={errors.email}
+          onChange={(event) => setEmail(event.target.value)}
           sx={{ mb: 2 }}
         />
 
         {/* Gender */}
-        <FormControl error={!!errors.gender} sx={{ mb: 2 }}>
+        <FormControl>
           <p style={{ color: "#616161" }}>Gender</p>
           <RadioGroup
             row
             value={gender}
-            onChange={(e) => setGender(e.target.value)}
+            onChange={(event) => setGender(event.target.value)}
           >
             <FormControlLabel
               value="Male"
@@ -189,7 +135,6 @@ function UserForm() {
               sx={{ color: "#616161" }}
             />
           </RadioGroup>
-          {errors.gender && <FormHelperText>{errors.gender}</FormHelperText>}
         </FormControl>
 
         {/* Checkbox */}
@@ -197,47 +142,38 @@ function UserForm() {
           control={
             <Checkbox
               checked={isChecked}
-              onChange={(e) => setIsChecked(e.target.checked)}
+              onChange={(event) => setIsChecked(event.target.checked)}
             />
           }
           label="I agree to the terms and conditions"
           sx={{ color: "#616161", mb: 3 }}
         />
-        {errors.checkbox && (
-          <FormHelperText error>{errors.checkbox}</FormHelperText>
-        )}
 
         {/* Comments */}
         <TextField
           fullWidth
           label="Comments"
           multiline
-          rows={3}
           value={textarea}
-          onChange={(e) => setTextarea(e.target.value)}
-          error={!!errors.textarea}
-          helperText={errors.textarea}
+          onChange={(event) => setTextarea(event.target.value)}
           sx={{ mb: 2 }}
         />
 
         {/* Dropdown */}
-        <FormControl fullWidth error={!!errors.dropdown} sx={{ mb: 2 }}>
+        <FormControl fullWidth sx={{ mb: 2 }}>
           <InputLabel id="country-label">Country</InputLabel>
           <Select
             labelId="country-label"
             value={dropdown}
-            onChange={(e) => setDropdown(e.target.value)}
+            onChange={(event) => setDropdown(event.target.value)}
             label="Country" // Ensures the label aligns properly
           >
-            {countries.map((country, index) => (
-              <MenuItem key={index} value={country}>
-                {country}
-              </MenuItem>
-            ))}
+            <MenuItem value="">country</MenuItem>
+            <MenuItem value="India">India</MenuItem>
+            <MenuItem value="UK">UK</MenuItem>
+            <MenuItem value="USA">USA</MenuItem>
+            <MenuItem value="Canada">Canada</MenuItem>
           </Select>
-          {errors.dropdown && (
-            <FormHelperText>{errors.dropdown}</FormHelperText>
-          )}
         </FormControl>
 
         {/* Submit Button */}

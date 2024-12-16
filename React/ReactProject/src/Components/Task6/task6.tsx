@@ -1,93 +1,306 @@
 import { useState } from "react";
-import TextField from "@mui/material/TextField";
-import Button from "@mui/material/Button";
-import Stack from "@mui/material/Stack";
-import Box from "@mui/material/Box";
 import "./task6.css";
 
-function InputList() {
-  const [inputValue, setInputValue] = useState<string>(""); // Tracks the input box value
-  const [values, setValues] = useState<string[]>([]); // Stores all the added values
+const UserForm=()=> {
+  // State variables for the form fields
+  const [firstName, setFirstName] = useState<string>("");
+  const [lastName, setLastName] = useState<string>("");
+  const [dob, setDob] = useState<string>("");
+  const [dateTime, setDateTime] = useState("");
+  const [mobileNumber, setMobileNumber] = useState<number>();
+  const [password, setPassword] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [gender, setGender] = useState<string>("");
+  const [isChecked, setIsChecked] = useState<boolean>(false);
+  const [textarea, setTextarea] = useState<string>("");
+  const [dropdown, setDropdown] = useState<string>("");
 
-  //This function is to handle input value
-  const handleAddValue = () => {
-    if (inputValue !== "") {
-      setValues([...values, inputValue]); // Add the input value to the list
-      setInputValue(""); // Clear the input box
-    } else {
-      alert("Enter any Value");
+  // Dropdown options
+  const countries = ["India", "USA", "UK", "Canada", "Australia"];
+
+  // Error state
+  const [errors, setErrors] = useState<{
+    [key: string]: string;
+  }>({});
+
+  // Validation functions
+  const validate = () => {
+    const newErrors: { [key: string]: string } = {};
+
+    if (!/^[a-zA-Z\s]+$/.test(firstName)) {
+      newErrors.firstName = "*Enter a proper name*";
+    }
+
+    if (!/^[a-zA-Z\s]+$/.test(lastName)) {
+      newErrors.lastName = "*Enter a proper name*";
+    }
+
+    if (!dob) {
+      newErrors.dob = "*Date of Birth is required*";
+    }
+
+    if (!dateTime) {
+      newErrors.dateTime = "*Date & Time is required*";
+    }
+
+    if (!/^\d{10}$/.test(String(mobileNumber))) {
+      newErrors.mobileNumber = "*Enter a valid 10-digit mobile number*";
+    }
+
+    if (password.length < 6) {
+      newErrors.password = "*Password must be at least 6 characters long*";
+    }
+
+    if (!/\S+@\S+\.\S+/.test(email)) {
+      newErrors.email = "*Enter a valid email*";
+    }
+
+    if (!gender) {
+      newErrors.gender = "*Gender is required*";
+    }
+
+    if (!isChecked) {
+      newErrors.checkbox = "*You must agree to the terms and conditions*";
+    }
+
+    if (!textarea) {
+      newErrors.textarea = "*Comments are required*";
+    }
+
+    if (!dropdown) {
+      newErrors.dropdown = "*Please select a country*";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0; // Return true if no errors
+  };
+
+  // Handlers for input changes
+  const handleFirstNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setFirstName(event.target.value);
+  };
+
+  const handleLastNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setLastName(event.target.value);
+  };
+
+  const handleDobChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setDob(event.target.value);
+  };
+
+  const handleDateTimeChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setDateTime(event.target.value);
+  };
+
+  const handleMobileNumberChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setMobileNumber(Number(event.target.value));
+  };
+
+  const handlePasswordChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setPassword(event.target.value);
+  };
+
+  const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(event.target.value);
+  };
+
+  const handleGenderChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setGender(event.target.value);
+  };
+
+  const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setIsChecked(event.target.checked);
+  };
+
+  const handleTextareaChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setTextarea(event.target.value);
+  };
+
+  const handleDropdownChange = (
+    event: React.ChangeEvent<HTMLSelectElement>
+  ) => {
+    setDropdown(event.target.value);
+  };
+  const renderDropDown = () => {
+    return countries.map((country, index) => (
+      <option key={index} value={country}>
+        {country}
+      </option>
+    ));
+  };
+  // Function to handle form submission
+  const handleSubmit = (event: React.FormEvent) => {
+    event.preventDefault();
+    if (validate()) {
+      alert(`
+        First Name: ${firstName}
+        Last Name: ${lastName}
+        DOB: ${dob}
+        Date & Time: ${dateTime}
+        Mobile Number: ${mobileNumber}
+        Password: ${password}
+        Email: ${email}
+        Gender: ${gender}
+        Checkbox: ${isChecked ? "Checked" : "Unchecked"}
+        Text Area: ${textarea}
+        Dropdown: ${dropdown}
+      `);
     }
   };
 
-  // This function is to reset the output
-  const handleReset = () => {
-    setValues([]);
-  };
-
-  const handleDelete = () => {
-    setValues(values.slice(0, -1));
-  };
-
   return (
-    <Box>
-      <Stack
-        spacing={2}
-        className="inputContainer"
-        direction="row"
-        alignItems="flex-start"
-        sx={{ marginLeft: 0 }} // Explicitly remove margin-left for the Stack
-      >
-        {/* Input Field */}
-        <TextField
-          className="inputValue"
-          variant="outlined"
-          label="Type something"
-          value={inputValue} // Current value of the input box
-          onChange={(event) => setInputValue(event.target.value)} // Update inputValue as the user types
-          sx={{ width: "300px" }}
-        />
+    <div className="formContainer">
+      <form onClick={handleSubmit}>
+        {/* First Name */}
+        <div className="firsName">
+          <label htmlFor="firstName">First Name: </label>
+          <input
+            type="text"
+            id="firstName"
+            value={firstName}
+            onChange={handleFirstNameChange}
+            placeholder="Enter your first name"
+          />
+          {errors.firstName && <p className="error">{errors.firstName}</p>}
+        </div>
 
-        {/* Buttons in the same column */}
-        <Stack direction="row" spacing={1} sx={{ marginLeft: 0 }}>
-          <Button
-            variant="contained"
-            color="primary"
-            onClick={handleAddValue}
-            sx={{ marginLeft: 0 }}
+        {/* Last Name */}
+        <div>
+          <label htmlFor="lastName">Last Name: </label>
+          <input
+            type="text"
+            id="lastName"
+            value={lastName}
+            onChange={handleLastNameChange}
+            placeholder="Enter your last name"
+          />
+          {errors.lastName && <p className="error">{errors.lastName}</p>}
+        </div>
+
+        {/* Date of Birth */}
+        <div>
+          <label htmlFor="dob">Date of Birth: </label>
+          <input type="date" id="dob" value={dob} onChange={handleDobChange} />
+          {errors.dob && <p className="error">{errors.dob}</p>}
+        </div>
+
+        {/* Date & Time */}
+        <div>
+          <label htmlFor="dateTime">Date & Time: </label>
+          <input
+            type="datetime-local"
+            id="dateTime"
+            value={dateTime}
+            onChange={handleDateTimeChange}
+          />
+          {errors.dateTime && <p className="error">{errors.dateTime}</p>}
+        </div>
+
+        {/* Mobile Number */}
+        <div>
+          <label htmlFor="mobileNumber">Mobile Number: </label>
+          <input
+            type="number"
+            id="mobileNumber"
+            value={mobileNumber}
+            onChange={handleMobileNumberChange}
+            placeholder="Enter your mobile number"
+          />
+          {errors.mobileNumber && <p className="error">{errors.mobileNumber}</p>}
+        </div>
+
+        {/* Password */}
+        <div>
+          <label htmlFor="password">Password: </label>
+          <input
+            type="password"
+            id="password"
+            value={password}
+            onChange={handlePasswordChange}
+            placeholder="Enter your password"
+          />
+          {errors.password && <p className="error">{errors.password}</p>}
+        </div>
+
+        {/* Email */}
+        <div>
+          <label htmlFor="email">Email: </label>
+          <input
+            type="email"
+            id="email"
+            value={email}
+            onChange={handleEmailChange}
+            placeholder="Enter your email"
+          />
+          {errors.email && <p className="error">{errors.email}</p>}
+        </div>
+
+        {/* Radio Buttons */}
+        <div>
+          <label>Gender: </label>
+          <div>
+            <input
+              type="radio"
+              name="gender"
+              value="Male"
+              onChange={handleGenderChange}
+            />
+            Male
+            <input
+              type="radio"
+              name="gender"
+              value="Female"
+              onChange={handleGenderChange}
+            />
+            Female
+            {errors.gender && <p className="error">{errors.gender}</p>}
+          </div>
+        </div>
+
+        {/* Checkbox */}
+        <div>
+          <label>
+            <input
+              type="checkbox"
+              checked={isChecked}
+              onChange={handleCheckboxChange}
+            />
+            I agree to the terms and conditions
+            {errors.checkbox && <p className="error">{errors.checkbox}</p>}
+          </label>
+        </div>
+
+        {/* Text Area */}
+        <div style={{display:"flex", flexWrap:"wrap", width:"350px"}}>
+          <label htmlFor="textarea" >Comments: </label>
+          <textarea style={{height:"60px", width:"260px"}}
+            id="textarea"
+            value={textarea}
+            onChange={handleTextareaChange}
+            placeholder="Enter your comments here"
+          ></textarea>
+          {errors.textarea && <p className="error">{errors.textarea}</p>}
+        </div>
+
+        {/* Dropdown */}
+        <div>
+          <label htmlFor="dropdown">Country: </label>
+          <select
+            id="dropdown"
+            value={dropdown}
+            onChange={handleDropdownChange}
           >
-            Add
-          </Button>
-          <Button
-            variant="contained"
-            color="secondary"
-            onClick={handleReset}
-            sx={{ marginLeft: 0 }}
-          >
-            Reset
-          </Button>
-        </Stack>
+            <option value="">--Select--</option>
+            {renderDropDown()}
+          </select>
+          {errors.dropdown && <p className="error">{errors.dropdown}</p>}
+        </div>
 
-        {/* Delete Button */}
-        <Button
-          variant="outlined"
-          color="error"
-          onClick={handleDelete}
-          sx={{ marginLeft: 0 }}
-        >
-          Delete
-        </Button>
-      </Stack>
-
-      {/* Output Container */}
-      <Box className="outputContainer" sx={{ marginTop: 3 }}>
-        {values.map((value, index) => (
-          <Box key={index} sx={{ padding: 1, borderBottom: "1px solid #ccc" }}>
-            {value}
-          </Box>
-        ))}
-      </Box>
-    </Box>
+        {/* Submit Button */}
+        <button type="submit" className="submitButton">Submit</button>
+      </form>
+    </div>
   );
 }
 
-export default InputList;
+export default UserForm;
