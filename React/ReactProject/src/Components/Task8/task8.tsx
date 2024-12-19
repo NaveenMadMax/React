@@ -175,8 +175,6 @@ const UserForm = () => {
         Checkbox: ${isChecked ? "Checked" : "Unchecked"}
         Comments: ${comments}
         Country: ${dropdown}`);
-    } else {
-      alert("Please fill out the form correctly.");
     }
   };
 
