@@ -11,7 +11,7 @@ import RadioGroup from "@mui/material/RadioGroup";
 import Select from "@mui/material/Select";
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
-import { Chip } from "@mui/material";
+import { Chip, FormHelperText } from "@mui/material";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
@@ -22,25 +22,59 @@ import { SelectChangeEvent } from "@mui/material";
 
 const UserForm = () => {
   const [firstName, setFirstName] = useState<string>("");
+  const [errorFirstName, setFirstNameError] = useState<string>("");
+
   const [dob, setDob] = useState<string>("");
-  const [mobileNumber, setMobileNumber] = useState<number>();
+  const [errorDob, setDobError] = useState<string>("");
+  const [mobileNumber, setMobileNumber] = useState<string>("");
+  const [errorMobileNumber, setMobileNumberError] = useState<string>("");
+
   const [password, setPassword] = useState<string>("");
+  const [errorPassword, setPasswordError] = useState<string>("");
+
   const [email, setEmail] = useState<string>("");
+  const [errorEmail, setEmailError] = useState<string>("");
+
   const [gender, setGender] = useState<string>("");
+  const [errorGender, setGenderError] = useState<string>("");
+
   const [isChecked, setIsChecked] = useState<boolean>(false);
+  const [errorCheckbox, setErrorCheckbox] = useState<string>("");
+
   const [comments, setComments] = useState<string>("");
+  const [errorComments, setErrorComments] = useState<string>("");
+
   const [dropdown, setDropdown] = useState<string>("");
+  const [errorDropdown, setErrorDropdown] = useState<string>("");
+
   const [favoriteOtt, setFavoriteOtt] = useState<string>("");
+  const [errorFavoriteOtt, setErrorFavoriteOtt] = useState<string>("");
+
   const [hobbies, setHobbies] = useState<string[]>([]);
+  const [errorHobbies, setErrorHobbies] = useState<string>("");
+
   const [programmingLanguages, setProgrammingLanguages] = useState<string[]>(
     []
   );
+  const [errorProgrammingLanguages, setErrorProgrammingLanguages] =
+    useState<string>("");
+
   const [skills, setSkills] = useState<string[]>([]);
+  const [errorSkills, setErrorSkills] = useState<string>("");
+
   const [cgpa, setCgpa] = useState<string>("");
+  const [errorCgpa, setErrorCgpa] = useState<string>("");
+
   const [age, setAge] = useState<string>("");
+  const [errorAge, setErrorAge] = useState<string>("");
+
   const [open, setOpen] = useState(false);
+
   const [jobRole, setJobRole] = useState<string>("");
+  const [errorJobRole, setErrorJobRole] = useState<string>("");
+
   const [workLocations, setWorkLocations] = useState<string[]>([]);
+  const [errorWorkLocations, setErrorWorkLocations] = useState<string>("");
 
   const handleDialogOpen = () => {
     setOpen(true);
@@ -49,34 +83,261 @@ const UserForm = () => {
   const handleDialogClose = () => {
     setOpen(false);
   };
+
   const handleWorkLocationChange = (event: SelectChangeEvent<string[]>) => {
     const value = event.target.value;
     setWorkLocations(typeof value === "string" ? value.split(",") : value);
   };
 
+  // Validation for First Name
+  const validateFirstName = (value: string) => {
+    if (value === "") {
+      setFirstNameError("First Name is required.");
+      return false;
+    } else if (!/^[a-zA-Z\s]+$/.test(value)) {
+      setFirstNameError("First Name can only contain letters and spaces.");
+      return false;
+    } else {
+      setFirstNameError("");
+      return true;
+    }
+  };
+
+  // Validation for DOB
+  const validateDob = (value: string) => {
+    if (value === "") {
+      setDobError("Date of Birth is required.");
+      return false;
+    } else {
+      setDobError("");
+      return true;
+    }
+  };
+
+  const validateMobileNumber = (value: string) => {
+    if (value === "") {
+      setMobileNumberError("Mobile Number is required.");
+      return false;
+    } else if (!/^\d{10}$/.test(value)) {
+      setMobileNumberError("Mobile Number should be 10 digits.");
+      return false;
+    } else {
+      setMobileNumberError("");
+      return true;
+    }
+  };
+
+  const validatePassword = (value: string) => {
+    if (value === "") {
+      setPasswordError("Password is required.");
+      return false;
+    } else if (value.length < 6) {
+      setPasswordError("Password should be at least 6 characters.");
+      return false;
+    } else {
+      setPasswordError("");
+      return true;
+    }
+  };
+
+  const validateEmail = (value: string) => {
+    if (value === "") {
+      setEmailError("Email is required.");
+      return false;
+    } else if (!/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(value)) {
+      setEmailError("Invalid email address.");
+      return false;
+    } else {
+      setEmailError("");
+      return true;
+    }
+  };
+
+  const validateGender = (value: string) => {
+    if (value === "") {
+      setGenderError("Gender is required.");
+      return false;
+    } else {
+      setGenderError("");
+      return true;
+    }
+  };
+
+  const validateComments = (value: string) => {
+    if (value === "") {
+      setErrorComments("Comments cannot be empty.");
+      return false;
+    } else {
+      setErrorComments("");
+      return true;
+    }
+  };
+
+  const validateCheckbox = (value: boolean) => {
+    if (!value) {
+      setErrorCheckbox("You must agree to the terms and conditions.");
+      return false;
+    } else {
+      setErrorCheckbox("");
+      return true;
+    }
+  };
+
+  const validateDropdown = (value: string) => {
+    if (value === "") {
+      setErrorDropdown("Country selection is required.");
+      return false;
+    } else {
+      setErrorDropdown("");
+      return true;
+    }
+  };
+
+  const validateFavoriteOtt = (value: string) => {
+    if (value === "") {
+      setErrorFavoriteOtt("Favorite OTT selection is required.");
+      return false;
+    } else {
+      setErrorFavoriteOtt("");
+      return true;
+    }
+  };
+
+  const validateHobbies = (value: string[]) => {
+    if (value.length === 0) {
+      setErrorHobbies("At least one hobby is required.");
+      return false;
+    }
+    setErrorHobbies("");
+    return true;
+  };
+
+  const validateProgrammingLanguages = (value: string[]) => {
+    if (value.length === 0) {
+      setErrorProgrammingLanguages(
+        "At least one programming language is required."
+      );
+      return false;
+    }
+    setErrorProgrammingLanguages("");
+    return true;
+  };
+
+  const validateSkills = (value: string[]) => {
+    if (value.length === 0) {
+      setErrorSkills("At least one skill is required.");
+      return false;
+    }
+    setErrorSkills("");
+    return true;
+  };
+
+  const validateCgpa = (value: string) => {
+    if (value === "") {
+      setErrorCgpa("CGPA selection is required.");
+      return false;
+    }
+    setErrorCgpa("");
+    return true;
+  };
+
+  const validateAge = (value: string) => {
+    if (value === "") {
+      setErrorAge("Age selection is required.");
+      return false;
+    }
+    setErrorAge("");
+    return true;
+  };
+
+  const validateJobRole = (value: string) => {
+    if (value === "") {
+      setErrorJobRole("Job role selection is required.");
+      return false;
+    }
+    setErrorJobRole("");
+    return true;
+  };
+
+  const validateWorkLocations = (value: string[]) => {
+    if (value.length === 0) {
+      setErrorWorkLocations("At least one work location is required.");
+      return false;
+    }
+    setErrorWorkLocations("");
+    return true;
+  };
+
+  // Form-wide validation
+  const validateForm = () => {
+    const isFirstNameValid = validateFirstName(firstName);
+    const isDobValid = validateDob(dob);
+    const isMobileValid = validateMobileNumber(mobileNumber);
+    const isPasswordValid = validatePassword(password);
+    const isEmailValid = validateEmail(email);
+    const isGenderValid = validateGender(gender);
+    const isCommentsValid = validateComments(comments);
+    const isCheckboxValid = validateCheckbox(isChecked);
+    const isDropdownValid = validateDropdown(dropdown);
+    const isFavoriteOttValid = validateFavoriteOtt(favoriteOtt);
+    const isHobbiesValid = validateHobbies(hobbies);
+    const isProgrammingLanguagesValid =
+      validateProgrammingLanguages(programmingLanguages);
+    const isSkillsValid = validateSkills(skills);
+    const isCgpaValid = validateCgpa(cgpa);
+    const isAgeValid = validateAge(age);
+    const isJobRoleValid = validateJobRole(jobRole);
+    const isWorkLocationsValid = validateWorkLocations(workLocations);
+
+    return (
+      isFirstNameValid &&
+      isDobValid &&
+      isMobileValid &&
+      isPasswordValid &&
+      isEmailValid &&
+      isGenderValid &&
+      isCommentsValid &&
+      isCheckboxValid &&
+      isDropdownValid &&
+      isFavoriteOttValid &&
+      isHobbiesValid &&
+      isProgrammingLanguagesValid &&
+      isSkillsValid &&
+      isCgpaValid &&
+      isAgeValid &&
+      isJobRoleValid &&
+      isWorkLocationsValid
+    );
+  };
+
+  // Submit Handler
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
-    {
-      alert(`
-            First Name: ${firstName};
-            DOB: ${dob};
-            Mobile Number: ${mobileNumber};
-            Password: ${password};
-            Email: ${email};
-            Gender: ${gender};
-            Checkbox: ${isChecked ? "Checked" : "Unchecked"};
-            Comments: ${comments};
-            Country: ${dropdown}
-            Favorite OTT: ${favoriteOtt};
-            Hobbies: ${hobbies.join(", ")};
-            ProgrammingLanguages: ${programmingLanguages.join(", ")};
-            Skills: ${skills.join(", ")}
-            CGPA: ${cgpa}
-            Age: ${age};
-            Job Role: ${jobRole}
-            Preferred Work Locations: ${workLocations.join(", ")}
-            `);
+
+    if (!validateForm()) {
+      alert("Please fix the errors in the form before submitting.");
+      return;
     }
+
+    alert(`
+      First Name: ${firstName}
+      DOB: ${dob}
+      Mobile Number: ${mobileNumber};
+      Password: ${password}
+      Email: ${email}
+      Gender: ${gender}
+      Checkbox: ${isChecked ? "Checked" : "Unchecked"}
+      Comments: ${comments}
+      Country: ${dropdown}
+      Favorite OTT: ${favoriteOtt}
+       Hobbies: ${hobbies.join(", ")}
+        Programming Languages: ${programmingLanguages.join(", ")}
+        Skills: ${skills.join(", ")}
+        CGPA: ${cgpa}
+        Age: ${age}
+        Job Role: ${jobRole}
+        Preferred Work Locations: ${workLocations.join(", ")}
+    `);
   };
 
   return (
@@ -89,9 +350,13 @@ const UserForm = () => {
           value={firstName}
           onChange={(event) => {
             setFirstName(event.target.value);
+            validateFirstName(event.target.value);
           }}
+          error={!!errorFirstName}
+          helperText={errorFirstName}
           sx={{ mb: 2 }}
         />
+
         {/* DOB Input */}
         <TextField
           fullWidth
@@ -100,7 +365,10 @@ const UserForm = () => {
           value={dob}
           onChange={(event) => {
             setDob(event.target.value);
+            validateDob(event.target.value);
           }}
+          error={!!errorDob}
+          helperText={errorDob}
           sx={{ mb: 2 }}
           InputLabelProps={{ shrink: true }}
         />
@@ -111,10 +379,14 @@ const UserForm = () => {
           type="tel"
           value={mobileNumber}
           onChange={(event) => {
-            setMobileNumber(Number(event.target.value));
+            setMobileNumber(event.target.value);
+            validateMobileNumber(event.target.value);
           }}
+          error={!!errorMobileNumber}
+          helperText={errorMobileNumber}
           sx={{ mb: 2 }}
         />
+
         {/* Password Input */}
         <TextField
           fullWidth
@@ -123,9 +395,13 @@ const UserForm = () => {
           value={password}
           onChange={(event) => {
             setPassword(event.target.value);
+            validatePassword(event.target.value);
           }}
+          error={!!errorPassword}
+          helperText={errorPassword}
           sx={{ mb: 2 }}
         />
+
         {/* Email Input */}
         <TextField
           fullWidth
@@ -133,17 +409,22 @@ const UserForm = () => {
           value={email}
           onChange={(event) => {
             setEmail(event.target.value);
+            validateEmail(event.target.value);
           }}
+          error={!!errorEmail}
+          helperText={errorEmail}
           sx={{ mb: 2 }}
         />
+
         {/* Gender Input */}
-        <FormControl sx={{ mb: 2, color: "blue" }}>
+        <FormControl sx={{ display: "block", mb: 2 }}>
           <p style={{ color: "#616161" }}>Gender</p>
           <RadioGroup
             row
             value={gender}
             onChange={(event) => {
               setGender(event.target.value);
+              validateGender(event.target.value);
             }}
           >
             <FormControlLabel value="Male" control={<Radio />} label="Male" />
@@ -153,20 +434,25 @@ const UserForm = () => {
               label="Female"
             />
           </RadioGroup>
+          {errorGender && (
+            <p style={{ color: "red", fontSize: "0.875rem" }}>{errorGender}</p>
+          )}
         </FormControl>
-        {/* Checkbox Input */}
         <FormControlLabel
           control={
             <Checkbox
               checked={isChecked}
               onChange={(event) => {
                 setIsChecked(event.target.checked);
+                validateCheckbox(event.target.checked);
               }}
             />
           }
           label="I agree to the terms and conditions"
           sx={{ mb: 2, color: "blue" }}
         />
+        {errorCheckbox && <p style={{ color: "red" }}>{errorCheckbox}</p>}
+
         {/* Comments Input */}
         <TextField
           fullWidth
@@ -174,15 +460,23 @@ const UserForm = () => {
           value={comments}
           onChange={(event) => {
             setComments(event.target.value);
+            validateComments(event.target.value);
           }}
+          error={!!errorComments}
+          helperText={errorComments}
           sx={{ mb: 2 }}
         />
+
         {/* Country Dropdown */}
         <FormControl fullWidth sx={{ mb: 2 }}>
           <InputLabel>Country</InputLabel>
           <Select
             value={dropdown}
-            onChange={(event) => setDropdown(event.target.value)}
+            onChange={(event) => {
+              setDropdown(event.target.value);
+              validateDropdown(event.target.value);
+            }}
+            error={!!errorDropdown}
             label="Country"
           >
             <MenuItem value="">Select Country</MenuItem>
@@ -190,7 +484,9 @@ const UserForm = () => {
             <MenuItem value="USA">USA</MenuItem>
             <MenuItem value="UK">UK</MenuItem>
           </Select>
+          {errorDropdown && <p style={{ color: "red" }}>{errorDropdown}</p>}
         </FormControl>
+
         {/* Favorite OTT Options Autocomplete */}
         <Autocomplete
           disablePortal
@@ -209,19 +505,28 @@ const UserForm = () => {
           value={favoriteOtt}
           onChange={(_, newValue) => {
             setFavoriteOtt(newValue || "");
+            validateFavoriteOtt(newValue || "");
           }}
           renderInput={(params) => (
-            <TextField {...params} label="Favorite OTT Options" />
+            <TextField
+              {...params}
+              label="Favorite OTT Options"
+              error={!!errorFavoriteOtt}
+              helperText={errorFavoriteOtt}
+            />
           )}
           sx={{ mb: 2 }}
         />
-        {/* Multiple Select for Hobbies */}
-        <FormControl fullWidth sx={{ mb: 2 }}>
+
+        <FormControl fullWidth sx={{ mb: 2 }} error={!!errorHobbies}>
           <InputLabel>Hobbies</InputLabel>
           <Select
             multiple
             value={hobbies}
-            onChange={(event) => setHobbies(event.target.value as string[])}
+            onChange={(event) => {
+              setHobbies(event.target.value as string[]);
+              setErrorHobbies(""); // Clear error on change
+            }}
             renderValue={(selected) => selected.join(", ")}
             label="Hobbies"
           >
@@ -230,16 +535,23 @@ const UserForm = () => {
             <MenuItem value="Gaming">Gaming</MenuItem>
             <MenuItem value="Cooking">Cooking</MenuItem>
           </Select>
+          <FormHelperText>{errorHobbies}</FormHelperText>
         </FormControl>
-        {/* List of programming languages */}
-        <FormControl fullWidth sx={{ mb: 2 }}>
+
+        {/* Programming Languages Dropdown */}
+        <FormControl
+          fullWidth
+          sx={{ mb: 2 }}
+          error={!!errorProgrammingLanguages}
+        >
           <InputLabel>Programming Languages</InputLabel>
           <Select
             multiple
             value={programmingLanguages}
-            onChange={(event) =>
-              setProgrammingLanguages(event.target.value as string[])
-            }
+            onChange={(event) => {
+              setProgrammingLanguages(event.target.value as string[]);
+              setErrorProgrammingLanguages(""); // Clear error on change
+            }}
             label="Programming Languages"
           >
             <MenuItem value="JavaScript">
@@ -271,14 +583,19 @@ const UserForm = () => {
               Swift
             </MenuItem>
           </Select>
+          <FormHelperText>{errorProgrammingLanguages}</FormHelperText>
         </FormControl>
-        {/* Skills with chip dorpdown */}
-        <FormControl fullWidth sx={{ mb: 2 }}>
+
+        {/* Skills Dropdown */}
+        <FormControl fullWidth sx={{ mb: 2 }} error={!!errorSkills}>
           <InputLabel>Skills</InputLabel>
           <Select
             multiple
             value={skills}
-            onChange={(event) => setSkills(event.target.value as string[])}
+            onChange={(event) => {
+              setSkills(event.target.value as string[]);
+              setErrorSkills(""); // Clear error on change
+            }}
             renderValue={(selected) => (
               <Box sx={{ display: "flex", flexWrap: "wrap" }}>
                 {selected.map((value) => (
@@ -288,7 +605,6 @@ const UserForm = () => {
             )}
             label="Skills"
           >
-            {/* List of skills */}
             <MenuItem value="React">
               <Checkbox checked={skills.includes("React")} />
               React
@@ -314,29 +630,30 @@ const UserForm = () => {
               Python
             </MenuItem>
           </Select>
+          <FormHelperText>{errorSkills}</FormHelperText>
         </FormControl>
-        {/* CGPA WITH PLACEHOLDER DROPDOWN */}
-        <FormControl fullWidth sx={{ mb: 2 }}>
+
+        {/* CGPA Dropdown */}
+        <FormControl fullWidth sx={{ mb: 2 }} error={!!errorCgpa}>
           <Select
             value={cgpa}
             onChange={(event) => setCgpa(event.target.value)}
             displayEmpty
           >
-            {/* Placeholder Option */}
             <MenuItem value="" disabled>
               Select CGPA
             </MenuItem>
-
-            {/* List of CGPA options */}
             <MenuItem value="Fifty">50</MenuItem>
             <MenuItem value="Sixty">60</MenuItem>
             <MenuItem value="Eighty">80</MenuItem>
             <MenuItem value="Above Eighty">Above 80</MenuItem>
           </Select>
+          <FormHelperText>{errorCgpa}</FormHelperText>
         </FormControl>
-        {/* age with a dialog */}
+
+        {/* Age with Dialog */}
         <Box>
-          <Button variant="outlined" onClick={handleDialogOpen}>
+          <Button variant="outlined" onClick={handleDialogOpen} sx={{ mb: 2 }}>
             Select Age
           </Button>
           <Dialog open={open} onClose={handleDialogClose}>
@@ -351,10 +668,10 @@ const UserForm = () => {
                   top: 8,
                   color: (theme) => theme.palette.grey[500],
                 }}
-              ></IconButton>
+              />
             </DialogTitle>
             <DialogContent>
-              <FormControl fullWidth>
+              <FormControl fullWidth error={!!errorAge}>
                 <InputLabel>Age</InputLabel>
                 <Select
                   value={age}
@@ -367,6 +684,37 @@ const UserForm = () => {
                   <MenuItem value="36-45">36-45</MenuItem>
                   <MenuItem value="46+">46+</MenuItem>
                 </Select>
+                <FormHelperText>{errorAge}</FormHelperText>
+              </FormControl>
+            </DialogContent>
+            <DialogTitle>
+              Select Your Age
+              <IconButton
+                aria-label="close"
+                onClick={handleDialogClose}
+                sx={{
+                  position: "absolute",
+                  right: 8,
+                  top: 8,
+                  color: (theme) => theme.palette.grey[500],
+                }}
+              />
+            </DialogTitle>
+            <DialogContent>
+              <FormControl fullWidth error={!!errorAge}>
+                <InputLabel>Age</InputLabel>
+                <Select
+                  value={age}
+                  onChange={(event) => setAge(event.target.value)}
+                  label="Age"
+                >
+                  <MenuItem value="">Select Age</MenuItem>
+                  <MenuItem value="18-25">18-25</MenuItem>
+                  <MenuItem value="26-35">26-35</MenuItem>
+                  <MenuItem value="36-45">36-45</MenuItem>
+                  <MenuItem value="46+">46+</MenuItem>
+                </Select>
+                <FormHelperText>{errorAge}</FormHelperText>
               </FormControl>
             </DialogContent>
             <DialogActions>
@@ -376,8 +724,9 @@ const UserForm = () => {
             </DialogActions>
           </Dialog>
         </Box>
-        ;{/* Grouped Dropdown for Job Role */}
-        <FormControl fullWidth sx={{ mb: 2 }}>
+
+        {/* Job Role Dropdown */}
+        <FormControl fullWidth sx={{ mb: 2 }} error={!!errorJobRole}>
           <InputLabel>Job Role</InputLabel>
           <Select
             value={jobRole}
@@ -403,10 +752,11 @@ const UserForm = () => {
             <MenuItem value="Data Analyst">Data Analyst</MenuItem>
             <MenuItem value="Quality Assurance">Quality Assurance</MenuItem>
           </Select>
+          <FormHelperText>{errorJobRole}</FormHelperText>
         </FormControl>
 
-         {/* Native multiple select for Preferred Work Location */}
-         <FormControl fullWidth sx={{ mb: 2 }}>
+        {/* Work Locations Dropdown */}
+        <FormControl fullWidth sx={{ mb: 2 }} error={!!errorWorkLocations}>
           <InputLabel shrink htmlFor="select-multiple-native">
             Preferred Work Location
           </InputLabel>
@@ -436,9 +786,9 @@ const UserForm = () => {
               </option>
             ))}
           </Select>
+          <FormHelperText>{errorWorkLocations}</FormHelperText>
         </FormControl>
 
-        {/* Submit Button */}
         <Button type="submit" variant="contained" color="primary">
           Submit
         </Button>
@@ -446,4 +796,5 @@ const UserForm = () => {
     </Box>
   );
 };
+
 export default UserForm;
