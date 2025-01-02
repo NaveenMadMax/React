@@ -1,4 +1,4 @@
-.displayName {
+/* .displayName {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -12,4 +12,38 @@
 }
 .displayName>h1{
   color: rgb(0, 110, 255);
+} */
+
+.navbar {
+  padding: 15px 8%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.logo{
+  font-family:cursive;
+  font-weight: 600;
+  font-size: 30px;
+}
+ 
+.navbar ul{
+  padding: 10px 30px;
+}
+
+.navbar ul li{
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0px 10px;
+  color: teal;
+}
+
+.navbar button {
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  padding: 12px 25px;
+  cursor: pointer;
 }
