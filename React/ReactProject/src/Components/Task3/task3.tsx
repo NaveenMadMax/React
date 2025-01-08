@@ -19,7 +19,8 @@ function InputList() {
   };
 
   return (
-    <div>
+    <div className="mainContainer">
+      <h1>Enter the numbers to add the value in a list</h1>
       <div className="inputContainer">
         <input
           className="inputValue"

@@ -11,7 +11,7 @@ import RadioGroup from "@mui/material/RadioGroup";
 import Select from "@mui/material/Select";
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
-import { Chip, FormHelperText } from "@mui/material";
+import { Chip, FormHelperText, Typography } from "@mui/material";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
@@ -342,6 +342,7 @@ const UserForm = () => {
 
   return (
     <Box sx={{ maxWidth: 400, margin: "0 auto", padding: 2 }}>
+      <Typography sx={{color:"black",fontSize:"30px", fontWeight:"bold", width:"500px", marginBottom:"10px"}}>React Dropdown types and AutoComplete Components and it's validation </Typography>
       <form onSubmit={handleSubmit}>
         {/* First Name Input */}
         <TextField

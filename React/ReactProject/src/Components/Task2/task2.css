@@ -3,8 +3,9 @@
   width: auto;
 }
 .alertButton:hover {
-  background-color: blue;
-  transition: all 0.6s ease;
+  background-color: rgb(0, 238, 255);
+  color: blueviolet;
+  transition: all 0.4s ease;
 }
 .alertButtonContainer {
   display: flex;
@@ -15,13 +16,14 @@
 }
 .inputLabel {
   font-family: cursive;
-  color: greenyellow;
+  color:  rgb(183, 0, 255);
   font-size: 20px;
+  padding: 20px;
 }
 .inputValueContainer {
   display: flex;
-  flex-wrap: wrap;
-  height: auto;
-  width: 948px;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin-top: 10%;
 }

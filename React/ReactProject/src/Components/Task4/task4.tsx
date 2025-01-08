@@ -22,7 +22,8 @@ function InputList() {
   }
 
   return (
-    <div>
+    <div className="task4">
+      <h1>Enter The Value to Add Numbers And select Delete Button To Delete one by one</h1>
       <div className="inputContainer">
         <input
           className="inputValue"
