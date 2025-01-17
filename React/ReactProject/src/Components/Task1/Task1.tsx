@@ -6,7 +6,7 @@ const Task1= () => {
       <button onClick={()=>setShowName(!showName)}>
         {showName ? 'Hide Name' : 'Show Name'}
       </button>
-      {showName &&<p style={{color:"red",fontFamily:"fantasy",fontSize:"30px"}}>Naveen</p>}
+      {showName &&<p style={{color:"red",fontFamily:"fantasy",fontSize:"30px"}}>NAVEEN</p>}
     </div>
   );
 };

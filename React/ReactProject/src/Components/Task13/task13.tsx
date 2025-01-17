@@ -21,6 +21,8 @@ const tasks = [
   { path: "/task8", label: "React Form Validation in Real-time" },
   { path: "/task9", label: "React Dropdown Types and AutoComplete Components" },
   { path: "/task10", label: "React Dropdown Types and AutoComplete Components and Validation" },
+  { path: "/task14", label: "React Axiox get method" },
+  { path: "/task15", label: "React Axiox get method for 10 users" }
 ];
 
 const NavBar = () => {
