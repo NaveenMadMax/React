@@ -22,7 +22,8 @@ const tasks = [
   { path: "/task9", label: "React Dropdown Types and AutoComplete Components" },
   { path: "/task10", label: "React Dropdown Types and AutoComplete Components and Validation" },
   { path: "/task14", label: "React Axiox get method" },
-  { path: "/task15", label: "React Axiox get method for 10 users" }
+  { path: "/task15", label: "React Axiox get method for 10 users" },
+  {path: "/task16", label:"React Axiox User Card with view More Feature"},
 ];
 
 const NavBar = () => {

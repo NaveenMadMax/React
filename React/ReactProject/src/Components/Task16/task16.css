@@ -1,0 +1,35 @@
+.maincontainer{
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 50px 0px;
+}
+
+.userCard{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.11);
+    width: fit-content;
+    padding: 42px 40px;
+    border-radius: 37px;
+    background-color: rgba(255, 235, 205, 0.419);
+}
+
+.userImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.userDetails{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+.viewMoreButton{
+    display: flex;
+    justify-content: center;
+}
