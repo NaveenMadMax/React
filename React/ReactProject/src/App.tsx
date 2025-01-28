@@ -17,8 +17,8 @@ import Task10 from './Components/Task10/task10'
 import Task13 from './Components/Task13/task13'
 import Task14 from './Components/Task14/task14'
 import Task15 from './Components/Task15/task15'
-import Task16 from './Components/Task16/task16'
-import UserDetail from "./Components/Task16/userdetail";
+import Task16 from './Components/Task16/Components/task16'
+import UserDetail from "./Components/Task16/Components/userdetail";
 
 const App= () => {
   return (

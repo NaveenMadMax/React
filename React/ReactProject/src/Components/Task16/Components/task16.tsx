@@ -1,60 +1,43 @@
 import { useState, useEffect } from "react";
-import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./task16.css"
+import {User} from "../Entity/user"
+import { fetchData } from "../Service/userapi";
 
-const baseURL = "https://randomuser.me/api/";
 
-interface User {
-    picture: { large: string };
-    name: { title: string; first: string; last: string };
-    email: string;
-    phone: number;
-    location: {
-      city: string;
-      street: { name: string; number: number };
-    };
-    login: { password: string };
-    dob: { date: string; age: number };
-  }
 
 const App = () => {
   const [user, setUser] = useState<User | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [shouldFetch, setShouldFetch] = useState(false); // Flag to trigger fetching
+  const [shouldFetch, setShouldFetch] = useState(false); 
   const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
 
+
+  const handleFetchUser = async () => {
+    setIsLoading(true); 
+    setError(null); 
+    try {
+      const fetchedUser = await fetchData(); // Fetch user from the API
+      setUser(fetchedUser); // Update user state with the fetched data
+    } catch (error) {
+      setError( "Failed to fetch user data."+ error); 
+    } finally {
+      setIsLoading(false); 
+      setShouldFetch(false);
+    }
+  };
+
   useEffect(() => {
     if (!shouldFetch) return;
-
-    const fetchData = async () => {
-      setError(null); // Reset error before fetching
-      setIsLoading (true);
-      try {
-        const response = await axios.get(baseURL);
-        const fetchedUser = response.data.results?.[0];
-        if (fetchedUser) {
-          setUser(fetchedUser);
-        } else {
-          setError("No user data currently."); // Set error if no data
-        }
-      } catch (err) {
-        setError("Failed to fetch user data.");
-      } finally {
-        setShouldFetch(false); // Reset the flag after fetching
-        setIsLoading (false);
-      }
-    };
-
-    fetchData();
+    handleFetchUser();
   }, [shouldFetch]);
   
 
   return (
     <div className="maincontainer">
       <button
-        onClick={() => setShouldFetch(true)} // Trigger fetching by setting the flag
+        onClick={() => setShouldFetch(true)} 
         style={{ padding: "10px 20px", fontSize: "16px", marginBottom: "20px" }}
         disabled={isLoading}
       >
