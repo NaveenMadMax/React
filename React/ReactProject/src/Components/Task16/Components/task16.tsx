@@ -9,16 +9,20 @@ import { fetchData } from "../Service/userapi";
 const App = () => {
   const [user, setUser] = useState<User | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [shouldFetch, setShouldFetch] = useState(false); 
-  const [isLoading, setIsLoading] = useState(false);
+  const [shouldFetch, setShouldFetch] = useState <boolean> (false); 
+  const [isLoading, setIsLoading] = useState <boolean> (false);
   const navigate = useNavigate();
-
+  
+  useEffect(() => {
+    if (!shouldFetch) return;
+    handleFetchUser();
+  }, [shouldFetch]);
 
   const handleFetchUser = async () => {
     setIsLoading(true); 
     setError(null); 
     try {
-      const fetchedUser = await fetchData(); // Fetch user from the API
+      let fetchedUser = await fetchData(); // Fetch user from the API
       setUser(fetchedUser); // Update user state with the fetched data
     } catch (error) {
       setError( "Failed to fetch user data."+ error); 
@@ -28,10 +32,7 @@ const App = () => {
     }
   };
 
-  useEffect(() => {
-    if (!shouldFetch) return;
-    handleFetchUser();
-  }, [shouldFetch]);
+
   
 
   return (
