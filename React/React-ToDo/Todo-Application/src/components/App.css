@@ -1,0 +1,36 @@
+.todoTitle {
+  color: rgba(0, 204, 255, 0.745);
+}
+.addToDoButtonContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  min-height: 500px;
+  align-items: center;
+  padding-top: 20px;
+  position: relative;
+}
+.textFieldContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.textFieldContainer button {
+  background-color: blueviolet;
+}
+.todoList {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  overflow: auto;
+  color: blueviolet;
+  
+}
+.todoCard {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
