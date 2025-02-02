@@ -10,6 +10,7 @@ import {
 import { Button } from "@mui/material";
 import { TextField } from "@mui/material";
 import { List } from "@mui/material";
+import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 import "./App.css";
 
@@ -18,15 +19,29 @@ const TodoApp = () => {
   const [inputvalue, setInputValue] = useState<string>("");
   const [hasError, setHasError] = useState<string>("");
   const [todolist, setToDoList] = useState<string[]>([]);
+  const [editTodoListIndex, setEditTodoListIndex] = useState<number | null>(null);
 
   const handleInputValue = () => {
     if (inputvalue.trim() === "") {
       setHasError("Input Field Should not be empty");
-    } else {
+      return;
+    }
+    if(editTodoListIndex!==null){
+      const updateTodoListIndex=[...todolist];
+      updateTodoListIndex[editTodoListIndex]= inputvalue;
+      setToDoList(updateTodoListIndex);
+      setEditTodoListIndex(null);
+    } 
+    else {
       setToDoList([...todolist, inputvalue]);
       setInputValue("");
       setHasError("");
     }
+  };
+  const handleEditClick = (index: number) => {
+    setInputValue(todolist[index]); // Set input field to selected item's text
+    setEditTodoListIndex(index); // Set index to track editing
+    setShowInputField(true); // Show input field
   };
 
   const handleDeleteIcon = (index: number) => {
@@ -46,7 +61,7 @@ const TodoApp = () => {
         <Button
           variant="contained"
           onClick={() => setShowInputField(true)}
-          sx={{ width: "300px", backgroundColor:'blueviolet' }}
+          sx={{ width: "300px", backgroundColor: "blueviolet" }}
         >
           Add TODO List
         </Button>
@@ -60,8 +75,8 @@ const TodoApp = () => {
             error={!!hasError}
             helperText={hasError}
           />
-          <Button variant="contained" onClick={handleInputValue}>
-            Add
+          <Button variant="contained" onClick={handleInputValue} sx={{gap:"10px"}}>
+            {editTodoListIndex!==null ? "Update" :"Add" }
           </Button>
           <Button variant="contained" onClick={() => setShowInputField(false)}>
             Back
@@ -82,18 +97,18 @@ const TodoApp = () => {
               <ListItem
                 key={index}
                 secondaryAction={
-                  <IconButton
-                    edge="end"
-                    aria-label="delete"
-                    onClick={() => handleDeleteIcon(index)}
-                    color="error"
-                  >
-                    <DeleteIcon />
-                  </IconButton>
+                  <>
+                    <IconButton edge="end" aria-label="edit" onClick={() => handleEditClick(index)} color="primary">
+                      <EditIcon />
+                    </IconButton>
+                    <IconButton edge="end" aria-label="delete" onClick={() => handleDeleteIcon(index)} color="error">
+                      <DeleteIcon />
+                    </IconButton>
+                  </>
                 }
               >
                 <ListItemText
-                  sx={{ textAlign: "justify", fontFamily:'fantasy' }}
+                  sx={{ textAlign: "justify", fontFamily: "fantasy" }}
                   primary={todolist}
                 />
               </ListItem>
