@@ -27,10 +27,15 @@
   height: 200px;
   overflow: auto;
   color: blueviolet;
+  gap: 20px;
   
 }
 .todoCard {
   width: 400px;
   margin: 0 auto;
   padding: 20px;
+}
+.updateList{
+  display: flex;
+  gap: 100px;
 }

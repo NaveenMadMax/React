@@ -10,6 +10,7 @@ import {
 import { Button } from "@mui/material";
 import { TextField } from "@mui/material";
 import { List } from "@mui/material";
+import SaveIcon from "@mui/icons-material/Save";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 import "./App.css";
@@ -18,34 +19,36 @@ const TodoApp = () => {
   const [showInputField, setShowInputField] = useState<boolean>(false);
   const [inputvalue, setInputValue] = useState<string>("");
   const [hasError, setHasError] = useState<string>("");
-  const [todolist, setToDoList] = useState<string[]>([]);
-  const [editTodoListIndex, setEditTodoListIndex] = useState<number | null>(null);
+  const [todoList, setToDoList] = useState<string[]>([]);
+  const [editTodoListIndex, setEditTodoListIndex] = useState<number | null>(
+    null
+  );
+  const [editTodoListValue, setEditTodoListValue] = useState<string>("");
 
   const handleInputValue = () => {
     if (inputvalue.trim() === "") {
       setHasError("Input Field Should not be empty");
-      return;
-    }
-    if(editTodoListIndex!==null){
-      const updateTodoListIndex=[...todolist];
-      updateTodoListIndex[editTodoListIndex]= inputvalue;
-      setToDoList(updateTodoListIndex);
-      setEditTodoListIndex(null);
-    } 
-    else {
-      setToDoList([...todolist, inputvalue]);
+    } else {
+      setToDoList([...todoList, inputvalue]);
       setInputValue("");
       setHasError("");
     }
   };
+
   const handleEditClick = (index: number) => {
-    setInputValue(todolist[index]); // Set input field to selected item's text
-    setEditTodoListIndex(index); // Set index to track editing
-    setShowInputField(true); // Show input field
+    setEditTodoListIndex(index);
+    setEditTodoListValue(todoList[index]);
+  };
+
+  const handleSaveEdit = (index: number) => {
+    const updateList = [...todoList];
+    updateList[index] = editTodoListValue;
+    setToDoList(updateList);
+    setEditTodoListIndex(null);
   };
 
   const handleDeleteIcon = (index: number) => {
-    setToDoList([...todolist.slice(0, index), ...todolist.slice(index + 1)]);
+    setToDoList([...todoList.slice(0, index), ...todoList.slice(index + 1)]);
   };
 
   return (
@@ -75,8 +78,12 @@ const TodoApp = () => {
             error={!!hasError}
             helperText={hasError}
           />
-          <Button variant="contained" onClick={handleInputValue} sx={{gap:"10px"}}>
-            {editTodoListIndex!==null ? "Update" :"Add" }
+          <Button
+            variant="contained"
+            onClick={handleInputValue}
+            sx={{ gap: "10px" }}
+          >
+            Add
           </Button>
           <Button variant="contained" onClick={() => setShowInputField(false)}>
             Back
@@ -93,24 +100,59 @@ const TodoApp = () => {
       >
         <CardContent>
           <List className="todoList">
-            {todolist.map((todolist, index) => (
+            {todoList.map((todolist, index) => (
               <ListItem
                 key={index}
                 secondaryAction={
                   <>
-                    <IconButton edge="end" aria-label="edit" onClick={() => handleEditClick(index)} color="primary">
-                      <EditIcon />
-                    </IconButton>
-                    <IconButton edge="end" aria-label="delete" onClick={() => handleDeleteIcon(index)} color="error">
-                      <DeleteIcon />
-                    </IconButton>
+                    {editTodoListIndex === index ? (
+                      <>
+                        <div className="updateList">
+                          <TextField
+                            sx={{ marginTop: "10px" }}
+                            variant="outlined"
+                            size="small"
+                            value={editTodoListValue}
+                            onChange={(event) =>
+                              setEditTodoListValue(event.target.value)
+                            }
+                          />
+                          <IconButton
+                            sx={{ marginTop: "10px" }}
+                            edge="end"
+                            aria-label="save"
+                            onClick={() => handleSaveEdit(index)}
+                          >
+                            <SaveIcon sx={{color:"blueviolet"}} />
+                          </IconButton>
+                        </div>
+                      </>
+                    ) : (
+                      <>
+                        <IconButton
+                          edge="end"
+                          aria-label="Edit"
+                          onClick={() => handleEditClick(index)}
+                          color="primary"
+                        >
+                          <EditIcon />
+                        </IconButton>
+                        <IconButton
+                          edge="end"
+                          aria-label="Delete"
+                          onClick={() => handleDeleteIcon(index)}
+                          color="error"
+                        >
+                          <DeleteIcon />
+                        </IconButton>
+                      </>
+                    )}
                   </>
                 }
               >
-                <ListItemText
-                  sx={{ textAlign: "justify", fontFamily: "fantasy" }}
-                  primary={todolist}
-                />
+                {editTodoListIndex === index ? null : (
+                  <ListItemText primary={todolist} />
+                )}
               </ListItem>
             ))}
           </List>
