@@ -1,0 +1,36 @@
+.signup__Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-image: url('/src/assets/images/Login/Signup__background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.signup__Card{
+    background-color: rgb(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    width: 300px;
+}
+.signup__Card>h2{
+    font-family: cursive;
+    color: rgb(230, 7, 155);
+}
+.submit__Button{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color:rgb(230, 7, 155)!important;
+    color: white;
+}
+.back__Button{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-color:rgb(230, 7, 155)!important ;
+    color: white !important;
+}

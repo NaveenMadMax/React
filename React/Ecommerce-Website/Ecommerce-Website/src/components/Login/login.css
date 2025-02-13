@@ -1,0 +1,39 @@
+
+.login__Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/src/assets/images/Login/Login__Background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.login__Card{
+    background-color: rgb(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    width: 300px;
+}
+.login__Card h2{
+    font-family: cursive;
+    color: rgb(221, 126, 3);
+}
+.error__Text{
+    color: red;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.login__Button{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(221, 126, 3) !important; 
+    color: white;
+}
+.login__Card p a {
+    text-decoration: underline;
+}
