@@ -5,7 +5,7 @@ import "./signup.css";
 
 const Signup = () => {
   const [name, setName] = useState<string>("");
-  const [phone, setPhone] = useState<number>();
+  const [phone, setPhone] = useState<number>(0);
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
 

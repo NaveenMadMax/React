@@ -93,7 +93,7 @@ const addProduct = () => {
     try {
       const data = await addProductAPI(product);
       alert(`The product is added successfully with the ID: ${data.id}`);
-      setProduct({
+      setProduct({  //Resets the product state, clearing the input fields so the user can add another product.
         title: "",
         thumbnail: "",
         price: 0,
