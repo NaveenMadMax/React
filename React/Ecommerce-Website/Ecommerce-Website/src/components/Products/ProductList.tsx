@@ -11,6 +11,7 @@ import Container from "@mui/material/Container";
 import Rating from "@mui/material/Rating";
 import "./ProductList.css";
 import { useNavigate } from "react-router-dom";
+import { deleteProduct } from "../../service/deleteProduct/deleteProductapi";
 
 const ProductList = () => {
   const [products, setProducts] = useState<Product[]>([]);
@@ -32,6 +33,20 @@ const ProductList = () => {
     getProducts();
   }, []);
 
+  const handleDelete = async (productId: number) => {
+    if (window.confirm("Are you sure you want to delete this product?")) {
+      try {
+        const deletedProduct = await deleteProduct(productId);
+        alert(`
+        Product deleted! 
+        ID: ${deletedProduct.id}
+        Title: ${deletedProduct.title}`);
+      } catch (error) {
+        alert("Failed to delete the product: " + error);
+      }
+    }
+  };
+
   if (loading)
     return (
       <div className="loading-container">
@@ -41,26 +56,40 @@ const ProductList = () => {
   if (error) return <p className="error-message">{error}</p>;
 
   const handleLogout = () => {
-    navigate("/"); 
+    navigate("/");
   };
 
-  const handleAddProduct=()=>{
-    navigate("/addProduct")
-  }
+  const handleAddProduct = () => {
+    navigate("/addProduct");
+  };
+  
+  const handleUpdate = (product: Product) => {
+    navigate("/updateProduct", { state: { product } });
+  };
 
   return (
     <div>
       <nav className="navbar">
-      <div className="nav-title">Ecommerce</div>
-      <div className="nav-buttons">
-        <Button color="primary" variant="contained" onClick={handleAddProduct} className="nav-btn">
-          Add Product
-        </Button>
-        <Button color="secondary" variant="contained" onClick={handleLogout} className="nav-btn">
-          Logout
-        </Button>
-      </div>
-    </nav>
+        <div className="nav-title">Ecommerce</div>
+        <div className="nav-buttons">
+          <Button
+            color="primary"
+            variant="contained"
+            onClick={handleAddProduct}
+            className="nav-btn"
+          >
+            Add Product
+          </Button>
+          <Button
+            color="secondary"
+            variant="contained"
+            onClick={handleLogout}
+            className="nav-btn"
+          >
+            Logout
+          </Button>
+        </div>
+      </nav>
       <Container>
         <Typography
           variant="h4"
@@ -83,7 +112,9 @@ const ProductList = () => {
                   alt={"ProductImage"}
                 />
                 <CardContent>
-                  <Typography variant="h6">{product.title}</Typography>
+                  <Typography variant="h6" className="product-title">
+                    {product.title}
+                  </Typography>
                   <Typography variant="body1">
                     Discount: {product.discountPercentage}%
                   </Typography>
@@ -92,6 +123,18 @@ const ProductList = () => {
                   </Typography>
                   <Rating value={product.rating} precision={0.5} readOnly />
                 </CardContent>
+                <div className="card-buttons">
+                  <Button variant="contained" color="secondary" onClick={() => handleUpdate(product)}>
+                    Update
+                  </Button>
+                  <Button
+                    variant="outlined"
+                    color="error"
+                    onClick={() => handleDelete(product.id)}
+                  >
+                    Delete
+                  </Button>
+                </div>
               </Card>
             </Grid>
           ))}

@@ -105,7 +105,6 @@ const addProduct = () => {
       alert("Failed to add product!");
     } finally {
       setSubmit(false); // Reset submit state after request is complete
-      navigate("/products");
     }
   };
 
@@ -172,14 +171,22 @@ const addProduct = () => {
             error={!!stockError}
             helperText={stockError}
           />
+          <div className="form-button">
+          <Button
+            variant="outlined"
+            color="primary"
+            onClick={()=>{navigate("/products")}}
+          >
+            Back
+          </Button>
           <Button
             variant="contained"
             color="primary"
-            fullWidth
             onClick={handleSubmit}
           >
             Add Product
           </Button>
+          </div>
         </form>
       </div>
     </div>

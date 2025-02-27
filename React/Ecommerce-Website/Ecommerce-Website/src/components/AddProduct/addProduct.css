@@ -35,3 +35,7 @@ h2 {
   flex-direction: column;
   gap: 15px;
 }
+.form-button{
+  display: flex;
+  justify-content: space-between;
+}
