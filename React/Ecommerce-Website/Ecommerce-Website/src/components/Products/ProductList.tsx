@@ -12,6 +12,7 @@ import Rating from "@mui/material/Rating";
 import "./ProductList.css";
 import { useNavigate } from "react-router-dom";
 import { deleteProduct } from "../../service/deleteProduct/deleteProductapi";
+import toast from "react-hot-toast";
 
 const ProductList = () => {
   const [products, setProducts] = useState<Product[]>([]);
@@ -29,23 +30,60 @@ const ProductList = () => {
     setLoading(false);
   };
 
+  const confirmDelete = () => {
+    return new Promise<boolean>((resolve) => {
+       toast(
+        (t) => (
+          <div>
+            <p>Are you sure you want to delete this product?</p>
+            <div style={{ display: "flex", gap: "10px", marginTop: "10px" }}>
+              <button
+                onClick={() => {
+                  toast.dismiss(t.id);
+                  resolve(true);
+                }}
+                style={{ background: "red", color: "white", padding: "5px 10px", border: "none", cursor: "pointer", borderRadius:"5px" }}
+              >
+                Yes
+              </button>
+              <button
+                onClick={() => {
+                  toast.dismiss(t.id);
+                  resolve(false);
+                }}
+                style={{ background: "gray", color: "white", padding: "5px 10px", border: "none", cursor: "pointer", borderRadius:"5px" }}
+              >
+                No
+              </button>
+            </div>
+          </div>
+        ),
+        { duration: Infinity }
+      );
+    });
+  };
+
+  
+  const handleDelete = async (productId: number) => {
+    const isConfirmed = await confirmDelete();
+    if (!isConfirmed) return;
+  
+    const deleteToast = toast.loading("Deleting product...");
+    try {
+      const deletedProduct = await deleteProduct(productId);
+      toast.success(`Product "${deletedProduct.title}" deleted successfully!`, {
+        id: deleteToast,
+      });
+    } catch (error) {
+      toast.error("Failed to delete the product. Try again!", {
+        id: deleteToast,
+      });
+    }
+  };
+
   useEffect(() => {
     getProducts();
   }, []);
-
-  const handleDelete = async (productId: number) => {
-    if (window.confirm("Are you sure you want to delete this product?")) {
-      try {
-        const deletedProduct = await deleteProduct(productId);
-        alert(`
-        Product deleted! 
-        ID: ${deletedProduct.id}
-        Title: ${deletedProduct.title}`);
-      } catch (error) {
-        alert("Failed to delete the product: " + error);
-      }
-    }
-  };
 
   if (loading)
     return (
@@ -65,6 +103,10 @@ const ProductList = () => {
   
   const handleUpdate = (product: Product) => {
     navigate("/updateProduct", { state: { product } });
+  };
+
+  const handleProductClick = (product: Product) => {
+    navigate(`/product/${product.id}`, { state: { product } });
   };
 
   return (
@@ -105,13 +147,13 @@ const ProductList = () => {
                 sx={{ backgroundColor: "rgba(151, 151, 151, 0.33)" }}
                 className="productCard"
               >
-                <CardMedia
+                <CardMedia onClick={() => handleProductClick(product)}
                   component="img"
                   height="180"
                   image={product.thumbnail}
                   alt={"ProductImage"}
                 />
-                <CardContent>
+                <CardContent onClick={() => handleProductClick(product)}>
                   <Typography variant="h6" className="product-title">
                     {product.title}
                   </Typography>

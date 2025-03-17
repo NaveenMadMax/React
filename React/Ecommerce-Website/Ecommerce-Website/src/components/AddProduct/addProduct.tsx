@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { addProductAPI } from "../../service/addProduct/addProductapi";
 import { AddProduct } from "../../entity/addProduct";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-hot-toast";
 
 const addProduct = () => {
   const [product, setProduct] = useState<AddProduct>({
@@ -92,17 +93,23 @@ const addProduct = () => {
   const addProduct = async () => {
     try {
       const data = await addProductAPI(product);
-      alert(`The product is added successfully with the ID: ${data.id}`);
-      setProduct({  //Resets the product state, clearing the input fields so the user can add another product.
-        title: "",
-        thumbnail: "",
-        price: 0,
-        discountPercentage: 0,
-        stock: 0,
+      toast.success(`Product added successfully! ID: ${data.id}`, {
+        duration: 1000,
+        position: "top-center",
       });
+      // setProduct({  //Resets the product state, clearing the input fields so the user can add another product.
+      //   title: "",
+      //   thumbnail: "",
+      //   price: 0,
+      //   discountPercentage: 0,
+      //   stock: 0,
+      // });
     } catch (error) {
+      toast.error("Failed to add product!", {
+        duration: 3000,
+        position: "top-center",
+      });
       console.error("Error adding product:", error);
-      alert("Failed to add product!");
     } finally {
       setSubmit(false); // Reset submit state after request is complete
     }

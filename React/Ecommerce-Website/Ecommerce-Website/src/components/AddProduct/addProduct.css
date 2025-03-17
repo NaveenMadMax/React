@@ -39,3 +39,8 @@ h2 {
   display: flex;
   justify-content: space-between;
 }
+.sucessMessage{
+  color: rgb(255, 0, 0);
+  font-weight: bolder;
+  font-size: 18px;
+}

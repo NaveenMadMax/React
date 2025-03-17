@@ -6,5 +6,9 @@ export class Product{
     thumbnail!: string;
     discountPercentage!: number;
     rating!: number;
-    stocks!: number;
+    stock!: number;
+    returnPolicy!:string;
+    warrantyInformation!:string;
+    shippingInformation!:string;
+    availabilityStatus!:string;
 }

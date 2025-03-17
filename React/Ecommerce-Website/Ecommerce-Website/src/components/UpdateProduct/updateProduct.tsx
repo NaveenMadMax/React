@@ -3,6 +3,8 @@ import { useState } from "react";
 import { updateProduct } from "../../service/updateProduct/updateProduct";
 import { Product } from "../../entity/products";
 import { Button, Container, TextField, Typography } from "@mui/material";
+import toast from "react-hot-toast";
+import "./updatedProduct.css"
 
 const UpdateProduct = () => {
   const location = useLocation();
@@ -22,30 +24,82 @@ const UpdateProduct = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    toast.loading("Updating product...");
     try {
       const updatedProduct = await updateProduct(product.id, formData);
-      alert(`Product updated successfully!\nID: ${updatedProduct.id}\nTitle: ${updatedProduct.title}`);
-      navigate("/products"); 
+      toast.dismiss();
+      toast.success(
+        `Product updated successfully! 🎉\nTitle: ${updatedProduct.title}`
+      );
     } catch (error) {
-      alert("Failed to update product: " + error);
+      toast.dismiss();
+      toast.error("Failed to update product. Please try again!" + error);
     }
   };
 
   return (
-    <Container maxWidth="sm">
-      <Typography variant="h4" align="center" gutterBottom>
-        Update Product
-      </Typography>
-      <form onSubmit={handleSubmit}>
-        <TextField label="Title" name="title" value={formData.title} onChange={handleChange} fullWidth margin="normal" />
-        <TextField label="Price" name="price" value={formData.price} onChange={handleChange} type="number" fullWidth margin="normal" />
-        <TextField label="Discount (%)" name="discountPercentage" value={formData.discountPercentage} onChange={handleChange} type="number" fullWidth margin="normal" />
-        <TextField label="Rating" name="rating" value={formData.rating} onChange={handleChange} type="number" fullWidth margin="normal" />
-        <Button type="submit" variant="contained" color="primary" fullWidth>
-          Update Product
+    <div>
+      <div className="updateproduct-backbutton-container">
+        <Button
+          className="updateProduct-backButton"
+          variant="contained"
+          color="secondary"
+          onClick={() => {
+            navigate("/products");
+          }}
+        >
+          Back
         </Button>
-      </form>
-    </Container>
+      </div>
+      <Container
+        style={{ marginTop: "100px", position: "relative" }}
+        maxWidth="sm"
+      >
+        <Typography variant="h4" align="center" gutterBottom>
+          Update Product
+        </Typography>
+        <form onSubmit={handleSubmit}>
+          <TextField
+            label="Title"
+            name="title"
+            value={formData.title}
+            onChange={handleChange}
+            fullWidth
+            margin="normal"
+          />
+          <TextField
+            label="Price"
+            name="price"
+            value={formData.price}
+            onChange={handleChange}
+            type="number"
+            fullWidth
+            margin="normal"
+          />
+          <TextField
+            label="Discount (%)"
+            name="discountPercentage"
+            value={formData.discountPercentage}
+            onChange={handleChange}
+            type="number"
+            fullWidth
+            margin="normal"
+          />
+          <TextField
+            label="Rating"
+            name="rating"
+            value={formData.rating}
+            onChange={handleChange}
+            type="number"
+            fullWidth
+            margin="normal"
+          />
+          <Button type="submit" variant="contained" color="primary" fullWidth>
+            Update Product
+          </Button>
+        </form>
+      </Container>
+    </div>
   );
 };
 
