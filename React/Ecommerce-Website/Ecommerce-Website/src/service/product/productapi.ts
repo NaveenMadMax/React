@@ -55,7 +55,7 @@ function productInfoToProductEntity(productInfo: any): Product {
   }
   let stocks= productInfo.stocks
   if (stocks){
-    product.stocks=stocks
+    product.stock=stocks
   }
   return product;
 }

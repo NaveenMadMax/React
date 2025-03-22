@@ -1,0 +1,36 @@
+.category-nav {
+    display: flex;
+    align-items: center;
+    background-color: #232f3e; /* Amazon's dark blue background */
+    padding: 10px 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 15px;
+  }
+  
+  .category-btn {
+    display: block !important;  
+    color: white;
+    background-color: #37475a; 
+    border: none;
+    padding: 8px !important;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: capitalize;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    min-width: 139px !important;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+  }
+  
+  .category-btn:hover {
+    background-color: #485769; 
+  }
+  
+  .category-btn:focus {
+    outline: none;
+    background-color: #52667a; /* Focus effect for buttons */
+  }

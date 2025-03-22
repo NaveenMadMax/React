@@ -94,7 +94,6 @@ const addProduct = () => {
     try {
       const data = await addProductAPI(product);
       toast.success(`Product added successfully! ID: ${data.id}`, {
-        duration: 1000,
         position: "top-center",
       });
       // setProduct({  //Resets the product state, clearing the input fields so the user can add another product.

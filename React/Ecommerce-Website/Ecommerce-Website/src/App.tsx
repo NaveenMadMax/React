@@ -10,7 +10,7 @@ import { Toaster } from "react-hot-toast";
 const App = () => {
   return (
     <Router>
-      <Toaster />
+      <Toaster toastOptions={{ duration: 3000 }} />
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/signup" element={<Signup/>}/>
